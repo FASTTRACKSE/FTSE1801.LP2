@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment</title>
+	<meta charset="utf-8">
+    <style type="text/css">
+        table{
+            border-bottom: : collapse;
+        }
+        table, th, td{
+            border:1px solid black;
+        }
+         th.right{
+          width: 400px;
+          height:20px;
+      }
+       th.left{
+          width: 40%;
+      }
+      .huong{
+      	height: 80px;
+      }
+    </style>
+</head>
+<body>
+	<h1>PHIẾU ĐĂNG KÝ DỰ THI NGƯỜI MẪU</h1>
+  <table>
+      <tr>
+          <th class="left">Tên</th>
+          <th class="right">Giá trị</th>
+      </tr>
+      <tr>
+          <td>Tên</td>
+          <td><input name="Tên" value="" type=""></td>
+      </tr>
+      <tr>
+          <td>Giới tính</td>
+          <td><input name="Giới tính" value="Nam" type="radio">Nam<br>
+              <input name="Giới tính" value="Nữ" type="radio">Nữ</td>
+      </tr>
+      <tr>
+          <td>Màu mắt</td>
+          <td>
+          	<select name="Màu mắt">
+          		<option value="Xanh">Xanh</option>
+          		<option value="Nâu">Nâu</option>
+          		<option value="Đen">Đen</option>	
+          	</select>
+          </td>
+      </tr>
+      <tr>
+          <td>Chiều cao</td>
+          <td><input name="Chiều cao" value="Trên 1.5m" type="checkbox">Trên 1.5m<br>
+              <input name="Chiều cao" value="Dưới 1.5m" type="checkbox">Dưới 1.5m</td>
+       <tr class="huong">
+          <td>Mong muốn của bạn</td>
+          <td></td>
+      </tr>
+      <tr>
+      	<td colspan="2" align="center"><input type="submit" value="Gửi thông tin"></td>   
+      </tr>
+  </table>
+</body>
+</html>
+
