@@ -1,0 +1,42 @@
+
+<script>
+	
+	var mangsonguyen;
+	var max
+	
+
+	function thutu(mangsonguyen){
+	var max=mangsonguyen[0];
+	for(var i=0;i<mangsonguyen.length;i++){
+		if(max<mangsonguyen[i]){
+			max=mangsonguyen[i];
+		}
+	  }
+   
+	document.write("Giá trị lớn nhất của dãy N là :" +"\t" + max);
+	document.write("<br>");}
+
+	mangsonguyen=[5,2,7,20,4,11];
+	thutu(mangsonguyen);
+	document.write("<br>");
+	//
+	//
+	// có return
+	var mangsonguyen;
+	var max
+	function songuyen(mangsonguyen){
+		max = mangsonguyen[0];
+		
+
+		for(var i=0;i<mangsonguyen.length;i++){
+		if(max<mangsonguyen[i]){
+			max=mangsonguyen[i];
+		}
+	  }
+	  return (max);
+
+	}
+	mangsonguyen=[672,642,384,98,1119];
+	max = songuyen(mangsonguyen);
+	document.write("Giá trị lớn nhất của dãy N là :" +"\t" + max);
+</script>
