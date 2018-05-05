@@ -1,0 +1,27 @@
+<script>
+	var i,j,n;
+	var min;
+	
+
+	function thutu(n){
+		
+		for (var i = 0 ; i<=n.length-1; i++){
+			for(var j=i+1;j<n.length;j++){
+				if(n[j] < n[i]){
+					min=n[i];
+					n[i]=n[j];
+					n[j]=min;
+				}
+			}
+		}return(n);
+	}
+
+
+	n=[53,243,754,170,477,165];
+	n=thutu(n);
+	document.write(n + "   ")
+	document.write("<br>");
+
+
+
+</script>

@@ -1,0 +1,86 @@
+<html>
+	<head><title>Bài tập về nhà</title></head>
+	<body>
+	<h1>Bài tập 1</h1>
+		<label>Phương trình bậc nhất</label>
+		  <p>ax + b = 0</p>
+		  <input id="so1" type="text" name="" value="">a
+		  <input id="so2" type="text" name="" value="">b</br></br>
+		  <input type="button" name="" value="submit" onclick="tinh()">
+          <script type="text/javascript">
+          	function tinh(){
+            var a=document.getElementById("so1").value;
+            var b=document.getElementById("so2").value;
+            var x=-b/a;
+            if(a==0){
+            	if(b==0){alert("phương trình vô số nghiệm")}
+            	else{alert("phương trình vô nghiệm")}
+            }
+            else{alert("phương trình có 1 nghiệm" + x)
+               }
+          	}
+          </script>
+
+
+
+
+     <h1>Bài tập 2</h1>
+		  <label>Phương trình bậc 2</label>
+		  <p>ax^2 + bx + c = 0</p>
+		  <input id="anh" type="text" name="" value="">a
+		  <input id="chi" type="text" name="" value="">b
+		  <input id="em" type="text" name="" value="">c</br></br>
+		  <input type="button" name="" value="ketqua" onclick="giatri()">
+          <script type="text/javascript">
+          	function giatri(){
+            var a=document.getElementById("anh").value;
+            var b=document.getElementById("chi").value;
+            var c=document.getElementById("em").value;
+            var dt=b*b-4*a*c;	
+            
+            if(a==0){
+            	if(b==0){
+            	    if(c==0){alert("phương trình vô số nghiệm")}
+            	    else{alert("phương trình vô nghiệm")}
+                }
+                 else{alert("phương trình có 1 nghiệm" + (-c/b))
+                    }
+          	    }
+            else{
+            	if(dt<0){alert("phương trình vô nghiệm ")}
+                else if(dt==0){alert("phương trình có nghiệm kép bằng" + -b/2*a)}
+                else{alert("phương trình có 2 nghiệm phân biêt là :" + (-b + Math.sqrt(dt))/(2*a)+ "và" + (-b - Math.sqrt(dt))/(2*a))}
+            }
+           } 
+          </script>
+
+    <h1>Bài tập 3</h1>
+	       <label>Tổng kết điểm và xếp loại học sinh A:</label></br></br>
+	       <input id="diem1" type="text" name="" value="">lp1</br></br>
+	       <input id="diem2" type="text" name="" value="">lp2</br></br>
+	       <input id="diem3" type="text" name="" value="">lp3</br></br>
+	       <input  type="button" name="" value="in" onclick="la()">
+	       <script type="text/javascript">
+	       	function la(){
+	       		var i=document.getElementById("diem1").value;
+	       		var j=document.getElementById("diem2").value;
+	       		var g=document.getElementById("diem3").value;
+	       		var dtb=i/3 + j/3 + g/3;
+	       		
+	       		if(dtb<5){
+				xl1='Yếu';
+				}else if(dtb<7){
+				xl1='Trung bình';
+				}else if(dtb<8){
+				xl1="Khá";
+				}else{
+				xl1='giỏi';
+			}
+
+
+	       			alert("điểm trung bình:" + dtb + "xếp loai:" + xl1)
+	       		
+	       	}
+	       </script>
+	</body>
+</html>

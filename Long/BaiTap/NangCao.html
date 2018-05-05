@@ -1,0 +1,49 @@
+<pre>
+	<script>
+
+//Phần khai báo biến
+document.write("Danh sách học sinh ");
+document.write("<br>");
+document.write("==================================================================");
+document.write("<br>");
+
+var danhsachHS=[];
+danhsachHS[0] = {danhsachHS:"Nguyễn Quốc Anh",namSinhHS:1991,diemLP0: 2,diemLP1: 4,diemTB:0};
+danhsachHS[1] = {danhsachHS:"Nguyễn Văn Sơn",namSinhHS:1997,diemLP0: 4,diemLP1: 6,diemTB:0};
+danhsachHS[2] = {danhsachHS:"Nguyễn Hoàng Vương",namSinhHS:1992,diemLP0: 6,diemLP1: 3,diemTB:0};
+for(var i =0; i<danhsachHS.length; i++){
+	danhsachHS[i].diemTB = (danhsachHS[i].diemLP0 +danhsachHS[i].diemLP1)/2.0;
+	if(danhsachHS[i].diemTB<5){
+		danhsachHS[i].xeploai = "YẾU";
+	}
+	if(danhsachHS[i].diemTB<7){
+		danhsachHS[i].xeploai = "TB";
+	}
+	if(danhsachHS[i.diemTB]<8,5){
+		danhsachHS[i].xeploai = "KHÁ";
+	}
+	else{
+		danhsachHS[i].xeploai = "GIỎI";
+	}
+}
+namHienTai = 2018;
+for (var i = 0 ; i<=danhsachHS.length-1; i++){
+  for(var j=i+1;j<danhsachHS.length;j++){
+    if(danhsachHS[i].diemTB > danhsachHS[j].diemTB){
+      var n=danhsachHS[i];
+      danhsachHS[i]=danhsachHS[j];
+      danhsachHS[j]=n;
+    }
+  }
+}
+
+//in ra danh sách sinh viên theo điểm trung bình
+document.write("STT Họ tên\t\tTuổi\tLP0    LP1    ĐTB    XẾP LOẠI");
+document.write("<br>");
+for(var i=0; i<danhsachHS.length;i++){
+	document.write((i+1)+"."+danhsachHS[i].danhsachHS+ "\t"+(namHienTai - danhsachHS[i].namSinhHS) + "\t"+danhsachHS[i].diemLP0+"\t"+danhsachHS[i].diemLP1+"\t"+danhsachHS[i].diemTB+"\t"+ danhsachHS[i].xeploai);
+	document.write("<br>");
+
+}
+</script>
+</pre>
