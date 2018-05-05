@@ -1,0 +1,28 @@
+.a{
+	width: 850px;
+margin-top: 20px;
+}
+.b{
+	float: right;
+	margin-top:-20px;
+	width: 600
+}
+.c{
+	margin-top: 20px;
+}
+.d{
+	margin-top: 20px;
+}
+.f{
+	margin-top: 20px;
+}
+
+
+
+.ab{border-top: 5px solid red;
+	width: 850px;
+	border-bottom: 5px solid #ececec;
+	padding-bottom: 10px  ;
+padding-top: 10px  ;}
+
+

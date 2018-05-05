@@ -1,0 +1,102 @@
+
+<pre>
+<script>
+
+	// Tình hình chuyên cần của SV
+var	tensv=["Bình","Tuấn","Dũng"];
+var songaynghi=[[3,4,5],[2,4,8,10],[3,5,7,9,10]];
+var tenthang;
+var min,ngay;
+tenthang=8;
+switch(tenthang){
+        case 3:
+        tenthang="Tháng 1";
+        ngay = 31;
+        break;
+
+ case 2:
+        tenthang="Tháng 2";
+        ngay = 28;
+        break;
+
+ case 3:
+        tenthang="Tháng 3";
+        ngay = 31;
+        break;
+
+ case 4:
+        tenthang="Tháng 4";
+        ngay = 30;
+        break;
+ case 5:
+        tenthang="Tháng 5";
+        ngay = 31;
+        break;
+ case 6:
+        tenthang="Tháng 6";
+        ngay = 30;
+        break;
+ case 7:
+        tenthang="Tháng 7";
+        ngay = 31;
+        break;
+ case 8:
+        tenthang="Tháng 8";
+        ngay = 31;
+        break;
+ case 9:
+        tenthang="Tháng 9";
+        ngay = 30;
+        break;
+ case 10:
+        tenthang="Tháng 10";
+        ngay = 31;
+        break;
+case 11:
+        tenthang="Tháng 11";
+        ngay = 30;
+        break;
+
+case 12:
+        tenthang="Tháng 12";
+        ngay = 31;
+        break;
+        default:
+        document.write("<khong giá trị>");
+        document.write("<br>");
+        break;}
+        //phần in
+        document.write(tenthang);
+         document.write("<br>");
+         document.write("---------------------------------><br>");
+		document.write("STT     HỌ VÀ TÊN     NGÀY");
+		for(var i=1;i<=ngay;i++){
+		document.write("\t" + i);
+	} 
+	    document.write("<br>");
+	var nghi;
+     for(i=0;i<tensv.length;i++){
+     	
+     	document.write((i+1) + "\t" +tensv[i]+ "\t" +"   ");
+          
+		for(var j=1;j<=ngay;j++){
+			nghi=0;
+			for(var k=0;k<songaynghi[i].length;k++){
+				if(j==songaynghi[i][k]){
+					
+                   document.write("\tx");
+                    nghi=1;
+				}
+			}
+			if(nghi==0){
+				   document.write("\t")
+			}
+
+			
+			
+	}document.write("<br>")
+}
+
+     
+</script>
+</pre>
