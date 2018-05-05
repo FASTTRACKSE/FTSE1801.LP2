@@ -1,0 +1,19 @@
+
+table{
+	border:solid 1px #87b6d9;
+	border-radius: 3px;
+}
+th{
+	text-align: left;
+}
+.a{
+	background-color: #87b6d9;
+	border-radius: 3px;
+}
+.b{
+	width: 500px;
+	border-radius: 3px;
+}
+.c{
+	border-radius: 3px;
+}

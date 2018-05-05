@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phương Trình Bậc nhất</title>
+</head>
+<body>
+	<label>Nhập A:</label>
+	<input id ="nhap1"  type="number" name="Phương trình bậc 1" value="" ><br>
+	<label>Nhập B:</label>
+	<input id ="nhap2"  type="number" name="Phương trình bậc 1" value="" ><br>
+	<label>Phương trình: </label>
+	<p id="ketqua"></p>
+	<button onclick="tinh()">Tính toán</button>
+	<script>
+		function tinh(){
+			var x1=document.getElementById('nhap1');
+			var x2=document.getElementById('nhap2');
+			var a = x1.value;
+			var b = x2.value;
+
+			if (a == 0 && b == 0){
+				ketqua = "Phương trình vô số nghiệm";
+				document.getElementById('ketqua').innerHTML = ketqua;
+			}
+			else if(a==0 && b != 0){
+				ketqua  = "Phương trình vô nghiệm";
+				document.getElementById('ketqua').innerHTML = ketqua;
+			}
+			else {
+				ketqua = "Phương trình có nghiệm x =" + (b/a);
+				document.getElementById('ketqua').innerHTML = ketqua;
+			}
+		}
+	</script>
+</body>
+</html>

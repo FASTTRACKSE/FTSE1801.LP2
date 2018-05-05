@@ -1,0 +1,101 @@
+
+<pre>
+  <script>
+
+/* **************************
+chương trình quản lý điểm sv
+*****************************/
+// phần khai báo và gắn giá trị
+
+var tenHS=["Nguyen Van Dung","Nguyen Van Khanh","Nguyen Van Binh"];
+var lp0=[1,10,5];
+var lp1=[9,10,7];
+var diemTB=[];
+var XepLoai=[];
+var vitri;
+var gioi;
+var nhap=["điểm trung bình","tên"];
+var n
+vitriabc=[];
+// phần thân chương trình
+
+//In tiêu đề
+function tieude(loaiSapXep){
+  document.write("Danh sách sinh viên sắp xếp theo "+nhap[loaiSapXep]);
+  document.write("<br>----------------------------------------------------------------------------------------------<br>")
+  document.write("STT\tHọ tên\t\t\ttuổi \tLP0\tLP1\tĐiểm TB\tXếp loại");
+  document.write("<br>----------------------------------------------------------------------------------------------<br>");
+}
+
+// Xếp loại học lực
+function xeploai(){
+  for(var i=0;i<tenHS.length;i++){
+    diemTB[i]=(lp0[i] + lp1[i])/2;
+    if(lp0[i]==0 || lp1[i]==0){
+     XepLoai[i] = "Liêt";
+   }
+   else if(diemTB[i]<5){
+     XepLoai[i] = "Yếu";
+   }
+   else if(diemTB[i]<7){
+     XepLoai[i] = "Trung bình";
+   }
+   else if(diemTB[i]<8){
+     XepLoai[i] = "Khá";
+   }
+   else {
+     XepLoai[i] = "giỏi";
+   }
+ }
+}
+// phần in 
+// in danh sách lớp được sắp xếp
+function indanhsach(){
+  for(var i=0;i<tenHS.length;i++){
+    document.write((i+1) + "."+ "\t" + "\t|"+ tenHS[i] +"\t" + "\t|"+ lp0[i] +"\t" + "\t|"+ lp1[i] +"\t" + "\t|"+ diemTB[i] +"\t" + "\t|"+ XepLoai[i]);
+    document.write("<br>");
+  }
+}
+// danh sách lớp
+function danhsach(loaiSapXep,tenHS,lp0,lp1,diemTB,XepLoai,vitriabc){
+  tieude(loaiSapXep)
+  xeploai()
+// Sắp xếp theo tên
+if(nhap[loaiSapXep]=="tên"){
+  for (var i = 0 ; i<=tenHS.length-1; i++){
+    for(var j=i+1;j<tenHS.length;j++){
+      if(tenHS[vitriabc[i]] > tenHS[vitriabc[j]]){
+        n=vitriabc[i];
+        vitriabc[i]=vitriabc[j];
+        vitriabc[j]=n;
+      }
+    }
+  }
+
+  
+        // sắp xếp theo diểm trung bình
+      }else if(nhap[loaiSapXep]=="điểm trung bình") {
+        for (var i = 0 ; i<=tenHS.length-1; i++){
+          for(var j=i+1;j<tenHS.length;j++){
+            if(diemTB[vitriabc[i]] > diemTB[vitriabc[j]]){
+              n=vitriabc[i];
+              vitriabc[i]=vitriabc[j];
+              vitriabc[j]=n;
+            }
+          }
+        }
+        
+      }
+      for(i=0; i<tenHS.length;i++) {
+      document.write((i+1) + "."+ "\t" + "\t|"+ tenHS[vitriabc[i]] +"\t" + "\t|"+ lp0[vitriabc[i]] +"\t" + "\t|"+ lp1[vitriabc[i]] +"\t" + "\t|"+ diemTB[vitriabc[i]] +"\t" + "\t|"+ XepLoai[vitriabc[i]]);}
+      document.write("<br>");
+    }
+    // 1 là in danh sách theo tên; 0 là in danh sách theo điểm trung bình
+    // in danh sách lớp theo tên
+    danhsach(0,tenHS,lp0,lp1,diemTB,XepLoai,vitriabc);
+    // in danh sách lớp theo điểm trung bình
+
+
+
+  </script>
+  <pre>

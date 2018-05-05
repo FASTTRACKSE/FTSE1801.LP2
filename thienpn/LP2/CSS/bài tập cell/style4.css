@@ -1,0 +1,33 @@
+table, th, tr, td{
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+.mimi{
+	
+	padding-left: 200px;
+}
+.color{
+	background-color: #bfbfbf;
+}
+.a{ border:solid;
+	border-color: white;
+	width: 700px;
+	height: 200px;
+}
+
+.b {
+	float: right;
+	margin-top: -90px;
+
+}
+.c{ border:solid;
+	border-color: white;
+	width: 230px;
+	height: 1px;
+}
+
+.d {
+	float: right;
+	margin-top: -152px;
+
+}
