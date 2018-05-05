@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 1</title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+	<form>
+		<label>Nhập a= </label>
+		<input id="n" type="text" name="" value=""><br>
+		<label>Nhập b= </label>
+		<input id="m" type="text" name="" value=""><br>
+		<input onclick="ptrinh1an()" type="submit" name="" value="kết quả">
+	</form>
+	<script type="text/javascript">
+		function ptrinh1an(){
+			var a= document.getElementById("n").value;
+			var b= document.getElementById("m").value;
+			if((a==0)&&(b==0)){
+				alert("Phương trình vố số nghiệm");
+			}else if(a!=0){
+				var x=-b/a;
+				alert("nghiệm của phương trình là x = "+x);
+
+			}else {
+				alert("Phương trình vô nghiệm");
+			}
+		}
+	</script>
+</body>
+</html>
