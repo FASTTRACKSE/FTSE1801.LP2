@@ -1,0 +1,42 @@
+<pre>
+<script>
+		/* Tìm số nguyên Lớn nhất, nhỏ nhất , tổng các số,
+		Giá trị trung bình các số */
+
+		//khai báo
+		 var mangsonguyen = [9,10,2,7,3,8,4];
+		 var solonnhat = mangsonguyen[0];
+		 var sonhonhat= mangsonguyen[0];
+
+		 var tong=0;
+		 var giatriTB = 0;
+		 
+
+		 //thực hiên chương trình 
+		 
+		  for (var i = 1 ; i < mangsonguyen.length;i++){
+		  	
+		  if (solonnhat < mangsonguyen[i]){
+		  	solonnhat = mangsonguyen[i];
+		  }else if(sonhonhat>mangsonguyen[i]){
+		  	sonhonhat = mangsonguyen[i]
+		  }
+		} 
+
+		document.write("Số lớn nhất " + solonnhat)
+		document.write("<br>")
+		document.write("Số nhỏ nhất " + sonhonhat)
+		document.write("<br>")
+
+		for (var i = 1 ; i < mangsonguyen.length;i++){
+			tong+=mangsonguyen[i]
+			giatriTB+=mangsonguyen[i] /5;
+		}
+		document.write("Tổng các số  " + tong)
+		document.write("<br>")
+		document.write("Giá Trị Trung Bình " + giatriTB)
+		document.write("<br>")
+		
+
+</script>
+</pre>
