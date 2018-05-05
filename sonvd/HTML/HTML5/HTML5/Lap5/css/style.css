@@ -1,0 +1,12 @@
+/*table, tr, td{
+	border-collapse: collapse;
+	border:1px solid #6699cc;
+}*/
+table, tr, th{
+	border-radius: 5px;
+	border: solid #3399cc 1px;
+}
+th{
+	text-align:left;
+	background-color: #99cccc;
+}

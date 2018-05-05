@@ -1,0 +1,29 @@
+.header{
+	border:solid white;
+	background-color: #ffa500;
+}
+	
+.o{
+	color: white;
+}
+.menu ul li{
+	display: inline;
+
+}
+.menu ul{
+	margin-left:-30px;
+}
+.content{
+	margin-left:  10px;
+	height:10%;
+	border:solid white;
+	background-color: #d3d3d3;
+}
+.footer{
+	border:solid white;
+	background-color: #ffa500;
+
+}
+.t{
+	color: white;
+}
