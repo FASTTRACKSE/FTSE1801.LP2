@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài tập Assigment06-3</title>
+</head>
+<body>
+	<h2>Chương trình tổng kết điểm và in xếp loại cho học sinh</h2>
+	<form method="post">
+		<label>Nhập điểm LP0</label>
+		<input id="lp0" type="text" required="" name="">
+		<br></br>
+		<label>Nhập điểm LP1</label>
+		<input id="lp1" type="text" required="" name="">
+		<br></br>
+		<label>Nhập điểm LP2</label>
+		<input id="lp2" type="text" required="" name="">
+		<br></br>
+		<button onclick="tinh()" name="kq" type="submit">Tính</button>
+		<input type="reset" name="Hủy" value="Hủy">
+		<script type="text/javascript">
+			function tinh(){
+				var a = document.getElementById('lp0').value;
+				var b = document.getElementById('lp1').value;
+				var c = document.getElementById('lp2').value;
+				var dtb = a/3+b/3+c/3;
+				if (dtb<5) {
+					alert("Điểm Tb "+dtb + " Xếp loại Yếu");
+				}
+				else if (dtb<7){
+					alert("Điểm Tb "+dtb + " Xếp loại trung bình");
+				}
+				else if (dtb<8){
+					alert("Điểm Tb "+dtb +" Xếp loại khá");
+				}
+				else {
+					alert("Điểm Tb "+dtb +" Xếp loại giỏi")
+				}
+			}
+		</script>
+	</form>
+</body>
+</html>

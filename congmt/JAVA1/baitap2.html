@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Giải phương trình bậc 2 một ẩn:</h1>
+	<form>
+		<label>Nhập a:</label>
+		<input id="a" type="text" name="a">
+		<label>Nhập b:</label>
+		<input id="b" type="text" name="b">
+		<label>Nhập c:</label>
+		<input id="c" type="text" name="c">
+		<button onclick="tinhtoan()">Tính toán</button>
+	</form>
+	<script type="text/javascript">
+		function tinhtoan() {
+			// body...
+		
+		var dt;
+		var x, x1, x2, x3;
+		var a = document.getElementById("a").value;
+		var b = document.getElementById("b").value;
+		var c = document.getElementById("c").value;
+
+		switch(true){
+			case(a==0):
+				switch(true){
+					case(b==0)&&(c==0):
+					alert("Phương trình có vô số nghiệm");
+					
+					break;
+
+					case(b==0)&&(c!==0):
+					alert("Phương trình vô nghiệm");
+					
+					break;
+
+					default:
+					x3 = -c/b
+					alert("Phương trình có nghiệm x = "+ x3);
+					
+					
+					break;
+
+				}
+				break;
+			default:
+				dt= b*b- 4*a*c;
+				switch(true){
+
+					case(dt<0):
+						alert("Phương trình vô nghiệm");
+						
+						break;
+					case(dt==0):
+						x= -b/(2*a);
+						alert("Phương trình có nghiệm kép x = " + x);
+						
+						break;
+					default:
+						x1= (-b + Math.sqrt(dt))/(2*a);
+						x2= (-b - Math.sqrt(dt))/(2*a);
+						alert("Phương trình có 2 nghiệm phân biệt x1 = " + x1 + " và x2 = " + x2);
+						
+						break;
+
+				}
+
+				break;
+
+		}
+	}
+
+	</script>
+</body>
+</html>
