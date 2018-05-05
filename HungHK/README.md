@@ -1,3 +1,11 @@
-# FTSE1801.LP2
-HTML, CSS &amp; JavaScript
-## HungHK
+# FTSE1801.LP2 - HungHK
+
+### HTML
+
+
+### CSS
+
+
+1. [Bài 1 - GPTB1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/HungHK/JavaScript/ass6.html)### JavaScript
+
+1. [Bài 1 - GPTB1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/HungHK/JavaScript/ass6.html)
