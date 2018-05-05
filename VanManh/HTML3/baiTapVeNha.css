@@ -1,0 +1,39 @@
+.a{
+	width: 700px;
+}
+.a img{
+	margin-top: 20px;
+}
+.a1{
+	float: right;
+	width: 450px;
+	margin-left: -50px;
+}
+
+.b{
+	width: 760px;
+	border-top: 5px solid #fdc80f;
+	border-bottom: 1px solid #e6e6e6;
+	padding-bottom: 20px;
+}
+.b img{
+	margin-top: 20px;
+}
+.b1{
+	float: right;
+	width: 550px;
+	margin-left: -50px;
+}
+
+
+.c{
+	width: 760px;
+}
+.c img{
+	margin-top: 20px;
+}
+.c1{
+	float: right;
+	width: 550px;
+	margin-left: -50px;
+}

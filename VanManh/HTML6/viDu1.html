@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<label>Nhập số : </label>
+		<input onchange="so()" id="n" type="text" name="" value=" ">
+	</form>
+	<script type="text/javascript">
+		function so(){
+			var x= document.getElementById('n').value;
+			if(x%2==0){
+				alert(x+' là số chẵn');
+			}else{
+				alert(x+' là số lẻ');
+			}			
+		}	
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+div.so1{
+	border: 5px dotted #ffc7d1;
+	width: 500px;
+	height: 300px;
+	margin-bottom: 25px;
+
+}
+
+div.so2{
+	border-right:5px solid green;
+	border-left: 2.5px solid green;
+	border-top: 5px solid green;
+	border-bottom: 5px solid green;
+	width: 500px;
+	height: 300px;
+}
+p{
+	margin: 2px;
+}
