@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diện tích hình tròn</title>
+	<style type="text/css">
+		#demo{}
+
+	</style>
+
+</head>
+<body>
+	<form>	
+	<h1> Diện tích hình tròn là:</h1>
+
+	
+	<label>Diện tích hình tròn: </label>
+	<input onchange="hinhtron()" id="n" type="text" name="dientich" value="">
+	
+
+
+	</form>
+	<script type="text/javascript">
+		function hinhtron(){
+			var r = document.getElementById("n").value;
+			 dt = 3.14*r*r;
+			alert("Diện tích hình tròn: "+ dt);
+		}
+	</script>
+</body>	
+</html>
