@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>giaiphuongtrinhbachai</title>
+</head>
+<body>
+	<br>
+	<form>
+		<h3> Chương trình giải phương trình bậc hai: ax2 + bx + c = 0 </h3>
+		<label> Nhập giá trị a: </label>
+		<input id="gta" type="text" name="a">
+		<br><br>
+		<label> Nhập giá trị b: </label>
+		<input id="gtb" type="text" name="b">
+		<br><br>
+		<label> Nhập giá trị c: </label>
+		<input id="gtc" type="text" name="c">
+		<br><br>
+		<input value="Giải phương trình" type="button" onclick="ptbh(a, b, c)">
+	</form>
+
+	<script type="text/javascript">
+	function ptbh(a, b, c)  {
+		var a = document.getElementById('gta').value;
+		var b = document.getElementById('gtb').value;
+		var c = document.getElementById('gtc').value;
+		var dt = b*b - 4*a*c;
+		if (a==0) {
+			if (b!=0) {
+				alert("Phương trình có nghiệm duy nhất: x = " + -c/b);
+			}
+			if (b==0) {
+				if (c==0) {  alert("Phương trình có vô số nghiệm");  }
+				if (c!=0) {  alert("Phương trình vô nghiệm");  }
+			}
+		}
+		if (a!=0) {
+			if (dt<0) {   alert("Phương trình vô nghiệm");  }
+			if (dt==0) {  alert("Phương trình có nghiệm kép: x = " + -b/(2*a) )   }
+			if (dt>0)  {
+			   alert("Phương trình có 2 nghiệm phân biệt: x1 = " + (-b+Math.sqrt(dt))/(2*a) + " và x2 = " + (-b-Math.sqrt(dt))/(2*a) );
+			}	
+		}
+	}
+	</script>
+</body>
+</html>
