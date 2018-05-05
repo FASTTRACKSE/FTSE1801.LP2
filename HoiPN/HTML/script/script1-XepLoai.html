@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Xếp loại</title>
+	<style type="text/css">
+	table{
+		border-collapse: collapse;
+	}
+	table, tr, td, th{
+		border: 1px solid black;
+	}
+</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>STT</th>
+			<th>Họ tên</th>
+			<th>LP1</th>
+			<th>LP2</th>
+			<th>LP3</th>
+			<th>ĐTB</th>
+			<th>XL</th>
+		</tr>
+		<tr>
+			<th>1</th>
+			<td>Phạm Ngọc Hợi</td>
+			<td><input id ="nhap1"  type="number" name="Phương trình bậc nhất" value="" ></td>
+			<td><input id ="nhap2"  type="number" name="Phương trình bậc nhất" value="" ></td>
+			<td><input id ="nhap3"  type="number" name="Phương trình bậc nhất" value="" ></td>
+			<td><p id="dtb"></p></td>
+			<td><p id="xl"></p></td>
+		</tr>
+	</table>
+	<button onclick="xet()">Tính toán</button>
+	<script>
+		function xet() {
+			var x1=document.getElementById('nhap1');
+			var x2=document.getElementById('nhap2');
+			var x3=document.getElementById('nhap3');
+			var lp1 =x1.value;
+			var lp2 = x2.value;
+			var lp3 = x3.value;
+			var dtb = lp1/3 + lp2/3 + lp3/3;
+			var xl;
+			document.getElementById('dtb').innerHTML = dtb;
+			if (dtb >= 8) {
+				xl = "GIỎI";
+				document.getElementById('xl').innerHTML = xl;
+			}else if(dtb >= 6.5){
+				xl = "KHÁ";
+				document.getElementById('xl').innerHTML = xl;
+			}else if(dtb >= 5){
+				xl = "TB";
+				document.getElementById('xl').innerHTML = xl;
+			}else{
+				xl= "YẾU";
+				document.getElementById('xl').innerHTML = xl;
+			}
+		}	
+	</script>
+
+</body>
+</html>

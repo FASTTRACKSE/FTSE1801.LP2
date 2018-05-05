@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Bài java</title>
+</head>
+<body>
+	<h1>Tính số chẳn lẻ</h1>
+		<label>Nhập số nguyên</label>
+		<input  onchange="so()" id="nhap" type="text" name="nhapdaysonguyen" value="">
+		
+	<script>
+		function so(){
+		var x= document.getElementById('nhap').value
+		
+       if (x%2==0) {
+		alert(x + " là số chẳn");
+	}
+	 else {
+		alert(x + " là số lẻ");
+	}
+	}
+</script>
+</body>
+</html>

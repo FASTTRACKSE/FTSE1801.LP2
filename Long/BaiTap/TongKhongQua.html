@@ -1,0 +1,25 @@
+
+<script>
+	// tính tổng các số nguyên từ a tới b nhưng tong khong quá 10
+	//phần khai báo
+	var tong, a, b, c;
+	// phần thân
+	//gắn giá trị
+	tong = 0;
+	b = 20;
+	a = 4;
+    c = 10;
+	
+	document.write("Tổng các số chẳn từ a đến b nhưng nhỏ hơn 10 :")
+	document.write("<br>");
+	    for (a; a<=b; a++){
+           if(tong + a < c){
+		      tong += a;
+           }
+			
+	}
+
+    document.write("tổng các sô từ a đến b là" + "\t" + tong );
+    document.write("<br>");
+
+</script>
