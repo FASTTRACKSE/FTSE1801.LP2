@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<script>
+	/*
+	Tính tông các số nguyên từ 1 đến n
+	*/
+	//khai báo
+	var n, m, tong, soTG;
+	var i;
+	//Gán giá trị
+	n = 1;
+	m = 20;
+	if (n>m){
+		soTG=n;
+		n=m;
+		m=soTG;
+	} 
+	i = n;
+	tong = 0;
+	// lời chào đầu tiên
+	document.write('Chương trình tính tổng số nguyên từ ' + n + ' đến ' + m + ' nhỏ hơn hoặc bằng 10');
+	document.write('<br>');
+	//Tính tổng số nguyên từ n đến m nhỉ hơn 10
+	while(i<=m){
+		if(tong + i <= 10){
+			tong = tong + i;
+		}
+		i++; // Có thể để i=i+1 hoặc i+=1
+	}
+	// In ra kết quả
+	document.write('Tổng từ '+ n +' đến ' + m + ' bằng  ' + tong + ' nhỏ hơn hoặc bằng 10');
+	document.write('<br>');
+	//Hiển thị lời kết thúc
+	document.write('Chương trình kết thúc.');
+</script>

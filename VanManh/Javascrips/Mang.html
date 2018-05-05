@@ -1,0 +1,25 @@
+<script>
+	var soNguyen=[1,8,10,2,9];
+	var Tong, Solonnhat, Sonhonhat;
+	Solonnhat=soNguyen[0];
+	Sonhonhat=soNguyen[0];
+	Tong=0;	
+	for(var i=0;i<soNguyen.length;i++){
+		Tong=Tong+soNguyen[i];
+		if(Solonnhat<soNguyen[i]){
+			Solonnhat=soNguyen[i];
+		}
+		if(Sonhonhat>soNguyen[i]){
+			Sonhonhat=soNguyen[i];
+		}
+	}
+	document.write('Số lớn nhất là: '+Solonnhat);
+	document.write('<br>');
+	document.write('Số nhỏ nhất là: '+Sonhonhat);
+	document.write('<br>');
+	document.write('Tổng là: '+Tong);
+	document.write('<br>');
+	document.write('TB cộng là: '+(Tong/i));
+
+	document.write('<br>');
+</script>

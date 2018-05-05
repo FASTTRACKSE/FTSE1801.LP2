@@ -1,0 +1,24 @@
+<script>
+	
+	var danhsachHS=[];
+	danhsachHS[0]={tenHS:'Nguyễn Văn A', namSinhHS:1991 ,dichiHS:'Quảng Nam', diemLP0:4, diemLP1:9, diemTB:0, xeploai:''};
+	danhsachHS[1]={tenHS:'Nguyễn Văn B', namSinhHS:1993 ,dichiHS:'Quảng Nam', diemLP0:6, diemLP1:1, diemTB:0, xeploai:''};
+	danhsachHS[2]={tenHS:'Nguyễn Văn C', namSinhHS:1997 ,dichiHS:'Quảng Nam', diemLP0:1, diemLP1:2, diemTB:0, xeploai:''};
+	danhsachHS[3]={tenHS:'Nguyễn Văn D', namSinhHS:1999 ,dichiHS:'Quảng Nam', diemLP0:8, diemLP1:3, diemTB:0, xeploai:''};
+
+	for(var i=0;i<danhsachHS.length;i++){
+		danhsachHS[i].diemTB = (danhsachHS[i].diemLP0 + danhsachHS[i].diemLP1)/2
+		if((danhsachHS[i].diemTB==0)||(danhsachHS[i].diemTB==0)){
+				danhsachHS[i].xeploai='Liệt';
+			}else if(dtb[i]<5){
+				danhsachHS[i].xeploai='Yếu';
+			}else if(dtb[i]<7){
+				danhsachHS[i].xeploai='Trung bình';
+			}else if(dtb[i]<8.5){
+				danhsachHS[i].xeploai="Khá";
+			}else{
+				danhsachHS[i].xeploai='Giỏi';
+			}
+	}
+	
+</script>

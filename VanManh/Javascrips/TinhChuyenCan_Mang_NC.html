@@ -1,0 +1,39 @@
+<pre>
+<script>
+		var tenhs=['Nguyễn Văn A','Nguyễn Văn B','Nguyễn Văn C'];
+		var thang=['Tháng một','Tháng hai','Tháng ba','Tháng tư','Tháng năm', 'Tháng sáu','Tháng bảy','Tháng tám','Tháng chín','Tháng mười','Tháng mười một','Tháng mười hai'];
+		var ngay=[31,28,31,30,31,30,31,31,30,31,30,31];
+		var Thang;
+		var ngayNghiHS=[];
+		ngayNghiHS[0]=[3,6,9];
+		ngayNghiHS[1]=[4,5];
+		ngayNghiHS[2]=[4,9,10,15,21];
+		document.write('TÍNH CHUYÊN CẦN LỚP FTSE1801');
+		document.write('<br>');
+		// nhập tháng
+		Thang=7;
+		document.write(thang[Thang-1] + ' - 2018');
+		document.write('<br>');
+		document.write('<br>');
+		document.write('STT' + '	' + 'Họ và tên' + '	' + 'Ngày');
+		for(var i=1;i<=ngay[Thang-1];i++){
+			document.write('	' + i);
+		}
+		document.write('<br>');
+		for(var i=0;i<tenhs.length;i++){
+			document.write((i+1) + '	' + tenhs[i]+ '		');
+			for(var k=1;k<ngay[Thang-1];k++){
+				for(var j=0;j<ngayNghiHS[i].length;j++){
+			if(k==ngayNghiHS[i][j]){
+				document.write('x');
+			}
+		}
+		document.write('	')
+	}
+	document.write('<br>');
+}
+document.write('<br>');
+document.write('Chương trình kết thúc');
+document.write('<br>');
+</script>
+</pre>

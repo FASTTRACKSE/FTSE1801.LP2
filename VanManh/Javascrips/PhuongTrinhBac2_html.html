@@ -1,0 +1,28 @@
+<pre>
+<script>
+		var a, b, c, dt;
+		a= 2;
+		b= -4;
+		c= 1;
+		if(a==0){
+			if ((b==0)&&(c==0)){
+				document.write('Phương trình vô số nghiệm.');
+			}	else if(b!=0){
+				document.write('Phương trình có nghiệm là x = ' +  (-c/b));
+			}else{
+				document.write('Phương trình vô nghiệm');
+			}
+		}else {
+			dt=b*b-4*a*c;
+			if(dt<0){
+				document.write('Phương trình vô nghiệm');
+			}else if(dt==0){
+				document.write('Phương trình có nghiệm kép là: ' + (-b/(2*a)))
+			}else{
+				document.write('Phương trình có 2 nghiệm phân biệt là: ' + ((-b+Math.sqrt(dt))/(2*a)) + ' và ' + ((-b-Math.sqrt(dt))/(2*a)));
+			}
+		}
+		document.write('<br>');
+		document.write('Kết thúc chương trình.');
+</script>
+</pre>

@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<script>
+	/*
+	Tính tông các số nguyên từ 1 đến n
+	*/
+	//khai báo
+	var n, tong;
+	var i;
+	//Gán giá trị
+	n = 5;
+	i = 1;	//không cho người dùng thay đổi
+	tong = 0;
+	// lời chào đầu tiên
+	document.write('Chương trình tính tổng số nguyên từ 1 đến ' + n);
+	document.write('<br>');
+	//Tính tổng số nguyên từ 1 đến n
+	do{
+		tong+=i;
+		i++;
+	} while(i<=n);  // Điều kiện để vòng lặp dừng lại
+	// In ra kết quả
+	document.write('Tổng từ 1 đến ' + n + ' bằng  ' + tong);
+	document.write('<br>');
+	//Hiển thị lời kết thúc
+	document.write('Chương trình kết thúc.');
+</script>

@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<script>
+	/*
+	In ra dãy số nguyên chẵn từ a đến b
+	*/
+	//khai báo
+	var a, b, i;
+	var soTG;
+	//Gán giá trị
+	a = 10;
+	b = 9;
+	// a>b --> đổi a cho b
+	if (a>b){
+		soTG=a;
+		a=b;
+		b=soTG;
+	} 	
+	// lời chào đầu tiên
+	document.write('Các số nguyên chẵn từ ' + a + ' đến ' + b + ' là:');
+	document.write('<br>');
+	i = a;
+	//Tìm ra số nguyên chẵn từ 1 đến n
+	while(i<=b){
+	// In ra kết quả
+		if(i%2==0){
+			document.write(i);
+			document.write('<br>');
+		}
+	i++;
+}
+
+	//Hiển thị lời kết thúc
+	document.write('Chương trình kết thúc.');
+</script>

@@ -1,0 +1,98 @@
+<pre>
+<script>
+	// nhập khai báo
+	var hoSV=['Nguyễn Văn','Nguyễn Văn','Nguyễn Văn','Nguyễn Văn'];
+	var tenSV=['D','C','A','B'];
+	var lp0=[5,9,9,8];
+	var lp1=[9,9,10,4];	
+	var dtb=[];
+	var xepLoai=[];
+	var chiSo=[0,1,2,3];
+	var ganChiSo;
+	var nhap=['theo tên','theo điểm trung bình'];
+
+	// Hàm in tiêu đề
+	function inTieuDe(cachSapXep){
+		document.write('Sắp xếp học sinh theo '+ nhap[cachSapXep]+' :');
+		document.write("<br>");
+		document.write("STT		Họ và tên			lp0	lp1	Điểm tb		Xếp loại ");
+		document.write("<br>");
+		document.write("-------------------------------------------------------------------------------------------");
+		document.write("<br>");
+	}
+
+	// hàm tính điểm tb và xếp loại
+	function xepLoaiSV(){
+		// Tính điểm TB và xếp loại:
+		for(var i=0;i<tenSV.length;i++){
+				dtb[i]=(lp0[i]+lp1[i])/2;
+			// Xếp loại hs
+			if((lp0[i]==0)||(lp1[i]==0)){
+					xepLoai[i]='Liệt';
+				}else if(dtb[i]<5){
+					xepLoai[i]='Yếu';
+				}else if(dtb[i]<7){
+					xepLoai[i]='Trung bình';
+				}else if(dtb[i]<8.5){
+					xepLoai[i]="Khá";
+				}else{
+					xepLoai[i]='Giỏi';
+			}
+		}
+	}
+
+	// Hàm in danh sách.
+	function inDanhsach(){
+		for(var i=0;i<tenSV.length;i++){
+			document.write((i+1)+"		" + hoSV[chiSo[i]]+' ' + tenSV[chiSo[i]] + "			" + lp0[chiSo[i]] + "	" + lp1[chiSo[i]] + "	" + dtb[chiSo[i]] + "		" + xepLoai[chiSo[i]]);
+			document.write("<br>");
+		}
+	}
+
+	// sắp xếp thứ tự
+	function sapXep(cachSapXep){
+		var mang=[tenSV,dtb];
+		for( var i=0;i<=tenSV.length-1;i++){
+			for(var j=i+1;j<tenSV.length;j++){
+				if(mang[cachSapXep][chiSo[i]]>mang[cachSapXep][chiSo[j]]){
+
+					ganChiSo=chiSo[i];
+					chiSo[i]=chiSo[j];
+					chiSo[j]=ganChiSo;
+
+				}
+			}
+		}
+		
+	}
+	// Hàm in danh sách sinh viên.
+	function danhsach(cachSapXep,hoSV,tenSV,lp0,lp1,dtb,xepLoai,chiSo){
+		// In tiêu đê.
+		inTieuDe(cachSapXep);
+
+		xepLoaiSV();
+
+		sapXep(cachSapXep);
+		//In danh sách
+		inDanhsach();
+
+		document.write("<br>");
+	}	
+
+
+	//0 là sắp xếp theo tên; 1 là sắp xếp theo điểm trung bình.
+	//Gọi hàm.
+	// Sắp xếp theo tên.
+	danhsach(0,hoSV,tenSV,lp0,lp1,dtb,xepLoai,chiSo);
+
+	// Sắp xếp theo DTB.
+	danhsach(1,hoSV,tenSV,lp0,lp1,dtb,xepLoai,chiSo);
+
+	// Sắp xếp theo tên.
+	danhsach(0,hoSV,tenSV,lp0,lp1,dtb,xepLoai,chiSo);
+
+	// Sắp xếp theo DTB.
+	danhsach(1,hoSV,tenSV,lp0,lp1,dtb,xepLoai,chiSo);
+</script>
+</pre>
+
