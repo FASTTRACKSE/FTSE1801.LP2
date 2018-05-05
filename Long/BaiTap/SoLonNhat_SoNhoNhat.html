@@ -1,0 +1,46 @@
+<pre>
+	<script>
+// Tính tổng các số
+var songuyen = [2,7,3,8,4]
+var trungbinh; 
+var solonnhat; 
+var sonhonhat 
+var tongsonguyen
+
+solonnhat=songuyen[0]
+tongsonguyen= 0 
+trungbinh
+for (var i=1; i<songuyen.length; i++){
+	if (solonnhat < songuyen[i]){
+		solonnhat=songuyen[i]
+	}
+} 
+document.write ("Số lớn nhất: " + solonnhat);
+document.write("<br>");
+
+sonhonhat = songuyen[0]
+
+for (var i=1; i>songuyen.length; i++){
+	if (sonhonhat > songuyen[i]){
+		sonhonhat=songuyen[i]
+	}
+} 
+document.write ("Số nhỏ nhất: " + sonhonhat);
+document.write("<br>");
+
+
+for (var i=0; i < songuyen.length; i++){
+	tongsonguyen += songuyen[i];
+	trungbinh = tongsonguyen/5;
+}
+document.write ("Tổng: " + tongsonguyen);
+document.write("<br>");
+
+
+
+
+document.write ("Trung Bình " + trungbinh);
+document.write("<br>");
+
+</script>
+</pre>

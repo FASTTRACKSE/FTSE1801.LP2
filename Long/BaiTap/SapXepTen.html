@@ -1,0 +1,93 @@
+
+<pre>
+  <script>
+
+/* **************************
+chương trình quản lý điểm sv
+*****************************/
+// phần khai báo và gắn giá trị
+
+var tenHS=["Nguyen Van Dung","Nguyen Van Khanh","Nguyen Van Binh"];
+var lp0=[1,10,5];
+var lp1=[9,10,7];
+var diemTB=[];
+var XepLoai=[];
+var diemTBLN=[];
+var vitri;
+var gioi;
+
+vitriabc=[0,1,2];
+// phần thân chương trình
+
+
+for(var i=0;i<tenHS.length;i++){
+  diemTB[i]=(lp0[i] + lp1[i])/2;
+  if(lp0[i]==0 || lp1[i]==0){
+   XepLoai[i] = "Liêt";
+ }
+ else if(diemTB[i]<5){
+   XepLoai[i] = "Yếu";
+ }
+ else if(diemTB[i]<7){
+   XepLoai[i] = "Trung bình";
+ }
+ else if(diemTB[i]<8){
+   XepLoai[i] = "Khá";
+ }
+ else {
+   XepLoai[i] = "giỏi";
+ }
+}
+// phần in 
+document.write(" STT" + "\t" + "\t" + " HỌ VÀ TÊN " + "\t" + "\t" + " LP0" + "\t" + "\t" + " LP1 " + "\t" + "\t" + " ĐTB " + "\t" + "\t" + " XẾP LOẠI ");
+document.write("<br>");
+document.write("----------------------------------------------------------------------------------------------------------------->");
+document.write("<br>");
+for(var i=0;i<tenHS.length;i++){
+  document.write((i+1) + "."+ "\t" + "\t|"+ tenHS[i] +"\t" + "\t|"+ lp0[i] +"\t" + "\t|"+ lp1[i] +"\t" + "\t|"+ diemTB[i] +"\t" + "\t|"+ XepLoai[i]);
+  document.write("<br>");
+}
+var diemTBLN=diemTB[0];
+
+for(var i=0;i<tenHS.length;i++){
+ if(diemTBLN<diemTB[i]){
+  diemTBLN=diemTB[i];  
+  vitri=i;
+
+}
+}
+document.write("Điểm trung bình cao nhất là : "+"\t"+(vitri+1) +"\t"+ tenHS[vitri] +"\t" +diemTBLN);
+document.write("<br>");
+document.write("Danh sách sinh viên giỏi :");
+for(var i=0;i<tenHS.length;i++){
+  if (XepLoai[i]=="giỏi"){
+    gioi = i;
+    document.write(tenHS[gioi] );
+    document.write("<br>");
+
+
+  }
+}
+
+for (var i = 0 ; i<=tenHS.length-1; i++){
+  for(var j=i+1;j<tenHS.length;j++){
+    if(tenHS[vitriabc[i]] > tenHS[vitriabc[j]]){
+      n=vitriabc[i];
+      vitriabc[i]=vitriabc[j];
+      vitriabc[j]=n;
+    }
+  }
+}
+
+
+
+for(i=0; i<tenHS.length;i++) {
+  document.write((i+1) + "."+ "\t" + "\t|"+ tenHS[vitriabc[i]] +"\t" + "\t|"+ lp0[vitriabc[i]] +"\t" + "\t|"+ lp1[vitriabc[i]] +"\t" + "\t|"+ diemTB[vitriabc[i]] +"\t" + "\t|"+ XepLoai[vitriabc[i]]);
+  document.write("<br>");
+
+
+}
+
+
+</script>
+<pre>

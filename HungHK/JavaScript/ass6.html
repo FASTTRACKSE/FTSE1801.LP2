@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>giaiphuongtrinhbacnhat</title>
+</head>
+<body>
+	<br>
+	<form>
+		<h3> Chương trình giải phương trình bậc nhất: ax + b = 0 </h3>
+		<label> Nhập giá trị a: </label>
+		<input id="gta" type="text" name="a">
+		<br><br>
+		<label> Nhập giá trị b: </label>
+		<input id="gtb" type="text" name="b">
+		<br><br>
+		<input value="Giải phương trình" type="button" onclick="ptbn(a, b)">
+		<p id="demo"></p>
+	</form>
+	
+	<script type="text/javascript">	
+	function ptbn(a, b)  {
+		var a = document.getElementById('gta').value;
+		var b = document.getElementById('gtb').value;
+
+		if (a!=0) {
+			alert("Phương trình có nghiệm duy nhất: x = " + -b/a)
+		}
+		if (a==0) {
+			if (b==0) {
+				alert("Phương trình có vô số nghiệm")
+			}
+			if (b!=0) {
+				alert("Phương trình vô nghiệm")
+			}
+		}
+	}
+	</script>
+</body>
+</html>
