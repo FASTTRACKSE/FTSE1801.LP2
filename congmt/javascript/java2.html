@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Xác định số nguyên n:</h1>
+	<form>
+		<label>Nhập n:</label>
+		<input onchange="nhapN()" id="a" type="text" name="nhapn" value="">
+	</form>
+	<script type="text/javascript">
+		function nhapN(){
+			var n = document.getElementById("a").value;
+			if (n%2==0) {
+				alert("n là số chẵn");
+
+			}
+			else{
+				alert("n là số lẻ");
+			}
+
+		}
+	</script>
+</body>
+</html>
