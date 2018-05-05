@@ -1,0 +1,61 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>Tính diện tích hình tròn</h1>
+		<form name="form1" action="" method="GET">
+			<label>Bán kính(r)</label>
+			<input type="text" name="bankinh">*</br></br>
+			<label>hằng số pi</label>
+			<input type="text" name="pi" value="3.14" readonly="">=</br></br>
+			<label>Diện tích</label>
+			<input type="text" name="dientich"></br></br>
+			<input type="button" value="kết quả" 
+			onclick="dientich.value =parseFloat(bankinh.value) * parseFloat(bankinh.value) * parseFloat(pi.value)">
+			</form>
+
+
+            <h1>Tính diện tích hình tròn</h1>
+		     
+			<label>Bán kính(r)</label>
+			<input id="nhap" type="text" name="bankinh"></br></br>
+			
+			<label>Diện tích</label>
+			<p id="kq"></p>
+			<button id="tinh" onclick="tinh()">Tính toán</button>
+        <script>
+        	function tinh(){
+        		
+        		var y=document.getElementById("nhap").value;
+        		var kq=y*y*3.14;
+        		document.getElementById("kq").innerHTML=kq;
+        	}
+
+        </script>
+
+			
+		
+		<h2>Xác định giá trị N là số chẳn hay lẻ</h2>
+		<form name="form1" action="" method="GET">
+			<label>Nhập số nguyên N</label>
+			<input onchange="so()" id="n" type="text" name="" value=""></br></br>
+           
+
+			<script>
+				function so(){
+					var x=document.getElementById("n").value;
+					
+					if(x%2==0){
+						
+						alert(x +"là số chẵn")
+					}
+					else{
+						alert(x + "là số lẻ")
+					}
+				}
+			</script>
+			
+		</form>
+
+	</body>
+</html>

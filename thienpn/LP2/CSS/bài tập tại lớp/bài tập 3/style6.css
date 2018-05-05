@@ -1,0 +1,26 @@
+
+.cl{
+	clear: both;
+}
+.a{
+	float: left;
+	width: 275px;
+	margin-right: 10px;
+}
+.a1{
+	border: 2px solid #0c6298;
+	border-top: 5px solid #0c6298;
+}
+.a2{margin-right: 10px;
+	float: left;
+}
+h2{ color: #0c6298;
+	display: inline;
+}
+li{ margin-left: -30px;
+	list-style-image: url(icon/dot-gr_10.png);
+	border-top: 1px dotted #cbcbcb;
+}
+
+
+

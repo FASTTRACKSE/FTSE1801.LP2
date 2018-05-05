@@ -1,0 +1,91 @@
+
+	.a {border-style: dotted;
+		border-size:1px;
+	}
+	.b{
+		border-style: dotted;
+		border-color: red;
+	}
+	.c{
+		border-top: dotted red;
+	}
+	.d{
+		border: 10px solid green
+        
+	}
+	.f{
+		padding-top: 30px;
+		background-color: green;
+	}
+	.g{
+		padding: 50px;
+		background-color: green;
+	}
+	.v{
+
+		padding-top: 25px;
+		padding-right: 50px;
+		padding-bottom: 25px;
+		padding-left: 50px;
+		background-color: green;
+	}
+	div .i{border:30px solid green;
+		padding: 25px;
+		margin:25px;
+		width: 200px;
+		background-color: red;
+
+	}
+	.one{
+		height: 100px;
+		background-color: green;
+	}
+	.two{
+		height: 50px;
+		background-color: green;
+	}
+	div.t{
+        border-top: 4px solid red;
+        border-right:4px solid green;
+        border-bottom: 4px solid blue;
+        border-left:4px solid yellow ;
+	}
+	.o{
+		border:1px solid;
+		background-color: pink;
+		margin: 5px ;
+	}
+	div.j{border : 15px solid red;
+		background-color :yellow;
+
+
+	}
+	div.u{
+		border-size  :5px;
+		border-style: dotted;
+		border-color:green;
+	}
+	.m1{
+		border: solid green;
+		background-color: pink;
+		
+	}
+	.m2{
+		border: solid black;
+		background-color: red;
+		
+	}
+	.m3{
+		border: solid yellow;
+		background-color: green;
+		
+	}
+	div.n{
+
+		border-top:10px solid green;
+		border-right:10px solid blue;
+		border-bottom:10px solid red;
+		border-left:10px solid yellow;
+	}
+	
+	
