@@ -8,15 +8,15 @@
 4. [HTML4 - Bài tập](https://github.com/FASTTRACKSE/FTSE1801.LP2/tree/master/VanManh/HTML/HTML4/Assignment4)
 5. [HTML5 - Bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/VanManh/HTML/HTML5/Assignment5/baiTapVeNha.html)
 6. [HTML5 - Bài tập 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/VanManh/HTML/HTML5/Assignment5/baiTapVeNha1.html)
-7. [HTML6 - Bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/VanManh/HTML6/b%C3%A0i%20t%E1%BA%ADp%20v%E1%BB%81%20nh%C3%A0/baitap1.html)
-8. [HTML6 - Bài tập 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/VanManh/HTML6/b%C3%A0i%20t%E1%BA%ADp%20v%E1%BB%81%20nh%C3%A0/baitap2.html)
-9. [HTML6 - Bài tập 3](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/VanManh/HTML6/b%C3%A0i%20t%E1%BA%ADp%20v%E1%BB%81%20nh%C3%A0/baitap3.html)
+7. [HTML6 - Bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/VanManh/HTML/HTML6/b%C3%A0i%20t%E1%BA%ADp%20v%E1%BB%81%20nh%C3%A0/baitap1.html)
+8. [HTML6 - Bài tập 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/VanManh/HTML/HTML6/b%C3%A0i%20t%E1%BA%ADp%20v%E1%BB%81%20nh%C3%A0/baitap2.html)
+9. [HTML6 - Bài tập 3](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/VanManh/HTML/HTML6/b%C3%A0i%20t%E1%BA%ADp%20v%E1%BB%81%20nh%C3%A0/baitap3.html)
 
 
 #### CSS
 
 
 #### JavaScript
-1. [Bài tập 1 - giải phương trình bậc 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/VanManh/HTML6/b%C3%A0i%20t%E1%BA%ADp%20v%E1%BB%81%20nh%C3%A0/baitap1.html)
-2. [Bài tập 2 - giải phương trình bậc 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/VanManh/HTML6/b%C3%A0i%20t%E1%BA%ADp%20v%E1%BB%81%20nh%C3%A0/baitap2.html)
-3. [Bài tập 3 - tính điểm học sinh](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/VanManh/HTML6/b%C3%A0i%20t%E1%BA%ADp%20v%E1%BB%81%20nh%C3%A0/baitap3.html)
+1. [HTML6 - Bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/VanManh/HTML/HTML6/b%C3%A0i%20t%E1%BA%ADp%20v%E1%BB%81%20nh%C3%A0/baitap1.html)
+2. [HTML6 - Bài tập 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/VanManh/HTML/HTML6/b%C3%A0i%20t%E1%BA%ADp%20v%E1%BB%81%20nh%C3%A0/baitap2.html)
+3. [HTML6 - Bài tập 3](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/VanManh/HTML/HTML6/b%C3%A0i%20t%E1%BA%ADp%20v%E1%BB%81%20nh%C3%A0/baitap3.html)
