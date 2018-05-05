@@ -1,0 +1,11 @@
+div.a{
+	border:dotted;
+	border-color:pink;
+}
+
+div.b{
+	border-top:5px solid green;
+	border-right:5px solid green;
+	border-bottom:5px solid green;
+	border-left:2px solid green;
+}

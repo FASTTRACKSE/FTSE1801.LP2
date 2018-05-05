@@ -1,0 +1,16 @@
+div.a{
+	border: dotted pink;
+	width: 500px;
+	height: 280px;
+}
+p.a{
+	margin: 1px;
+}
+div.b{
+	border: solid green;
+	width: 430px;
+	height: 260px;
+}
+p.b{
+	margin: 1px;
+}
