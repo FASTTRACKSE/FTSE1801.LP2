@@ -1,0 +1,52 @@
+<pre>
+<script>
+	var a,b,c;
+
+	function giaiphuongtrinhbac2(a,b,c){
+	var dt=b*b-4*a*c;
+
+	
+// phần in
+
+ if(a==0){
+ 	document.write("phương trình bậc nhất bx + c = 0")
+ 	document.write("<br>");
+ 	if((b==0) && (c!=0)){
+ 		document.write("phương trình vô nghiệm");
+ 		document.write("<br>");
+ 	}
+ 	else if((b==0) && (c==0)){
+ 		document.write("phương trình vô số nghiệm");
+ 		document.write("<br>");
+ 	}
+ 	else {
+ 		document.write("phương trình có nghiệm bằng :" + (-c/b));
+ 		document.write("<br>");
+ 	}
+ }
+ else {
+       document.write("phương trình bậc 2 với dt = b*b-4*a*c");
+       document.write("<br>");
+       if(dt<0){
+       	document.write("phương trình vô nghiệm");
+       	document.write("<br>");
+       }
+       else if(dt==0){
+        document.write("phương trình có nghiệm kép bằng :" + (-b/2*a));
+        document.write("<br>");
+       }
+       else {
+       	document.write("phương trình có 2 nghiệm phân biêt là :" + (-b + Math.sqrt(dt))/(2*a)+ "và" + (-b - Math.sqrt(dt))/(2*a))
+       	document.write("<br>");
+       }
+ }
+        document.write("<br>");
+        document.write("Chương trình kết thúc!");
+
+}
+giaiphuongtrinhbac2(0,4,6);
+giaiphuongtrinhbac2(4,6,8);
+giaiphuongtrinhbac2(2,6,3);
+
+</script>
+</pre>
