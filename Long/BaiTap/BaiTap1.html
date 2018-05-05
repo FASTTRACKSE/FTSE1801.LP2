@@ -1,0 +1,83 @@
+<PRE>
+<script>
+/*
+Chương trình quản lý sinh viên
+Trung tâm đào tạo FASTTRACKSE
+*/
+// Phần Khai Báo
+var tenHS1, tenHS2, tenHS3
+var LP01, LP11, LOP02,LP12,LPO3,LPO13
+var DTB1,DTB2,DTB3
+var al1,al2,al3
+
+// Phần chương trình
+
+ document.write("STT Họ tên"+" \t " + "LP0"  + " \t "+"LP1"+"\t " + " ĐTB "+"\t"+ "Xếp Loại");
+ document.write("<br>");
+// Nhập giá trị sv thứ 1 
+tenHS1 = "Nguyễn văn A";
+LP01 = 0
+LP11 = 9
+DTB1 = (LP01+LP11)/2 
+
+if((LP01==0)||(LP11==0)){
+	al1='Liệt';
+}else if(DTB1<5){
+	al1='Yếu';
+}else if(DTB1<7){
+	al1='Trung bình';
+}else if(dDTB1<8.5){
+	al1="Khá";
+}else{
+	al1='Giỏi';
+}
+
+
+// Nhập giá trị sv thứ 2 
+tenHS2 = "Nguyễn văn B";
+LP02=4
+LP12=8
+DTB2=(LP02+LP12)/2
+
+if((LP02==0)||(LP12==0)){
+	al2='Liệt';
+}else if(DTB2<5){
+	al2='Yếu';
+}else if(DTB2<7){
+	al2='Trung bình';
+}else if(dDTB2<8.5){
+	al2="Khá";
+}else{
+	al2='Giỏi';
+}
+// Nhập giá trị sv thứ 3 
+tenHS3 = "Nguyễn văn C";
+LP03=9
+LP13=10
+DTB3=(LP03+LP13)/2
+
+if((LP03==0)||(LP13==0)){
+	al3='Liệt';
+}else if(DTB3<5){
+	al3='Yếu';
+}else if(DTB3<7){
+	al3='Trung bình';
+}else if(DTB3<8.5){
+	al3="Khá";
+}else{
+	al3='Giỏi';
+}
+
+
+
+// In danh sách sv
+ document.write("1."+tenHS1+" \t " + LP01  + " \t "+LP11+"\t " + DTB1+"\t"+ al1);
+ document.write("<br>");
+ 
+ document.write("2."+tenHS2+" \t " + LP02  + " \t "+LP12+"\t " + DTB2+"\t"+ al2);
+ document.write("<br>");
+ 
+ document.write("3."+tenHS3+" \t " + LP03  + " \t "+LP13+"\t " + DTB3+"\t"+ al3);
+ document.write("<br>");
+</script>
+</PRE>
