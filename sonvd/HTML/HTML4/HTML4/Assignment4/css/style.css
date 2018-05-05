@@ -1,0 +1,56 @@
+ul{
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #666699;
+}
+li{
+	float: left;
+}
+li a:hover{
+	background-color: red;
+}
+li a{
+	border-right: solid black 1px;
+	border-left: solid black 1px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 2px 6px;
+	text-decoration: none;
+	padding: 10px;
+}
+table{
+	border-collapse:collapse;
+	text-align: center;
+}
+table, td, th{
+	border: 1px solid black;
+}
+.nav{
+	float: left;
+	padding-left: 20px;
+	margin-top: -110px;
+	z-index: auto;
+}
+.content{
+	margin-left: 400px;
+	margin-top: -90px;
+}
+p{
+	text-align: left;
+}
+.inner,.imagesfooter, .nav, .content, .textfooter{
+	position: relative;
+}
+.inner{
+	margin-top: -16px;
+	z-index: auto;
+}
+.textfooter{
+	z-index: auto;
+	margin-top: -150px;
+	margin-left: 20px;
+}
+.imagesfooter{
+	margin-top: 60px;
+}

@@ -1,0 +1,118 @@
+
+<pre>
+	<script>
+	/*Chương trình tính chuyên cần 
+	*/
+
+	// khai báo 
+	var thang,ngay
+	var tenhs1,tenhs2,tenhs3
+	var vanghs1,vanghs2,vanghs3
+	// phần chương trình 
+
+	// nhập giá trị 
+	
+	tenhs1 = "Nguyễn Văn A"
+	tenhs2 = "Nguyễn văn B "
+	tenhs3 = "Nguyễn văn C"
+	vanghs1 = 6
+	vanghs2 = 19
+	vanghs3 = 10
+	
+	thang = 6;
+	switch(thang){
+		case 1:
+		thang = "tháng một";
+		ngay = 31;
+		break;
+		case 2:
+		thang = "tháng hai";
+		ngay= 28;
+		break;
+		case 3:
+		thang = "tháng ba";
+		ngay = 31;
+		break;
+		case 4:
+		thang = "tháng tư";
+		ngay = 30;
+		break;
+		case 5:
+		thang = "tháng năm";
+		ngay = 31;
+		break;
+		case 6:
+		thang = "tháng sáu";
+		ngay = 30;
+		break;
+		case 7:
+		thang = "tháng bảy";
+		ngay = 31;
+		break;
+		case 8:
+		thang = "tháng tám";
+		ngay = 31;
+		break;
+		case 9:
+		thang = "tháng chín";
+		ngay = 30;
+		break;
+		case 10:
+		thang = "tháng mười";
+		ngay = 31;
+		break;
+		case 11:
+		thang = "tháng mười một";
+		ngay = 30;
+		break;
+		case 12:
+		thang = "tháng mười hai";
+		ngay = 31;
+		break;
+	}
+			// in ra 
+			document.write(thang);
+			document.write('<br>');
+			document.write('<br>');
+			document.write('STT' +"     "+ 'Họ và tên' +"\t"+ 'Ngày' + "  ");
+			for(var i=1;i<=ngay;i++){
+				document.write('	' + i);
+			}
+			document.write('<br>');
+			document.write('1.'+"     " +tenhs1);
+			for(var i=1;i<=ngay;i++){
+				if(i==vanghs1){
+					document.write( "\t"+"\t" + "x");
+					break;
+				}else{
+					document.write("\t" +"  ");
+					
+				}
+			}
+			document.write('<br>');
+			document.write('1.'+"     " +tenhs2);
+			for(var i=1;i<=ngay;i++){
+				if(i==vanghs2){
+					document.write( "\t"+"\t" + "x");
+					break;
+				}else{
+					document.write("\t" +"  ");
+					
+				}
+			
+}
+
+			document.write('<br>');
+			document.write('1.'+"     " +tenhs3);
+			for(var i=1;i<=ngay;i++){
+				if(i==vanghs3){
+					document.write( "\t"+"\t" + "x");
+					break;
+				}else{
+					document.write("\t" +"  ");
+					
+				}
+			
+}
+		</script>
+	</pre>
