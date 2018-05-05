@@ -2,7 +2,8 @@
 ##Danh sách file bài tập
 
 ### HTML
-
+1. [Bài tập 1 - Món ăn](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/LuanTD/HTML5/baitap.html)
+2. [Bài tập 2 - Phiếu đăng ký](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/LuanTD/HTML5/baitap1.html)
 ### CSS
 
 ### JavaScript
