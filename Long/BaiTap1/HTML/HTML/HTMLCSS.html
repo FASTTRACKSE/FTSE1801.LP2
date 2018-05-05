@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>Bài java</title>
+</head>
+<body>
+	<h1>Diện tích hình tròn</h1>
+		<label>Nhập Bán kính</label>
+		<input id="nhap" type="text" name="bankinh" value="">
+		<br></br>
+		<label>Diện tích</label>
+		<p id="kq"></p>
+		<button id="tinh" onclick="tinh()">Tính toán</button>
+	<script>
+		function tinh(){
+		var x= document.getElementById('nhap')
+		var y= x.value;
+		var kq=3.14*y*y;
+		document.getElementById('kq').innerHTML = kq;
+	}
+</script>
+</body>
+</html>
