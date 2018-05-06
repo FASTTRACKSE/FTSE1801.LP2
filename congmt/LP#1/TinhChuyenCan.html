@@ -1,0 +1,107 @@
+<pre>
+<script>
+		var tenhs1, tenhs2, tenhs3;
+		var thang, ngay;
+		document.write('TÍNH CHUYÊN CẦN LỚP FTSE1801');
+		document.write('<br>');
+		tenhs1='Nguyễn Văn A';
+		tenhs2='Nguyễn Văn B';
+		tenhs3='Nguyễn Văn C';
+		thang = 3;
+		switch(thang){
+			case 1:
+			thang = 'Tháng một';
+			ngay = 31;
+			break;
+			case 2:
+			thang = 'Tháng hai';
+			ngay = 28;
+			break;
+			case 3:
+			thang = 'Tháng ba';
+			ngay = 31;
+			break;
+			case 4:
+			thang = 'Tháng tư';
+			ngay = 30;
+			break;
+			case 5:
+			thang = 'Tháng năm';
+			ngay = 31;
+			break;
+			case 6:
+			thang = 'Tháng sáu';
+			ngay = 30;
+			break;
+			case 7:
+			thang = 'Tháng bảy';
+			ngay = 31;
+			break;
+			case 8:
+			thang = 'Tháng tám';
+			ngay = 31;
+			break;
+			case 9:
+			thang = 'Tháng chín';
+			ngay = 30;
+			break;
+			case 10:
+			thang = 'Tháng mười';
+			ngay = 31;
+			break;
+			case 11:
+			thang = 'Tháng mười một';
+			ngay = 30;
+			break;
+			case 12:
+			thang = 'Tháng mười hai';
+			ngay = 31;
+			break;
+			default:
+			document.write('Sai tháng ');
+			document.write('<br><br>');
+			break;
+		}
+		document.write(thang);
+		document.write('<br>');
+		document.write('<br>');
+		document.write('STT' + '	' + 'Họ và tên' + '	' + 'Ngày');
+		for(var i=1;i<=ngay;i++){
+			document.write('	' + i);
+		}
+		document.write('<br>');
+		document.write('1.'+ '	' + tenhs1);
+		for(var i=1;i<=ngay;i++){
+			if(i!=2){
+				document.write('	');
+			}else{
+				document.write('		'+'x');
+				break;
+			}
+		}
+		document.write('<br>');
+		document.write('2.'+ '	' + tenhs2);
+		for(var i=1;i<=ngay;i++){
+			if(i!=28){
+				document.write('	');
+			}else{
+				document.write('		'+'x');
+				break;
+			}
+		}
+		document.write('<br>');
+		document.write('3.'+ '	' + tenhs3);
+		for(var i=1;i<=ngay;i++){
+			if(i!=10){
+				document.write('	');
+			}else{
+				document.write('		'+'x');
+				break;
+			}
+		}
+		document.write('<br>');
+		document.write('<br>');
+		document.write('Chương trình kết thúc');
+		document.write('<br>');
+</script>
+</pre>

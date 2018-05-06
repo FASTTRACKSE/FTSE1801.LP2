@@ -1,0 +1,243 @@
+<pre>
+<script type="text/javascript">
+		
+		/***************************
+		Chương trình quản lý sinh viên
+		****************************/
+
+
+		// Phần khai báo
+
+		var hoHS= ["Nguyễn Văn", "Trần Văn", "Phạm Thị", "Trần Thị", "Ngô Văn"];
+		var tenHS= [" Anh", " Trí ", " Ngọc ", " Hà", " Quý"];
+		var namsinhHS= [1991,  1992,  1993, 1995, 1993];
+		var diachiHS= [" Quảng Nam", " Huế      ", " Đà Nẵng  ", " Quảng Trị  ", " Đà Nẵng     "];
+		var diemLP0= [10, 10, 7, 8, 9];
+		var diemLP1= [10, 10, 5, 7, 9];
+		var diemTB =[];
+		var xeploai = [];
+
+		for (var i = 0; i < tenHS.length; i++) {
+
+			diemTB[i] = (diemLP0[i] + diemLP1[i])/2.0;
+
+			if(diemTB[i] <5){
+				xeploai[i]= " Yếu";
+
+			}
+			else if(diemTB[i]<7){
+				xeploai[i]= "Trung bình";
+			}
+			else if(diemTB[i]<8.5){
+				xeploai[i] = "Khá";
+			}
+			else{
+				xeploai[i] = "Giỏi";
+			}
+
+		}
+
+		namhientai= 2018;
+
+		// In danh sách sinh viên
+ 
+		document.write("STT Họ tên\t\tTuổi\tĐịa chỉ         LP0     LP1     ĐTB       Xếp loại");
+		document.write("<br>");
+		document.write("------------------------------------------------------------------------------------");
+		document.write("<br>");
+
+		for (var i = 0; i < tenHS.length; i++) {
+			document.write((i+1) + " . " + hoHS[i] + " " + tenHS[i] + " \t " + (namhientai- namsinhHS[i]) + " | " + diachiHS[i] + "\t| " + diemLP0[i] + "\t|" + diemLP1[i] + " \t| " + diemTB[i] + " \t| " + xeploai[i]);
+			document.write("<br>");
+		}
+
+
+		var max= diemTB[0];
+		var vitrimax= 1 ;
+		var b=[];
+		var a=[];
+ 
+
+		for (var i = 0; i <diemTB.length; i++) {
+			if (max<diemTB[i]) {
+				max=  diemTB[i] ; ; vitrimax=i +1;
+			}
+		}	
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write(" - Người có số điểm cao nhất: "  + " \t " + vitrimax  + "\t" + hoHS[vitrimax-1] + tenHS[vitrimax-1] + "\t" + max);
+		document.write("<br>");
+		document.write("<br>");
+
+		document.write(" - Những bạn học sinh giỏi là :"  );
+		document.write("<br>");
+		document.write("<br>");
+
+		for (var i = 0; i <tenHS.length; i++) {
+			if("Giỏi" ==xeploai[i]){
+				document.write((i+1) + " . " + hoHS[i] + " " + tenHS[i] + " \t " + (namhientai- namsinhHS[i]) + " | " + diachiHS[i] + "\t| " + diemLP0[i] + "\t|" + diemLP1[i] + " \t| " + diemTB[i] + " \t| " + xeploai[i]);
+			document.write("<br>");
+			}
+
+		}
+
+		var dtb, ten, mon1, mon2, xl, nam, dc, ho;
+		document.write("<br>");
+		document.write("- Thứ tự tên theo vần abc của các sinh viên là :");
+		document.write("<br>");
+		document.write("<br>");
+		for (var i = 0; i <tenHS.length-1; i++) {
+			for (var j =i+1; j<tenHS.length; j++) {
+					if (tenHS[i]> tenHS[j]) {
+						ten=tenHS[i];
+						tenHS[i]=tenHS[j];
+						tenHS[j]=ten;
+					
+						nam=namsinhHS[i];
+						namsinhHS[i]=namsinhHS[j];
+						namsinhHS[j]=nam;
+					
+						dc=diachiHS[i];
+						diachiHS[i]=diachiHS[j];
+						diachiHS[j]=dc;
+
+						mon1=diemLP0[i];
+						diemLP0[i]=diemLP0[j];
+						diemLP0[j]=mon1;
+
+						mon2=diemLP1[i];
+						diemLP1[i]=diemLP1[j];
+						diemLP1[j]=mon2;
+
+						dtb=diemTB[i];
+						diemTB[i]=diemTB[j];
+						diemTB[j]=dtb;
+
+						xl=xeploai[i];
+						xeploai[i]=xeploai[j];
+						xeploai[j]=xl;
+
+						ho=hoHS[i];
+						hoHS[i]=hoHS[j];
+						hoHS[j]=ho;
+					}
+					
+				}
+		}
+		for (var i = 0; i <tenHS.length; i++) {
+			document.write( (i+1) + " . " + hoHS[i] + " " + tenHS[i] + " \t " + (namhientai- namsinhHS[i]) + " | " + diachiHS[i] + "\t| " + diemLP0[i] + "\t|" + diemLP1[i] + " \t| " + diemTB[i] + " \t| " + xeploai[i]);
+			document.write("<br>");
+		}
+
+
+		document.write("<br>");
+		document.write("- Thứ tự điểm trung bình từ thấp đến cao của các sinh viên là :");
+		document.write("<br>");
+		document.write("<br>");
+		for (var i = 0; i <diemTB.length-1; i++) {
+			for (var j =i+1; j<diemTB.length; j++) {
+					if (diemTB[i]> diemTB[j]) {
+						ten=tenHS[i];
+						tenHS[i]=tenHS[j];
+						tenHS[j]=ten;
+					
+						nam=namsinhHS[i];
+						namsinhHS[i]=namsinhHS[j];
+						namsinhHS[j]=nam;
+					
+						dc=diachiHS[i];
+						diachiHS[i]=diachiHS[j];
+						diachiHS[j]=dc;
+
+						mon1=diemLP0[i];
+						diemLP0[i]=diemLP0[j];
+						diemLP0[j]=mon1;
+
+						mon2=diemLP1[i];
+						diemLP1[i]=diemLP1[j];
+						diemLP1[j]=mon2;
+
+						dtb=diemTB[i];
+						diemTB[i]=diemTB[j];
+						diemTB[j]=dtb;
+
+						xl=xeploai[i];
+						xeploai[i]=xeploai[j];
+						xeploai[j]=xl;
+
+						ho=hoHS[i];
+						hoHS[i]=hoHS[j];
+						hoHS[j]=ho;
+					}
+					
+				}
+		}
+		for (var i = 0; i <diemTB.length; i++) {
+			document.write( (i+1) + " . " + hoHS[i] + " " + tenHS[i] + " \t " + (namhientai- namsinhHS[i]) + " | " + diachiHS[i] + "\t| " + diemLP0[i] + "\t|" + diemLP1[i] + " \t| " + diemTB[i] + " \t| " + xeploai[i]);
+			document.write("<br>");
+		}
+		
+		
+		document.write("<br>");
+		document.write("<br>");
+		document.write(" Cách đặt ví trí mảng theo tên!!");
+		document.write("<br>-----------------------<br>");
+		var vitriten=[0,1,2,3,4];
+		
+		var vitridiemtb=[0,1,2,3,4];
+		
+
+		document.write("<br>");
+		document.write("- Thứ tự tên theo vần abc của các sinh viên là :");
+		document.write("<br>");
+		document.write("<br>");
+
+		for (var i = 0; i <tenHS.length- 1; i++) {
+			for (var j = i+1; j< tenHS.length; j++) {
+				if (tenHS[vitriten[i]]> tenHS[vitriten[j]]) {
+						ten=vitriten[i];
+						vitriten[i]=vitriten[j];
+						vitriten[j]=ten;
+				}
+			}
+		}
+		for (var i = 0; i < tenHS.length; i++) {
+			document.write( (i+1) + " . " + hoHS[vitriten[i]] + " " + tenHS[vitriten[i]] + " \t " + (namhientai- namsinhHS[vitriten[i]]) + " | " + diachiHS[vitriten[i]] + "\t| " + diemLP0[vitriten[i]] + "\t|" + diemLP1[vitriten[i]] + " \t| " + diemTB[vitriten[i]] + " \t| " + xeploai[vitriten[i]]);
+			document.write("<br>");
+			
+		}
+		document.write("<br>");
+		document.write("<br>");
+		document.write(" Cách đặt ví trí mảng theo điểm trung bình!!");
+		document.write("<br>-----------------------<br>");
+		document.write("<br>");
+		document.write("-  Thứ tự điểm trung bình từ thấp đến cao của các sinh viên là  :");
+		document.write("<br>");
+		document.write("<br>");
+
+		for (var i = 0; i <diemTB.length- 1; i++) {
+			for (var j = i+1; j< diemTB.length; j++) {
+				if (diemTB[vitridiemtb[i]]> diemTB[vitridiemtb[j]]) {
+						dtb=vitridiemtb[i];
+						vitridiemtb[i]=vitridiemtb[j];
+						vitridiemtb[j]=dtb;
+				}
+			}
+		}
+		for (var i = 0; i < diemTB.length; i++) {
+			document.write( (i+1) + " . " + hoHS[vitridiemtb[i]] + " " + tenHS[vitridiemtb[i]] + " \t " + (namhientai- namsinhHS[vitridiemtb[i]]) + " | " + diachiHS[vitridiemtb[i]] + "\t| " + diemLP0[vitridiemtb[i]] + "\t|" + diemLP1[vitridiemtb[i]] + " \t| " + diemTB[vitridiemtb[i]] + " \t| " + xeploai[vitridiemtb[i]]);
+			document.write("<br>");
+			
+		}
+
+
+		
+		// Hiển thị kết thúc
+		document.write("<br>----------------------<br>");
+
+		document.write("Chương trình kết thúc!!");
+
+
+	</script>
+</pre>
