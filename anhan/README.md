@@ -1,7 +1,5 @@
 # FTSE1801.LP2
 
-###HuynhAnhAn
-
 THƯ MỤC BÀI TẬP CỦA TÔI
 
 html
