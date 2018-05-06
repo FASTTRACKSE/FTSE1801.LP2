@@ -1,0 +1,44 @@
+.a{
+	background-color: #ffa500;
+	margin-bottom: -10px;
+}
+.b ul li{
+	display: inline;
+	margin-bottom: -10px;
+}
+.b ul{
+	margin-left: -35px;
+	margin-bottom: -10px;
+
+}
+.c{
+	background-color: #d3d3d3;
+	margin-bottom: -10px;
+	height: 30px;
+}
+.c p{
+	padding: 5px;	
+}
+.d{
+	background-color: #ffa500;
+	margin-bottom: -10px;
+}
+.d p{
+	padding: 5px;	
+}
+.e{	
+	width: 245px;
+	background-color: #7f3772;
+	padding: 10px;
+	margin: auto;
+}
+.f p{
+	font-family: tahoma;
+	font-size: 13px;
+}
+.f p{
+	color: white;
+	margin-bottom: 20px;
+}
+
+

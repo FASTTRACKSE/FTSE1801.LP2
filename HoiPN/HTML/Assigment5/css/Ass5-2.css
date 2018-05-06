@@ -1,0 +1,72 @@
+.head{
+	width: 680px;
+	height: 350px;
+}
+.a{
+	float: left;
+	margin-left: 2px;
+}
+.dot{
+	float: left;
+	height: 45px;
+	margin-right: 5px;
+}
+
+.dong{
+	height: 45px;
+	background-color: #c3c3c3;
+	margin-top: 1px;
+	margin-left: 2px;
+}
+.tin{
+	height: 28px;
+	background-color: #c3c3c3;
+	margin-top: 2px;
+	margin-left: 2px;	
+}
+.b{
+	float:right;
+	height: 28px;
+	background-color: #5f5f5f;
+	color: white;
+	text-align: center;
+}
+.top{
+	width: 680px;
+	height: 200px;
+	border-bottom: 1px solid #c3c3c3;
+}
+.hinh1{
+	width: 220px;
+	float: left;
+	margin-right: 10px;
+}
+.hinh2{
+	width: 220px;
+	float: left;
+}
+.hinh3{
+	width: 220px;
+	float: right;
+}
+.bottom{
+	width: 680px;
+	height: 500px;
+}
+.hinh{
+	width: 330px;
+	float: left;
+	display: inline;
+	margin-top: 10px;
+}
+.trai{
+	float: left;
+	margin-right: 10px;
+}
+.chu{
+	line-height: 15px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
