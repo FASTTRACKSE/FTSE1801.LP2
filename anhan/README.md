@@ -4,7 +4,7 @@
 
 THƯ MỤC BÀI TẬP CỦA TÔI
 
-###html
+html
 
 
 6. [bài tập 3](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/anhan/b%C3%A0i%20t%E1%BA%ADp%203/b%C3%A0i%20t%E1%BA%ADp%203.html)
@@ -19,13 +19,13 @@ THƯ MỤC BÀI TẬP CỦA TÔI
 
 
 
-###css
+css
 
 
 
 
 
-###javascript
+javascript
 
 1. [Bài tập về nhà1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/anhan/b%C3%A0i%20t%E1%BA%ADp/b%C3%A0i%20t%E1%BA%ADp%20v%E1%BB%81%20nh%C3%A0%201.html)
 2. [Bài tập về nhà 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/anhan/b%C3%A0i%20t%E1%BA%ADp/b%C3%A0i%20t%E1%BA%ADp%20v%E1%BB%81%20nh%C3%A0%202.html)
