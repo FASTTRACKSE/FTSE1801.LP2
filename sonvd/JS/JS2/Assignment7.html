@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài tập Assignment7</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+	<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+	<div class="layout">
+		<h2>Form validation</h2>
+		<p>Tích hợp ckeditor vào trường nội dung và vaild các thuộc tính sau của form:</p>
+		<div class="form">
+			<form method="post" id="form1" action="javascript:void(0)">
+				<table>
+					<tr>
+						<td>
+							<label>Họ tên:</label>
+						</td>
+						<td>
+							<input type="text" name="hoten" id="name">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Thành phố:</label>
+						</td>
+						<td>
+							<input type="text" name="thanhpho" id="city">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Email:</label>
+						</td>
+						<td>
+							<input type="" name="email" id="mail">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Nội dung:</label>
+						</td>
+						<td>
+							<textarea name="noidung" id="mess"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="submit" name="guidi" value="Gửi đi" class="gd">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		CKEDITOR.replace('noidung')
+	</script>
+	<script type="text/javascript">
+		 var rs =$("#form1").validate({
+			rules:{
+				hoten:{
+					required:true,
+					maxlength:50,
+					minlength:10,
+				},
+				thanhpho:{
+					required:true,
+					maxlength:50,
+					minlength:10
+				},
+				email:{
+					required:true,
+					email:true
+				},
+				noidung:{
+					required:true
+				}
+			},
+			messages:{
+						hoten:{
+							required:'Vui lòng nhập họ và tên',
+							minlength:'Vui lòng nhập không dưới 10 kí tự',
+							maxlength:'Vui lòng nhập không quá 50 kí tự'
+						},
+						thanhpho:{
+							required:'Vui lòng nhập tên thành phố',
+							minlength:'Vui lòng nhập không dưới 10 kí tự',
+							maxlength:'Vui lòng nhập không quá 50 kí tự'
+						},
+						email:{
+							required:'Vui lòng nhập email',
+							email:'Vui lòng nhập đúng địa chỉ email',
+						},
+						noidung:{
+							required:'Vui lòng nhập nội dung'
+						}
+					}
+		})
+	</script>
+</body>
+</html>
