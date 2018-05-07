@@ -1,0 +1,121 @@
+<pre>
+<script type="text/javascript">
+		
+		/***************************
+		Chương trình quản lý sinh viên
+		****************************/
+
+		// Phần khai báo
+		
+		var hoHS= ["Nguyễn Văn", "Trần Văn", "Phạm Thị", "Trần Thị", "Ngô Văn"];
+		var tenHS= [" Anh", " Trí ", " Ngọc ", " Hà", " Quý"];
+		var namsinhHS= [1991,  1992,  1993, 1995, 1993];
+		var diachiHS= [" Quảng Nam", " Huế      ", " Đà Nẵng  ", " Quảng Trị  ", " Đà Nẵng     "];
+		var diemLP0= [10, 10, 7, 8, 9];
+		var diemLP1= [10, 10, 5, 7, 9];
+		var diemTB =[];
+		var xeploai = [];
+		var nhap=['theo tên','theo điểm trung bình', 'theo xếp loại', ' theo điểm LP0', 'theo điểm LP1', 'theo tuổi'];
+		namhientai= 2018;
+		var vitri=[0,1,2,3,4];
+		var tam, ten, xl, lp0, lp1, nam;
+		
+
+		// Hàm in tiêu đề danh sách sinh viên
+		function inTieuDe(loaiSapXep) {
+ 			document.write("Sắp xếp sinh vien  " + nhap[loaiSapXep] + " :");
+			document.write("<br>_______________________________________<br>");
+			document.write("<br>");
+			document.write("STT Họ tên\t\tTuổi\tĐịa chỉ         LP0     LP1     ĐTB       Xếp loại");
+			document.write("<br>");
+			document.write("------------------------------------------------------------------------------------");
+			document.write("<br>");
+		}
+		// Hàm tính điểm trung bình và xếp loại
+		function xepLoaiSV() {
+			for (var i = 0; i < tenHS.length; i++) {
+
+				diemTB[i] = (diemLP0[i] + diemLP1[i])/2.0;
+
+					if(diemTB[i] <5){
+						xeploai[i]= " Yếu";
+
+					}
+					else if(diemTB[i]<7){
+						xeploai[i]= "Trung bình";
+					}
+					else if(diemTB[i]<8.5){
+						xeploai[i] = "Khá";
+					}
+					else{
+						xeploai[i] = "Giỏi";
+					}
+
+			}
+		}
+		// Hàm in tên danh sách sinh viên
+		function intensv() {
+			for (var i = 0; i <tenHS.length; i++) {
+				document.write((i+1) + " . " + hoHS[vitri[i]] + " " + tenHS[vitri[i]] + " \t " + (namhientai- namsinhHS[vitri[i]]) + " | " + diachiHS[vitri[i]] + "\t| " + diemLP0[vitri[i]] + "\t|" + diemLP1[vitri[i]] + " \t| " + diemTB[vitri[i]] + " \t| " + xeploai[vitri[i]]);
+				document.write("<br>");
+			}
+				
+		}
+		
+		function sapXepSinhVien(loaiSapXep) {
+			var mangTam = vitri;
+			for (var i = 0; i <diemTB.length- 1; i++) {
+				for (var j = i+1; j< diemTB.length; j++) {
+
+					if (diemTB[vitri[i]]< diemTB[vitri[j]]) {
+							tam=mangTam[i];
+							mangTam[i]=mangTam[j];
+							mangTam[j]=tam;
+						
+							
+							ten=mangTam[i];
+							mangTam[i]=mangTam[j];
+							mangTam[j]=ten;
+						
+					
+							xl=mangTam[i];
+							mangTam[i]=mangTam[j];
+							mangTam[j]=xl;
+						
+				
+					}
+					
+				}
+			}
+			return mangTam;
+
+		}
+
+		// Hàm in  danh sách theo điểm trung bình và theo tên:
+		function vitritheo(loaiSapXep,hoHS,tenHS,namsinhHS, diachiHS, diemLP0,diemLP1,diemTB,xeploai,vitri) {
+			inTieuDe(loaiSapXep);
+			xepLoaiSV();
+
+			vitri = sapXepSinhVien(loaiSapXep);
+			intensv();
+
+			document.write("<br>");
+		}
+
+
+		// 0 là sắp xếp theo tên; 1 là sắp xếp theo điểm trung bình.
+		//Gọi hàm
+		// Sắp xếp theo tên.
+		vitritheo(1,hoHS,tenHS,namsinhHS, diachiHS, diemLP0,diemLP1,diemTB,xeploai,vitri);
+
+		
+		
+
+		// Hiển thị kết thúc
+		document.write("<br>----------------------<br>");
+
+		document.write("Chương trình kết thúc!!");
+
+
+	</script>
+</pre>

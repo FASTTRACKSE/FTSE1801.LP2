@@ -1,0 +1,160 @@
+<pre>
+<script>
+
+	/*********************
+	Chương trình tính chuyên cần lớp 1801 tháng 3
+	*********************/
+
+	// Phần khai báo
+
+	var thang;
+	var tenHS1,tenHS2,tenHS3;
+	var nnHS1,nnHS2,nnHS3;
+	var songaytrongthang;
+
+	// Phần thực hiện chương trình
+
+		
+		// Gán giá trị
+
+		// Giá trị học sinh 1
+
+		tenHS1= " Nguyễn Văn Anh";
+		nnHS1= 1;
+
+		// Giá trị học sinh 2
+
+		tenHS2= "Trần Văn Bình";
+		nnHS2= 10;
+
+		// Giá trị học sinh 3
+
+		tenHS3= " Nguyễn Văn Bê ";
+		nnHS3= 15;
+
+		// Thực hiện vòng lặp
+		
+			document.write("Tình hình chuyên cần lớp 1801: ");
+			document.write("<br>__________________________<br>"),
+
+
+		 thang=3;
+			
+		switch(true){
+			case(thang==1):
+				document.write("Tháng Một");
+				document.write("<br>");
+				
+				songaytrongthang=31;
+				break;
+			case(thang==3):
+				document.write("Tháng ba");
+				document.write("<br>");
+				
+				songaytrongthang=31;
+				break;
+			case(thang==2):
+				document.write("Tháng hai");
+				document.write("<br>");
+				songaytrongthang=28;
+				break;
+			case(thang==4):
+				document.write("Tháng tư");
+				document.write("<br>");
+				songaytrongthang=30;
+				break;
+			case(thang==5):
+				document.write("Tháng năm");
+				document.write("<br>");
+				songaytrongthang=31;
+				break;
+			case(thang==6):
+				document.write("Tháng Sáu");
+				document.write("<br>");
+				songaytrongthang=30;
+				break;
+			case(thang==7):
+				document.write("Tháng Bảy");
+				document.write("<br>");
+				songaytrongthang=29;
+				break;
+			case(thang==8):
+				document.write("Tháng Tám");
+				document.write("<br>");
+				songaytrongthang=31;
+				break;
+			case(thang==9):
+				document.write("Tháng Chín");
+				document.write("<br>");
+				songaytrongthang=30;
+				break;
+			case(thang==10):
+				document.write("Tháng Mười");
+				document.write("<br>");
+				songaytrongthang=31;
+				break;
+			case(thang==11):
+				document.write("Tháng Mười một");
+				document.write("<br>");
+				songaytrongthang=30;
+				break;
+			case(thang==12):
+				document.write("Tháng Mười Hai");
+				document.write("<br>");
+				songaytrongthang=31;
+				break;
+			default:
+				document.write("Không có kết quả nào");
+				document.write("<br>");
+				
+			
+		}
+		
+		// Hiển thị kết quả
+		
+			document.write("<br>");
+			document.write(" STT \t  Họ và tên \t Ngày \t ");
+
+				for (var i = 1; i <= songaytrongthang; i++) {
+
+					document.write(i + "\t ");
+				}
+	
+			document.write("<br>------------------------	<br>");
+			document.write(" 1. " + "\t " + tenHS1 );
+				for(var i=1;i<=songaytrongthang;i++){
+					if(i!= nnHS1){
+						document.write(" \t ");
+					}else{
+						document.write(" \t " + "x");
+					break;
+					}
+				}
+			document.write("<br>");
+			document.write(" 2. " + "\t  " + tenHS2);
+				for(var i=1;i<=songaytrongthang;i++){
+					if(i!=nnHS2 ){
+						document.write(" \t ");
+					}else{
+						document.write(" \t " + "x");
+					break;
+					}
+				}
+			document.write("<br>");
+			document.write(" 3. " + " \t " + tenHS3 );
+				for(var i=1;i<=songaytrongthang;i++){
+					if(i!=nnHS3 ){
+						document.write(" \t ");
+					}else{
+						document.write(" \t " + "x");
+					break;
+					}
+				}
+			document.write("<br>_________________________<br>");
+
+		// Hiển thị kết thúc chương trình
+
+			document.write(" Chương trình kết thúc!!");
+
+</script>
+</pre>

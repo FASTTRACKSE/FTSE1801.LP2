@@ -7,3 +7,8 @@
 5. [Bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/CuongFTSE1801/LP2/bt/baitap.html)
 6. [Bài tập 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/CuongFTSE1801/LP2/bt/baitap2.html)
 7. [Bài tập 3](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/CuongFTSE1801/LP2/bt/btlap4.html)
+
+### Javascrips
+1. [Bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/CuongFTSE1801/Javascrips/baitap1.html)
+2. [Bài tập 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/CuongFTSE1801/Javascrips/baitap2.html)
+3. [Bài tập 3](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/CuongFTSE1801/Javascrips/baitap3.html)

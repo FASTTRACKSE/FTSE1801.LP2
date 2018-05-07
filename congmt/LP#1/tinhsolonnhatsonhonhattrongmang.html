@@ -1,0 +1,54 @@
+<pre>
+<script type="text/javascript">
+	
+	/*************************
+	Chương trình tính tổng 
+	************************/
+
+
+	// Phần khai báo
+
+	var mangsonguyen= [1, 2, 4, 6, 10, 5];
+
+	var max =mangsonguyen[0];
+	var min = mangsonguyen[0];
+	var tongcacso=1;
+	var GTTB;
+		
+
+
+
+
+
+	// Phần thân chương trình
+	
+
+	for (var i = 1; i < mangsonguyen.length; i++) {
+		if(max<mangsonguyen[i]){
+			max= mangsonguyen[i];
+		}
+		if (min>mangsonguyen[i]) {
+			min=mangsonguyen[i];
+		}
+		tongcacso= mangsonguyen[i] + tongcacso ;	
+	}
+		
+		GTTB = tongcacso/ mangsonguyen.length;
+		
+		document.write(" + Số lớn nhất: " + max );
+		document.write("<br>");
+
+		document.write(" + Số nhỏ nhất: " + min );
+		document.write("<br>");
+
+
+		document.write(" + Tổng các số : " + tongcacso );
+		document.write("<br>");
+		
+		document.write(" + Giá trị trung bình : " + GTTB );
+		document.write("<br>");
+
+		// Hiển thị kết thuc
+		 document.write("Chương trình kết thúc!!");
+</script>
+</pre>

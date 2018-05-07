@@ -1,0 +1,94 @@
+<pre>
+	<script>
+/*
+ chương trình quản lý sinh viên
+	Trung tâm đào tạo FasttrackSE 2018
+	*/
+//khai báo
+var tenHS1, tenHS2, tenHS3;
+var lp01, lp02, lp03;
+var lp11, lp12, lp13;
+var dtb1, dtb2, dtb3;
+var xl1, xl2, xl3;
+// phần thân chương trình
+//-nhập giá trị sinh viên thứ 1
+tenHS1 = "Nguyễn Văn A";
+lp01 = 0;
+lp11 = 9;
+// Tính điểm tb hs 1
+dtb1 = (lp01 + lp11)/2 ;
+// Xếp loại hs1
+if((lp01==0)||(lp11==0)){
+	xl1='Liệt';
+}
+else if(dtb1<5){
+	xl1='Yếu';
+}
+else if(dtb1<7){
+	xl1='Trung bình';
+}
+else if(dtb1<8.5){
+	xl1="Khá";
+}
+else{
+	xl1='Giỏi'
+}
+//-nhập giá trị sinh viên thứ 2
+tenHS2 = "Nguyễn Văn B";
+lp02 = 7;
+lp12 = 7;
+// Tính điểm tb hs 2
+dtb2 = (lp02 + lp12)/2;
+//Xếp loại hs2
+if((lp02==0)||(lp12==0)){
+	xl2='Liệt';
+}
+else if(dtb2<5){
+	xl2='Yếu';
+}
+else if(dtb2<7){
+	xl2='Trung bình';
+}
+else if(dtb2<8.5){
+	xl2="Khá";
+}
+else{
+	xl2='Giỏi'
+}
+
+// -nhập giá trị sinh viên thứ 3
+tenHS3 = "Nguyễn Văn C";
+lp03 = 9;
+lp13 = 10;
+// Tính điểm tb hs 3
+dtb3 = (lp03 + lp13)/2;
+//Xếp loại hs3
+if((lp03==0)||(lp13==0)){
+	xl3='Liệt';
+}
+else if(dtb3<5){
+	xl2='Yếu';
+}
+else if(dtb3<7){
+	xl3='Trung bình';
+}
+else if(dtb3<8.5){
+	xl3="Khá";
+}
+else{
+	xl3='Giỏi'
+}
+
+//In danh sách sinh viên
+document.write("STT       Họ và tên    	     LP0       LP1        Điểm TB      	Xếp loại ");
+document.write("<br>");
+document.write("---------------------------------------------------------------------------------------");
+document.write("<br>");
+document.write(" 	 1.      " + tenHS1 + "  	      " + lp01 + "         " + lp11 + "     	  " + dtb1 + "         	" + xl1);
+document.write("<br>");
+document.write(" 	 2.      " + tenHS2 + "  	      " + lp02 + "         " + lp12 + "     	  " + dtb2 + "         	" + xl2);
+document.write("<br>");
+document.write("  	 3.      " + tenHS3 + "  	      " + lp03 + "         " + lp13 + "     	  " + dtb3 + "         	" + xl3);
+document.write("<br>");
+</script>
+</pre>

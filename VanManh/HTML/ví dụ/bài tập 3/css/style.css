@@ -1,0 +1,131 @@
+
+		p#bai1{
+			border-style: dotted;
+    
+		}
+
+		p#bai2{
+			border-style: dotted;
+			border-color: red;
+		}
+
+		p#bai3{
+			border-top-style: dotted;
+			border-color: red;
+		}
+
+		p#bai4{
+			border: 5px solid green;
+		}
+
+		p#bai5{
+			background: lightblue;
+			padding-top: 30px;
+
+		}
+
+		p#bai6{
+			background-color: lightblue;
+			padding: 50px; 
+		}
+
+		p#bai7{
+			background-color: lightblue;
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-top: 25px;
+			padding-bottom: 25px;  
+		}
+
+		div#bai8{
+			width: 200px;
+			border: 25px solid blue;
+			padding: 25px;
+			margin: 25px;
+			background-color: lightblue;
+		}
+
+		h1#tieude1{
+			height: 100px;
+			background-color: lightblue;
+		}
+
+		h1#tieude2{
+			height: 50%;
+			width: 140px;
+			background-color: lightblue;
+		}
+
+		div#bai9{
+			color: #684aa3;
+			border: 10px solid;
+			border-top-color: #ff0000;
+			border-bottom-color: #0000ff;
+			border-left-color: #ffff00;
+			border-right-color: #008000;
+			text-decoration: underline;
+			margin-bottom: 25px;
+		}
+
+		div#bai10{
+			border: 10px solid #ff0000;
+			background-color: #ffff00;
+
+		}
+
+
+		p.bai11{
+			border: 1px solid green;
+			background-color: #ffc0cb;
+			margin: 5px;
+			padding: 20px;
+		}
+
+		div#bai12{
+			margin-top: 25px;
+			color: #684aa3;
+			border: 10px dashed #0000ff;
+			text-decoration: underline;
+			margin-bottom: 25px;
+		}
+
+		div#bai13{
+			border: 10px solid;
+			border-bottom-color: #ff0000;
+			border-right-color: #0000ff;
+			border-left-color: #ffff00;
+			border-top-color: #008000;
+			margin-top: 25px;
+		}
+
+		p#bai14{
+			border:  5px solid #66cbf3;
+			background-color: #ffc0cb;
+			margin-bottom: 20px;
+			margin-top: 10px;
+			margin-left: 10px;
+			margin-right: 10px;
+			text-align: center;
+		}
+
+		p#bai15{
+			border:  5px solid #77e197;
+			background-color: #d70f1c;
+			margin-bottom: 40px;
+			margin-top: 10px;
+			margin-left: 10px;
+			margin-right: 10px;
+			text-align: center;
+		}
+
+		p#bai16{
+			border:  5px solid #f95ed2;
+			background-color: #3dcefe;
+			margin-bottom: 50px;
+			margin-top: 10px;
+			margin-left: 10px;
+			margin-right: 10px;
+			text-align: center;
+		}
+
+

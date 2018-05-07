@@ -1,0 +1,54 @@
+<script type="text/javascript">
+	
+/*********************
+Chương trình tính tổng số nguyên a và b 
+nhưng tổng của a và b không quá 10
+**********************/
+
+// Phần khai báo
+
+	var a , b , c;
+	var tong=0;
+	
+
+	// Gán giá trị
+	c=40;
+	a=1;
+	b=20;
+
+
+
+
+// Phần thân chương trình
+
+	// Lời chào chương trình
+
+	  document.write(" Chương trình tính tổng các số a và b nhưng không quá c là :");
+	  document.write("<br>_____________________________<br>");
+
+
+	 // Thực hiện vòng lặp để tính tổng
+
+	 for (var i =a; i <= b ; i++) {
+	 	
+	 	if ((tong + i )<= c) {
+	 		tong+=i
+	
+
+	 	}
+	 }
+
+
+	 document.write("Tổng các số của " + a + " đến  " + b + " nhỏ hơn " + c + " là : " + tong);
+	 document.write("<br>_____________________________<br>");
+	
+
+
+	// Hiển thị lời chào
+
+	document.write(" Chương trình kết thúc !!");
+	document.write("<br>_____________________________<br>");
+
+
+
+</script>

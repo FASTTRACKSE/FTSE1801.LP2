@@ -1,0 +1,83 @@
+<pre>
+<script type="text/javascript">
+		
+		/***************************
+		Chương trình quản lý sinh viên
+		****************************/
+
+
+		// Phần khai báo
+
+		
+		var danhsachHS =[];
+		danhsachHS[0]= {tenHS: " Nguyễn Văn Anh ", namsinhHS: 1991, diachiHS: "Quảng Nam", diemLP0: 10, diemLP1: 10, diemTB: 0, xeploai: " "};
+		danhsachHS[1]= {tenHS: " Trần Văn Trí ", namsinhHS: 1992, diachiHS: "Huế", diemLP0: 10, diemLP1: 9, diemTB: 0, xeploai: " "};
+		danhsachHS[2]= {tenHS: " Phạm Thị Ngọc ", namsinhHS: 1993, diachiHS: "Đà Nẵng", diemLP0: 7, diemLP1: 5, diemTB: 0, xeploai: ""};
+		danhsachHS[3]= {tenHS: " Trần Thị Hà ", namsinhHS: 1998, diachiHS: "Quảng Nam", diemLP0: 8, diemLP1: 9, diemTB: 0, xeploai: " "};
+		
+
+		// Tính điểm trung bình và xếp loại học sinh
+		for (var i = 0; i < danhsachHS.length; i++) {
+
+			danhsachHS[i].diemTB = (danhsachHS[i].diemLP0 + danhsachHS[i].diemLP1)/2.0;
+
+				if(danhsachHS[i].diemTB <5){
+					danhsachHS[i].xeploai= " Yếu";
+
+				}
+				else if(danhsachHS[i].diemTB <7){
+					danhsachHS[i].xeploai= "Trung bình";
+				}
+				else if(danhsachHS[i].diemTB <8.5){
+					danhsachHS[i].xeploai = "Khá";
+				}
+				else{
+					danhsachHS[i].xeploai= "Giỏi";
+				}
+
+		}
+
+		namhientai= 2018;
+
+		// In danh sách sinh viên
+ 
+		document.write("STT Họ tên\t\tTuổi\tĐịa chỉ         LP0     LP1     ĐTB       Xếp loại");
+		document.write("<br>");
+		document.write("------------------------------------------------------------------------------------");
+		document.write("<br>");
+
+		for (var i = 0; i < danhsachHS.length; i++) {
+			document.write((i+1) + " . "  + danhsachHS[i].tenHS + " \t " + (namhientai- danhsachHS[i].namsinhHS) + " | " + danhsachHS[i].diachiHS + "\t | \t" + danhsachHS[i].diemLP0 + "\t|" + danhsachHS[i].diemLP1 + " \t| " + danhsachHS[i].diemTB + " \t| " + danhsachHS[i].xeploai);
+			document.write("<br>");
+		}
+
+		
+		// Thực hiện vòng lặp theo điều kiện
+		var tam;
+		
+		for (var i =0; i < danhsachHS.length-1; i++) {
+			for (var j=i+1; j <danhsachHS.length; j++) {
+					if (danhsachHS[i].diemTB<danhsachHS[j].diemTB) {
+						tam=danhsachHS[i].diemTB;
+						danhsachHS[i].diemTB=danhsachHS[j].diemTB;
+						danhsachHS[j].diemTB=tam;
+					}
+			}
+		}
+		document.write("<br>");
+		// In danh sách sinh viên theo điểm trung bình
+
+		document.write("- Sắp xếp thứ tự học sinh theo điểm trung bình:");
+		document.write("<br>");
+
+		document.write("STT Họ tên\t\tTuổi\tĐịa chỉ         LP0     LP1     ĐTB       Xếp loại");
+		document.write("<br>");
+		document.write("------------------------------------------------------------------------------------");
+		document.write("<br>");
+
+		for (var i = 0; i < danhsachHS.length; i++) {
+			document.write((i+1) + " . "  + danhsachHS[i].tenHS + " \t " + (namhientai- danhsachHS[i].namsinhHS) + " | " + danhsachHS[i].diachiHS + "\t | \t" + danhsachHS[i].diemLP0 + "\t|" + danhsachHS[i].diemLP1 + " \t| " + danhsachHS[i].diemTB + " \t| " + danhsachHS[i].xeploai);
+			document.write("<br>");
+		}
+</script>
+</pre>
