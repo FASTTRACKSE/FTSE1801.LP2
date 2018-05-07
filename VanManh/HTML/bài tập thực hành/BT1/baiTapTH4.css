@@ -1,0 +1,174 @@
+.tieuDe{
+	background-color: #292a24;
+}
+
+.anh{
+	float: left;
+}
+
+.anh1{
+	 width: 1.5px;
+	 height:35px;
+	 margin-top: 35px;
+	 float: left;
+	 margin-left: 10px;
+	 margin-right: 10px;
+}
+
+.tieuDe p{
+	color: #7c7d77;
+	padding-top: 41px;
+	padding-bottom: 41px;
+
+}
+
+.anh2{
+ 	float: right;
+ 	margin-top: -80px;
+ 	margin-right: 25px;
+}
+
+.menu{
+	background-color: #3d3e39;
+	margin-top: -17px;
+}
+
+.menu img{
+	width: 190px;
+	height: 40px;
+}
+.menu1{
+	margin-left: 100px;
+}
+
+.ma{
+	padding-top: 20px;
+	width: 100%;
+	height: 200px;
+	background-color: #e3deda;
+}
+
+.a{
+	background-image: url('images/block1.jpg');
+	background-repeat: no-repeat;
+	margin-left: 100px;
+	float: left;
+}
+
+.a h3{
+	width: 150px;
+	margin-left: 150px;
+	font-size: 16px;
+}
+
+.a p{
+	width: 150px;
+	margin-left: 150px;
+	margin-top: -10px;
+	color: #6b7c1c;
+}
+
+.a img{
+	margin-left: 150px;
+}
+
+.b{
+	background-image: url('images/block2.jpg');
+	background-repeat: no-repeat;
+	margin-left: 150px;
+	float: left;
+}
+
+.b h3{
+	width: 150px;
+	margin-left: 150px;
+	font-size: 16px;
+}
+
+.b p{
+	width: 150px;
+	margin-left: 150px;
+	margin-top: -10px;
+	color: #6b7c1c;
+}
+
+.b img{
+	margin-left: 150px;
+}
+
+.c{
+	background-image: url('images/block3.jpg');
+	background-repeat: no-repeat;
+	margin-left: 100px;
+	float: right;
+	display: block;
+}
+
+.c h3{
+	width: 150px;
+	margin-left: 150px;
+	font-size: 16px;
+	
+}
+
+.c p{
+	width: 150px;
+	margin-left: 150px;
+	margin-top: -10px;
+	color: #6b7c1c;
+}
+
+.c img{
+
+	margin-left: 150px;
+}
+
+
+.phan1{
+	width: 45%;
+	float: left;
+}
+
+.hinh{
+	float: left;
+}
+ .phan1 h3{
+ 	margin-top: 0px; 
+ }
+
+ .hinh1{
+ 	float: right;
+ }
+
+
+ .phan11{
+ 	color: #667027;
+ 	font-size: 20px;
+ }
+
+ .phan2{
+ 	float: right;
+ 	width: 45%;
+ }
+
+ .phan2 h3{
+ 	margin-top: 0px;
+ }
+
+ .nd1{
+ 	float: left;
+ 	margin-top: -14px;
+ 	height: 70px;
+ 	color: #f08c22;
+ }
+
+ .nd12{
+ 	width: 590px; 
+ 	height: 70px;
+ } 
+
+ .nd12 p{
+ 	display: inline;
+ }
+
+

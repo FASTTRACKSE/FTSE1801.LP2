@@ -1,0 +1,95 @@
+<pre>
+<script type="text/javascript">
+	
+	/*************************
+	Chương trình tính tổng 
+	************************/
+
+
+	// Phần khai báo
+
+	
+
+
+
+
+
+	// Phần thân chương trình
+
+	function songuyenlonnhat(mangsonguyen) {
+		
+
+		var max =mangsonguyen[0];	
+	
+	for (var i = 1; i < mangsonguyen.length; i++) {
+		if(max<mangsonguyen[i]){
+			max= mangsonguyen[i];
+		}
+		
+		
+	}
+	document.write(" + Dãy số nguyên :" + mangsonguyen + ". Có số lớn nhất là:" + max );
+		document.write("<br>");
+
+}
+	document.write("- Chương trình chạy dãy số nguyên: ");
+	document.write("<br>________________________________<br>");
+	document.write("<br>");
+		var mangsonguyen= [1, 2, 4, 6, 10, 5];
+
+		songuyenlonnhat(mangsonguyen);
+
+		var mangsonguyen= [17, 2, 4, 6, 10, 5];
+
+		songuyenlonnhat(mangsonguyen);
+			
+
+				// Hiển thị kết thuc
+				document.write("<br>");
+				 document.write("Chương trình kết thúc!!");
+		</script>
+</pre>
+
+<pre>
+<script type="text/javascript">
+	
+	/*************************
+	Chương trình tính tổng 
+	************************/
+	// Phần thân chương trình
+
+	function songuyenlonnhat(mangsonguyen) {
+		
+		var max =mangsonguyen[0];	
+		
+		for (var i = 1; i < mangsonguyen.length; i++) {
+			if(max<mangsonguyen[i]){
+				max= mangsonguyen[i];
+			}
+		}
+		return max
+	}
+	function hienthisolonnhat(mangsonguyen) {
+	
+	
+		document.write(" + Dãy số nguyên :" + mangsonguyen + ". Có số lớn nhất là:" + max);
+		document.write("<br>");
+
+	}
+	document.write("- Chương trình chạy dãy số nguyên: ");
+	document.write("<br>________________________________<br>");
+	document.write("<br>");
+		var mangsonguyen= [1, 2, 4, 6, 10, 5];
+		max=songuyenlonnhat(mangsonguyen);
+		hienthisolonnhat(mangsonguyen);
+
+		var mangsonguyen= [1, 2, 39, 6, 10, 5];
+		max=songuyenlonnhat(mangsonguyen);
+		hienthisolonnhat(mangsonguyen);
+			
+
+				// Hiển thị kết thuc
+				document.write("<br>");
+				 document.write("Chương trình kết thúc!!");
+		</script>
+</pre>

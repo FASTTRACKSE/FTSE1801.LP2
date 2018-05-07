@@ -1,0 +1,39 @@
+<script type="text/javascript">
+	/***************
+	Chương trình giải phương trình bậc nhất
+	******************/
+
+	// Phần khai báo
+
+	
+
+	function phuongtrinh(a, b) {
+		if ((a==0)&(b==0)) {
+			
+			document.write("Phương trình vô số nghiệm");
+			document.write("<br>------------------<br>");
+		}
+		else if ((a==0)&(b!=0)) {
+			document.write("Phương trình vô nghiệm");
+			document.write("<br>------------------<br>");
+		}
+		else {
+			var x = -b/a
+			document.write("Phương trình có nghiệm x = "+ x);
+			document.write("<br>________________________<br>");
+		}
+	}
+
+	document.write("-Hiển thị chương trình giải phương trình bậc nhất:");
+	document.write("<br>_________________________________________<br>");
+
+	a=5, b=10;
+	document.write("- Phương trình bậc nhất ax + b =0 có a =" + a + " và b = " + b + " có kết quả: ");
+	document.write("<br>-------------------------------------------------------------------------<br>");
+	document.write("<br>");
+	
+	phuongtrinh(a,b);
+
+	document.write("- Chương trình kết thúc!!!");
+	document.write("<br>________________________<br>");
+</script>

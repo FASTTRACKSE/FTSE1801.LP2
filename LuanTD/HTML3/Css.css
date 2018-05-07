@@ -1,0 +1,117 @@
+body{
+	background-color: #e5e0dc;
+}
+.header{
+	background-color: #2f3029;
+	height: 50px;
+}
+.a{
+	float: left;
+	margin-left: 0px;
+}
+.b{
+	float: left;
+	margin: 20px;
+}
+.header p{
+	float: left;
+	color: white;
+	font-size: 5px;
+	margin-top: 25px;
+}
+.c{
+	float: right;
+	margin: 10px;
+}
+.menu{
+	background-color: #43443f;
+	width: 100%
+}
+.d{
+	margin-left: -70px;
+}
+.e{
+	margin-left: -2px;
+	margin-right: -2px;
+	margin-bottom: 20px;
+}
+.hinh{
+	margin-left: 17%;
+	height: 180px;
+}
+.hinh1{
+	width: 300px;
+	height: 200px;
+	background-image: url(images/block1.jpg);
+	background-repeat: no-repeat;
+	float: left; 
+}
+.hinh2{
+	width: 300px;
+	height: 200px;
+	background-image: url(images/block2.jpg);
+	background-repeat: no-repeat;
+	float: left; 
+}
+.hinh3{
+	width: 300px;
+	height: 200px;
+	background-image: url(images/block3.jpg);
+	background-repeat: no-repeat;
+	float: left; 
+}
+.h3,.p1{
+	margin-top: 7px;
+	margin-bottom: 0px;
+	margin-left: 125px;
+	width: 170px;
+}
+.hhh{
+	margin-left: 120px;
+}
+.end{
+	background-color: white;
+	height: 500px;
+}
+.end1{
+	float: left;
+	padding-top:30px;
+	width: 45%;
+	margin-left: 0px;
+}
+.ic,h5,p{
+	margin-left: 3px;
+}
+.end h3{
+	display: inline;
+}
+.pic{
+	padding-top: 30px;
+	margin-left: 2px;
+}
+.more{
+	float: right;
+}
+.end2{
+	float: right;
+	margin-right: 30px;
+	padding-top:30px;
+	width: 40%;
+}
+.ngay{
+	float: left;
+}
+h4{
+	margin-bottom: 75px;
+}
+.pp{
+	margin-top: 20px;
+	width: 440px;
+	float: left;
+}
+.p2{
+
+	display: inline;
+	margin-top: 150px;
+}
+
