@@ -14,6 +14,7 @@
 9. [HTML6 - bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/LuanTD/HTML6/Assigment/bai1.html)
 10. [HTML6 - bài tập 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/LuanTD/HTML6/Assigment/bai2.html)
 11. [HTML6 - bài tập 3](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/LuanTD/HTML6/Assigment/bai3.html)
+12. [HTML7 - bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/LuanTD/HTML7/baitap1.html)
 
 ### CSS
 
