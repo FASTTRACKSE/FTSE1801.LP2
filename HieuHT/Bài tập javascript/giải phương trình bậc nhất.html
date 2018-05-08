@@ -2,37 +2,65 @@
 <html>
 <head>
 	<title>bài 1</title>
+	<script src="../js/jquery-3.3.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
 </head>
 <body>
-	<label>số A: </label>
-	<input id="nhap1"  type="number" name="phương trình bậc nhất" value="" ><br><br>
-	<label>số B: </label>
-	<input id="nhap2"  type="number" name="phương trình bậc nhất" value="" ><br><br>
-    <label>Phương trình bậc nhất:</label>
-     <p id="ketqua"></p>
-     <button  onclick="tinh()">Tính toán</button>
-     <script>
+	<form id ='form1' action="javascript:void(0)">
+		<p id='pt'>ax + b = 0</p>
+		<label>số A: </label>
+		<input id="nhap1"  type="text" name="giatri_a" value="" ><br><br>
+		<label>số B: </label>
+		<input id="nhap2"  type="text" name="giatri_b" value="" ><br><br>
+		<label>Phương trình bậc nhất:</label>
+		<p id="ketqua"></p>
+		<button >Tính toán</button>
+	</form>
+	<script type="text/javascript">
+		var rs = $('#form1').validate({
+			rules:{
+				giatri_a:{
+					required: true,
+					number: true
+				},
+				giatri_b:'required'
+			},
+			messages:{
+				giatri_a:{
+					required: 'Vui lòng nhập a',
+					number:'Giá trị a chỉ được nhập số'
+				},
+				giatri_b:{
+					required:'Vui lòng nhập b',
+				}
+			}
+		});
+		$('#form1').on('submit',function(){
+			if(rs.valid()==true){
+				tinh();
+			}
+		})
+function tinh() {
 
-		function tinh() {
-			var x1=document.getElementById('nhap1');
-			var x2=document.getElementById('nhap2');
-			var a=x1.value;
-			var b=x2.value;
-			var nghiem=-b/a;
-			if((a==0)&&(b==0)) {
-				ketqua="có vô số nghiệm";
-			document.getElementById('ketqua').innerHTML = ketqua;
-		}
-		else if((a==0)&&(b!=0)) {
-				ketqua=" vô nghiệm";
-			document.getElementById('ketqua').innerHTML = ketqua;
-		}
-		else{
-			ketqua=nghiem;
-			document.getElementById('ketqua').innerHTML = ketqua;
-		}
+	var a=$('#nhap1').val();
+	var b=$('#nhap2').val();
+	$('#pt').text(a +'x +'+ b+ '=0');
+	var x=-b/a;
+	if((a==0)&&(b==0)) {
+		ketqua="có vô số nghiệm";
+		document.getElementById('ketqua').innerHTML = ketqua;
+	}
+	else if((a==0)&&(b!=0)) {
+		ketqua=" vô nghiệm";
+		document.getElementById('ketqua').innerHTML = ketqua;
+	}
+	else{
+		ketqua=x;
+		document.getElementById('ketqua').innerHTML = ketqua;
 	}
 
-	</script>
+}
+
+</script>
 </body>
 </html>

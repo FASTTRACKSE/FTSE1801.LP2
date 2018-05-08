@@ -2,27 +2,59 @@
 <html>
 <head>
 	<title>bài 2</title>
+	<script src="../js/jquery-3.3.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
 </head>
 <body>
-	<label>số A: </label>
-	<input id="nhap1"  type="number" name="phương trình bậc nhất" value="" ><br><br>
-	<label>số B: </label>
-	<input id="nhap2"  type="number" name="phương trình bậc nhất" value="" ><br><br>
-	<label>số C: </label>
-	<input id="nhap3"  type="number" name="phương trình bậc nhất" value="" ><br><br>
-    <label>Phương trình bậc nhất:</label>
-     <p id="ketqua"></p>
-     <button  onclick="tinh()">Tính toán</button>
+	<form id ='form1' action="javascript:void(0)">
+		<p id='pt'>axx + bx + c = 0</p>
+		<label>số A: </label>
+		<input id="nhap1"  type="text" name="giatri_a" value="" ><br><br>
+		<label>số B: </label>
+		<input id="nhap2"  type="text" name="giatri_b" value="" ><br><br>
+		<label>số C: </label>
+		<input id="nhap3"  type="text" name="giatri_c" value="" ><br><br>
+		<label>Phương trình bậc nhất:</label>
+		<p id="ketqua"></p>
+		<button>Tính toán</button>
+	</form>
+	<script type="text/javascript">
+		var rs = $('#form1').validate({
+			rules:{
+				giatri_a:{
+					required: true,
+					number: true
+				},
+				giatri_b: { required: true,
+					number: true
+				},
+				giatri_c: 'required'
+			},
+			messages:{
+				giatri_a:{
+					required: 'Vui lòng nhập a',
+					number:'Giá trị a chỉ được nhập số'
+				},
+				giatri_b:{
+					required:'Vui lòng nhập b',
+					number:'Giá trị b chỉ được nhập số'
+				},
+				giatri_c:{
+					required:'Vui lòng nhập c'
+				}
 
-			<script>
+			}
+		});
+		$('#form1').on('submit',function(){
+			if(rs.valid()==true){
+				tinh();
+			}
+		})
 		function tinh() {
-			var x1=document.getElementById('nhap1');
-			var x2=document.getElementById('nhap2');
-			var x3=document.getElementById('nhap3');
-			var a = x1.value;
-			var b = x2.value;
-			var c = x3.value;
-
+			var a=$('#nhap1').val();
+			var b=$('#nhap2').val();
+			var c=$('#nhap3').val();
+			$('#pt').text(a +'xx +'+ b+  'x + '+ c + '=0');
 			if(a == 0){
 				if ((b == 0)&&(c ==0)) {
 					ketqua = "Có vô số nghiệm";

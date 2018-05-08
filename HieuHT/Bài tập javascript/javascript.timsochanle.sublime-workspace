@@ -1,0 +1,535 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"v",
+				"value"
+			],
+			[
+				"so",
+				"sochan"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"bo",
+				"box-shadow"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"t",
+				"text-align"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"li",
+				"list-style-type"
+			],
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"l",
+				"label\tTag"
+			],
+			[
+				"p",
+				"padding-right"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"i",
+				"input\tTag"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"fr",
+				"form\tTag"
+			],
+			[
+				"dro",
+				"dropdown-content"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"bor",
+				"border-bottom-width"
+			],
+			[
+				"bod",
+				"border"
+			],
+			[
+				"s",
+				"span\tTag"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"f",
+				"float"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"u",
+				"ul\tTag"
+			],
+			[
+				"fo",
+				"font"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"m",
+				"margin-right"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"d",
+				"div\tTag"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"me",
+				"meta\tTag"
+			],
+			[
+				"do",
+				"double"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"ti",
+				"title\tTag"
+			],
+			[
+				"a",
+				"alt\tAttr"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"die",
+				"diemTB"
+			],
+			[
+				"X",
+				"xeploai"
+			],
+			[
+				"diem",
+				"diemTB"
+			],
+			[
+				"ng",
+				"ngaynghiHS"
+			],
+			[
+				"vi",
+				"vitriabc"
+			],
+			[
+				"giỏi",
+				"Giỏi"
+			],
+			[
+				"ten",
+				"tenHS"
+			],
+			[
+				"x",
+				"xeploai"
+			],
+			[
+				"nam",
+				"namsinhHS"
+			],
+			[
+				"tenh",
+				"tenhs3"
+			],
+			[
+				"tenhs1",
+				"tenhs1"
+			],
+			[
+				"n",
+				"ngaynghi2"
+			],
+			[
+				"sc",
+				"script\tTag"
+			],
+			[
+				"malop",
+				"malopFTSE1801"
+			],
+			[
+				"tuoi",
+				"tuoiHS1"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/bài1/css.excel/bai1.html",
+		"/D/bài1/css.excel/baiTapVeNha.html",
+		"/D/HTML.CSS/FTSE1801.LP2/HieuHT/README.md",
+		"/D/Html/Bài tập về lập trình JAVAscript/Phương trình bật hai một ẩn, mảng.html",
+		"/D/bài1/css.excel/javascript.tinhphuongtrinhbatnhat.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Phương trình bật nhất 1 ẩn kiêu hàm.html",
+		"/D/bài1/css.excel/javascript.Tinhdientich.html",
+		"/D/bài1/css.excel/javascript.timsochanle.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Tìm số chẵn.html",
+		"/D/bài1/Bài tập ở lớp/baitapvenha.html",
+		"/D/bài1/Bài tập ở lớp/Access.html",
+		"/D/bài1/css.excel/bài phiếu đăng ký dự thi.html",
+		"/D/bài1/Bài tập ở lớp/bài tập ở lớp.html",
+		"/D/bài1/Bài tập ở lớp/hình/baiphu.css",
+		"/D/bài1/Bài tập ở lớp/hình/bài phụ.css",
+		"/D/bài1/Bài tập ở lớp/bài tập về nhà.html",
+		"/D/bài1/Bài tập ở lớp/bài tập giới thiệu về trâu.html",
+		"/D/bài1/Assignment.html",
+		"/D/bài1/Bài tập ở lớp/baif1.html",
+		"/D/bài1/css.excel/bài tập ở lớp 2.html",
+		"/D/bài1/Bài tập ở lớp/bài 1.html",
+		"/D/bài1/css.excel/bài tập ở lớp 1.html",
+		"/D/bài1/bài 2.html",
+		"/D/bài1/css/lap1.html",
+		"/D/bài1/css.excel/bài tập ở lớp.html",
+		"/D/bài1/bài 3.html",
+		"/D/bài1/Danh sách điểm thi.css.html",
+		"/D/bài1/css.excel/vd2.html",
+		"/D/bài1/css.excel/vd3.html",
+		"/D/bài1/bài 1.html",
+		"/D/bài1/bài tập về nhà.rar",
+		"/D/bài1/bài tập 1.html",
+		"/D/bài1/Bai1.html",
+		"/D/bài1/css/style.css",
+		"/D/bài1/vd3.html",
+		"/D/bài1/css.excel/style1.css",
+		"/D/bài1/vd1.html",
+		"/D/bài1/vvd1.css",
+		"/D/bài1/style.css",
+		"/D/bài1/vvd1.html",
+		"/D/bài1/bài tập 3.html",
+		"/D/bài1/bài tập 2.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/bài 2.html",
+		"/D/bài1/hinh/quanco.jpg",
+		"/D/Html/Bài tập về lập trình JAVAscript/bài 3.html",
+		"/D/bài1/css/vd1.html",
+		"/D/bài1/style/vd1.html",
+		"/D/bài1/style/bai10.html",
+		"/D/bài1/bài1.html",
+		"/D/bài1/trungquoc.html",
+		"/C/Users/user/Downloads/Assignment.html",
+		"/C/Users/user/Downloads/bài1.html",
+		"/D/bài1/trang3.html",
+		"/D/bài1/trang2.html",
+		"/D/bài1/trang1.html",
+		"/D/bài1/mh370.html",
+		"/D/bài1/chuyennhuong.html",
+		"/D/bài1/mynhan.html",
+		"/D/bài1/trongtai.html",
+		"/D/bài1/assigkinhdoanh.html",
+		"/D/bài1/assiggocnhin.html",
+		"/D/bài1/assigtrangchu.html",
+		"/D/bài1/assigtintuc.html",
+		"/D/bài1/assigthoisu.html",
+		"/D/bài1/assigthegioi.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/bài 1.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Danh sách xếp loại học sinh.mảng.html.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Sắp xếp danh sách học sinh theo thứ tự kiểu hàm.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Bài xác định các ngày trong tuần.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/sắp xếp dãy số nguyên kiểu hàm.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/sắp xếp lớp theo kiểu hàm.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Tìm số lớn nhất kiểu hàm.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Tìm số lớn nhất kiểu hàm return.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Phương trình bật hai 1 ẩn kiểu hàm.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Dãy số nguyên.mảng.html.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Chương trình hiến thị dãy số.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Hiển thị lời chào kiểu hàm.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Giải phương trình bậc nhất 1 ẩn.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Tình hình chuyên cần của học sinh.mảng.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Sắp xếp tên và điểm TB theo thứ tự.mảng.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/tinhhinhchuyencanlop.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Giải thuật sắp xếp lựa chọn sắp xếp dãy số.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Sắp xếp tên và điểm trung bình theo thứ tự, mảng.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Tìm USCLN và BSCNN của hai số.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Tính tổng có điều kiện.mảng.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Tổng các số chẵn từ 2 đến 10.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Bài 2.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Tính tổng các số nguyên.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Bài tập tính tổng có điều kiện.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/bài tính tổng dãy số nguyên.mảng,html",
+		"/D/Html/Bài tập về lập trình JAVAscript/bai1.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/hóa đơn bán hàng.html",
+		"/D/Html/Tạo bản cửu chương.html",
+		"/D/Html/Chương trình hiến thị dãy số.html",
+		"/D/Html/xeploaihocsinh.html",
+		"/D/wofd/tính tổng các số nguyên.html",
+		"/D/Html/Bài tập về lập trình JAVAscript/Tính tổng từ 1 đến n.html",
+		"/D/Html/Bài tập 1.html",
+		"/D/wofd/bai1..html",
+		"/D/Html/bai3.html",
+		"/D/Html/Bài 1.html",
+		"/D/wofd/Chương trình in dãy số nguyên 123.html",
+		"/D/Html/in ra day so chan.html",
+		"/D/wofd/inradayso.html",
+		"/D/Html/Giair phương trình bậc nhất 1 ẩn.html",
+		"/D/Html/Bai xac dinh ngay trong tuan.html",
+		"/D/wofd/in ra dãy số.html",
+		"/D/wofd/bai1.html",
+		"/D/Html/Tìm số dương.html",
+		"/D/Html/Tìm số chẵn.html",
+		"/D/wofd/Phép tính hình tròn và hình chữ nhật.html",
+		"/D/wofd/3.html",
+		"/D/wofd/danhsachsinhvien.html",
+		"/C/eSupport/3.html",
+		"/C/eSupport/1.html"
+	],
+	"find":
+	{
+		"height": 42.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 42.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "javascript.timsochanle.sublime-project",
+	"replace":
+	{
+		"height": 80.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 348.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
