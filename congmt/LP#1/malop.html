@@ -1,0 +1,36 @@
+<script type="text/javascript">
+	/********************
+	Chương trình tìm mã lớp
+	*********************/
+
+	// Phần khai báo
+
+	var ML;
+	
+	ML= "FTRW1801";
+	
+	
+
+	// Phần thân chương trình
+
+	// -- Xác định lơp này có phải là FTSE1801 hay không
+	if(ML == "FTSE1801") {
+		document.write(" Chào các bạn khóa CẤP TỐC Fulltime 1801");
+		document.write("<br>_________________<br>");
+	}
+
+	// -- Xác định lơp này có phải FTRW1801 hay không
+	if(ML == "FTRW1801") {
+		document.write(" Chào các bạn khoa Web ngắn hạn 1801");
+		document.write("<br>_________________<br>");
+	}
+	// -- Xác định lơp này có phải là 2 trường hợp trên hay không
+
+	if((ML!= "FTRW1801") && ( ML != "FTSE1801")){
+	 	document.write(" Chào các bạn sinh viên mới");
+	 	document.write("<br>_________________<br>");
+	}
+
+	// Hiển thị lời kết thúc
+	document.write("Chương trình kết thúc!!!");
+</script>

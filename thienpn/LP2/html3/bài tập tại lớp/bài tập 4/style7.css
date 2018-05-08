@@ -1,0 +1,33 @@
+.a{
+  border:solid white;
+  
+  height: 700px;
+}
+
+.ch{
+	border:solid;
+	background-color: #383934;
+	height: 100px;
+}
+.ch img{ margin-right: 20px;
+	float: left;
+}
+
+
+.ch h4{
+	color: white;
+}
+.ss{border:solid;
+	background-color: #383934;
+
+}
+
+
+.b{
+	background-image: url("block1.jpg" ),url("block2.jpg" );
+	background-repeat: no-repeat,repeat,no-repeat;
+	padding-top:20px;
+	margin-left: 30px;
+    
+}
+

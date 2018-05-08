@@ -1,0 +1,14 @@
+.tin{
+	width: 790px;
+}
+.images{
+	float: left;
+	margin-right: 25px; 
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.text{
+	margin-bottom: 70px;
+}

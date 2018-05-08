@@ -1,0 +1,40 @@
+<script type="text/javascript">
+	/********************
+	Chạy chương trình giải phương trình bậc nhất
+	*********************/
+
+	// Phần khai báo
+
+	var a ,b;
+	a=4;
+	b=5;
+	
+
+	// Phần thân chương trình
+
+		// Giải phương trình và hiển thị:
+
+		switch(true){
+			case(a==0)&&(b==0):
+			document.write("Phương trình có vô số nghiệm");
+			document.write("<br>________________________<br>");
+			break;
+
+			case(a==0)&&(b!==0):
+			document.write("Phương trình vô nghiệm");
+			document.write("<br>________________________<br>");
+			break;
+
+			default:
+			x = -b/a
+			document.write("Phương trình vô nghiệm x = "+ x);
+			document.write("<br>________________________<br>");
+			break;
+
+		}
+	// Hiển thị lời kết thúc
+	document.write("Chương trình kết thúc!!!");
+
+
+</script>
+

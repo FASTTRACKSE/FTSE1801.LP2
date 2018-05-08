@@ -1,0 +1,90 @@
+
+<meta charset="utf-8">
+<pre>
+<script type="text/javascript">
+	/*
+	**************************
+	Danh sách sinh viên 
+	FTSE1801
+	**************************
+	*/
+	//phần khai báo
+		var tensv=["D","E","A","C","B"];
+		var hosv=["Nguyễn Văn","Nguyễn Văn","Nguyễn Văn", "Nguyễn Văn", "Nguyễn Văn"];
+		var namsinhsv=[1991,1995,1993,1997,1994];
+		var diachisv=["Quảng Nam ","Đà Nẵng  ","Huế       ","Hà Nội    ", "Hải Phòng"];
+		var diemLP0=[9,9,4,9,10];
+		var diemLP1=[7,8,9,10,9];
+		var diemTB=[];
+		var tam;
+		var vitri=[0,1,2,3,4];
+		var xl=[];
+		var nhap=["điểm trung bình","tên"];
+		var namhientai=2018;
+		// Tiêu đề
+		function tieude(loaiSapXep){
+			document.write("Danh sách sinh viên sắp xếp theo "+nhap[loaiSapXep]);
+				document.write("<br>----------------------------------------------------------------------------------------------<br>");
+				document.write("STT\tHọ tên\t\t\ttuổi\tđịa chỉ \tLP0\tLP1\tĐiểm TB\tXếp loại");
+				document.write("<br>----------------------------------------------------------------------------------------------<br>");
+		}
+		// xếp loại học lực
+		function xeploai(){
+			for(var i=0; i<tensv.length; i++){
+				diemTB[i]=(diemLP0[i]+diemLP1[i])/2;
+				if(diemTB[i]<5){
+					xl[i]="yếu";
+				}else if(diemTB[i]<7){
+					xl[i]="trung bình";
+				}else if(diemTB[i]<8.5){
+					xl[i]="khá";
+				}else{
+					xl[i]="giỏi";
+				}
+			}
+		}	
+		// in danh sách lớp được sắp xếp
+		function indanhsach(){
+			for(var i=0; i<tensv.length; i++){
+					document.write((i+1)+"/\t"+hosv[vitri[i]]+" "+tensv[vitri[i]]+"\t\t"+(namhientai-namsinhsv[vitri[i]])+"\t"+diachisv[vitri[i]]+" \t"+diemLP0[vitri[i]]+"\t"+diemLP1[vitri[i]]+"\t"+diemTB[vitri[i]]+"\t"+xl[vitri[i]]);
+					document.write('<br>');
+				}
+		}
+		// danh sách lớp
+		function danhsach(loaiSapXep,tensv,hosv,namsinhsv,diachisv,diemLP0,diemLP1,diemTB,vitri,xl){
+			tieude(loaiSapXep);
+			xeploai();
+			// sắp xếp theo tên
+			if(nhap[loaiSapXep]=="tên"){
+				for(var i=0; i<tensv.length-1; i++){
+					for(var j=i+1; j<tensv.length; j++){
+						if(tensv[vitri[i]]>tensv[vitri[j]]){
+							tam=vitri[i];
+							vitri[i]=vitri[j];
+							vitri[j]=tam;
+						}
+					}
+				}
+				indanhsach();
+				// sắp xếp theo diểm trung bình
+			}else if(nhap[loaiSapXep]=="điểm trung bình"){
+				for(var i=0; i<diemTB.length-1; i++){
+					for(var j=i+1; j<diemTB.length; j++){
+						if(diemTB[vitri[i]]>diemTB[vitri[j]]){
+							tam=vitri[i];
+							vitri[i]=vitri[j];
+							vitri[j]=tam;
+						}
+					}
+				}
+				indanhsach();
+			}
+			document.write("<br>");
+		}
+		// 1 là in danh sách theo tên; 0 là in danh sách theo điểm trung bình
+		// in danh sách lớp theo tên
+		danhsach(1,tensv,hosv,namsinhsv,diachisv,diemLP0,diemLP1,diemTB,vitri,xl);
+		// in danh sách lớp theo điểm trung bình
+		
+	</script>
+</pre>

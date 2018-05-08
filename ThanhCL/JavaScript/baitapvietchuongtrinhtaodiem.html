@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Điểm trung bình của bạn:</h1>
+	<form>
+		<label>Điểm Lp1</label>
+		<input id="a" type="text" name="diem1">
+		<label>Điểm Lp2</label>
+		<input id="b" type="text" name="diem2">
+		<label>Điểm Lp3</label>
+		<input id="c" type="text" name="diem3">
+		<button onclick="tinhtoan()">Tính toán</button>
+	</form>
+	<script type="text/javascript">
+		function tinhtoan() {
+			var dtb;
+			var xl;
+			var lp1 = document.getElementById("a").value;
+			var lp2 = document.getElementById("b").value;
+			var lp3 = document.getElementById("c").value;
+				dtb = lp1/3 + lp2/3 + lp3/3 ;
+				if((lp1==0)||(lp2==0)){
+					alert( dtb + "Liệt");
+
+				}
+				else if(dtb<5){
+					alert( dtb + "Yếu");
+				}
+				else if(dtb<7){
+					alert( dtb + "Trung bình");
+				}
+				else if(dtb<8.5){
+					alert( dtb + "Khá");
+				}
+				else{
+					alert( dtb + 	"Giỏi");
+				}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<form>
+		<label>LP1:</label>
+		<input id="x" type="number" name="" value=""/> <br/><br/>
+		<label>LP2:</label>
+		<input id="y" type="number" name="" value=""/><br/><br/>
+		<label>LP3:</label>
+		<input id="z" type="number" name="" value=""/><br/><br/>
+		<input  onclick="kq()" type="submit" name="" value="Kết quả">	
+	</form>	
+	<script type="text/javascript">
+		function kq(){
+			var a=document.getElementById('x').value;
+			var b=document.getElementById('y').value;
+			var c=document.getElementById('z').value;
+			var xl1;	
+			var dtb=a/3+b/3+c/3;
+			if(dtb<5){
+				xl1='Yếu';
+				}else if(dtb<7){
+				xl1='Trung bình';
+				}else if(dtb<8){
+				xl1="Khá";
+				}else{
+				xl1='Giỏi';
+			}
+			alert("Điểm TB:"+dtb +" Xếp loại:" +xl1)
+		}
+	</script>
+
+
+
+</body>
+</html>

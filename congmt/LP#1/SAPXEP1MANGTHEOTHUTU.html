@@ -1,0 +1,48 @@
+<pre>
+<script type="text/javascript">
+		/*******************
+		Chương trình sắp xếp các số nguyên
+		********************/
+
+	
+
+		function sapXepmang(n) {
+			
+		
+			
+			var tam;
+
+			document.write("- Sắp xếp các số nguyên theo thứ tự từ nhỏ đến lớn:");
+			document.write("<br>-------------------------------------------<br>");
+			for (var i = 0; i <n.length - 1; i++) {
+				for (var j = i + 1; j <n.length; j++) {
+					if (n[i]> n[j]) {
+						tam=n[i];
+						n[i]=n[j];
+						n[j]=tam;
+
+					}
+				}
+
+			}
+			for (var i = 0; i <n.length; i++) {
+				document.write( n[i] + " \t | ");
+
+			}
+		}
+
+		var n=[1,2,10,6,32,12,45, 20];
+		sapXepmang(n);
+		document.write("<br>___________________<br>");
+
+		// Hiển thị phần kết thúc
+		
+		document.write("<br>");
+		document.write("- Chương trình kết thúc!!");
+
+		
+
+			
+
+	</script>
+</pre>

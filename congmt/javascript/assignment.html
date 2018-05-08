@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="../ckeditor/ckeditor.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+	<div id="noidung">
+		<h1>Form validation</h1>
+		<p>Tích hợp ckeditor vào trường nội dung và valid các thuộc tính sau của form:</p>
+		<div id="div2">
+		<form>
+
+			<label>Họ tên:</label>
+			<input id="hoten" type="text" name="hoten" value=""><br><br/>
+			<label>Thành phố:</label>
+			<input id="thanhpho" type="text" name="thanhpho" value=""><br><br/>
+			<label id="email">Email:</label>
+			<input type="email" name="email" value=""><br><br/>
+			<label id="nd">Nội dung:</label><br>
+			 <textarea class="noidung" name="editor1" id="editor1" rows="20" cols="20">
+	                
+	            </textarea>
+			<input id="submit" type="submit" name="submit" value=" Gửi đi">
+		</form>
+		</div>
+	</div>
+	<script>
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace( 'editor1' );
+            </script>
+</body>
+</html>
