@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+	<style type="text/css">
+		#toanbo { margin: auto; width:660px }
+		p { margin-top:-20px }
+		#form_val { width:600px; margin-top:25px }
+		input { width:470px; border: solid 2px #ccc; margin-bottom:10px; padding:5px }
+		label { float: left; text-align: right; width:100px; margin-right:15px; padding-top:5px }
+		.submit-button { float:right; width:100px }
+
+	</style>
+</head>
+<body>
+	<div id="toanbo">
+		<h2>Form validation</h2>
+		<p>Tích hợp ckeditor vào trường nội dung và valid các thuộc tính sau của form:</p>
+		<div id="form_val">
+			
+			<form id="form" method="post" action="javascript:void(0)">
+				<label for="hoten">Họ tên:</label>
+				<input type="text" name="hoten" id="hoten" minlength="10" maxlength="50" required/>
+				
+				<label for="tp">Thành phố:</label>
+				<input type="text" name="tp" id="tp" minlength="10" maxlength="50" required/>
+	
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" required />
+				
+				<label for="noidung">Nội dung:</label><br />
+				<textarea name="noidung" rows="20" cols="20" id="noidung"></textarea>
+
+				<input class="submit-button" type="submit" name="submit" value="Gửi đi"  />
+			</form>
+			
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+	<script>
+			 CKEDITOR.replace('noidung');
+	</script>
+</body>
+</html>

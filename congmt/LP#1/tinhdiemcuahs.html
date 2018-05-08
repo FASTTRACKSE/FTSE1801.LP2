@@ -1,0 +1,135 @@
+<pre>
+
+<script type="text/javascript">
+	/************************
+	Chương trình tính điểm số học sinh
+	************************/
+
+	// Phần khai báo
+
+	var tenHS1, tenHS2, tenHS3;
+	var lp0HS1, lp0HS2, lp0HS3;
+	var lp1HS1, lp1HS2, lp1HS3;
+	var dtbHS1, dtbHS2, dtbHS3;
+	var xlHS1, xlHS2, xlHS3;
+
+
+	// Phần thân chương trình
+
+		// Gán giá trị
+
+		// Giá trị sinh viên thứ nhất
+
+		tenHS1= " Nguyễn Văn A";
+		lp0HS1= 0;
+		lp1HS1= 9;
+		dtbHS1=(lp0HS1 + lp1HS1)/2;
+
+
+		// Giá trị sinh viên thứ hai
+
+		tenHS2= " Nguyễn Văn B";
+		lp0HS2= 4;
+		lp1HS2= 8;
+		dtbHS2=(lp0HS2 + lp1HS2)/2;
+
+		// Giá trị sinh viên thứ ba
+
+		tenHS3= " Hồ Thị C";
+		lp0HS3= 9;
+		lp1HS3= 10;
+		dtbHS3=(lp0HS3 + lp1HS3)/2;
+		
+
+
+
+		// Phần thực hiện chương trình
+
+		// Lời giới thiệu chương trình
+			document.write(" STT     Họ và tên        LP0    LP1             ĐTB          Xếp loại");
+			document.write("<br>");
+			document.write("_____________________________________________________________________");
+			document.write("<br>");
+
+		
+
+	
+
+		// Xác định điểm trung bình và xếp loại của học sinh thứ nhất
+			switch(true){
+				case((lp0HS1==0)||(lp1HS1==0)):
+					xlHS1= "Liệt";
+					break;
+				case(dtbHS1<5):
+					xlHS1= "Yếu";
+					break;
+				case(5<=dtbHS1<7):
+					xlHS1= "Trung bình";
+					break;
+				case(7<=dtbHS1<8.5):
+					xlHS1= "Khá";
+					break;
+				default:
+					xlHS1= "Giỏi";
+					break;
+
+		     }
+
+		// Xác định điểm trung bình và xếp loại của học sinh thứ hai
+
+			switch(true){
+				case((lp0HS2==0)||(lp1HS2==0)):
+					xlHS2= "Liệt";
+					break;
+				case(dtbHS2<5):
+					xlHS2= "Yếu";
+					break;
+				case(5<=dtbHS2<7):
+					xlHS2= "Trung bình";
+					break;
+				case(7<=dtbHS2<8.5):
+					xlHS2= "Khá";
+					break;
+				default:
+					xlHS2= "Giỏi";
+					break;
+		     }
+
+		// Xác định điểm trung bình và xếp loại của học sinh thứ ba
+
+			switch(true){
+				case((lp0HS3==0)||(lp1HS3==0)):
+					xlHS3= "Liệt";
+					break;
+				case(dtbHS3<5):
+					xlHS3= "Yếu";
+					break;
+				case(dtbHS3<7):
+					xlHS3= "Trung bình";
+					break;
+				case(dtbHS3<8.5):
+					xlHS3= "Khá";
+					break;
+				default:
+					xlHS3= "Giỏi";
+					break;
+			 }
+
+		// Phần in ra kết quả
+
+		
+
+			document.write(" 1.   " + tenHS1 + " \t  " + lp0HS1 + " \t  " + lp1HS1 + " \t \t " + dtbHS1 + " \t      " + xlHS1);
+			document.write("<br>-----------------------------------------------------------------------<br>");
+
+
+			document.write(" 2.   " + tenHS2 + " \t  " + lp0HS2 + " \t  " + lp1HS2 + " \t \t " + dtbHS2 + " \t      " + xlHS2);
+			document.write("<br>-----------------------------------------------------------------------<br>");
+
+
+			document.write(" 3.   " +  tenHS3 + " \t  " + lp0HS3 + " \t  " + lp1HS3 + " \t  \t " + dtbHS3 + " \t      " + xlHS3);
+			document.write("<br>-----------------------------------------------------------------------<br>");
+
+
+</script>
+</pre>

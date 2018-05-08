@@ -1,0 +1,146 @@
+<pre>
+<script>
+
+	/*********************
+	Chương trình tính chuyên cần lớp 1801 tháng 3
+	*********************/
+
+	// Phần khai báo
+
+	var thang;
+	var tenHS1,tenHS2,tenHS3;
+	var nnHS1,nnHS2,nnHS3;
+	var tenthang;
+	var songaytrongthang
+
+	// Phần thực hiện chương trình
+
+		
+
+		// Gán giá trị
+
+		// Giá trị học sinh 1
+
+		tenHS1= " Nguyễn Văn Anh";
+		nnHS1= 1;
+
+		// Giá trị học sinh 2
+
+		tenHS2= "Trần Văn Bình";
+		nnHS2= 10;
+
+		// Giá trị học sinh 3
+
+		tenHS3= " Nguyễn Văn Bê ";
+		nnHS3= 15;
+
+		// Thực hiện vòng lặp
+
+
+		 thang=2;
+			
+		switch(thang){
+			case 1:
+			tenthang= "Tháng một";
+			songaytrongthang= 31;
+			break;
+			
+			case 2:
+			tenthang= "Tháng hai";
+			songaytrongthang= 30;
+			break;
+			case 3:
+			tenthang= "Tháng ba";
+			songaytrongthang= 30;
+			break;
+			case 4:
+			tenthang= "Tháng tư";
+			songaytrongthang= 31;
+			break;
+			case 5:
+			tenthang= "Tháng năm";
+			songaytrongthang= 30;
+			break;
+			case 6:
+			tenthang= "Tháng sáu";
+			songaytrongthang= 31;
+			break;
+			case 7:
+			tenthang= "Tháng bảy";
+			songaytrongthang= 30;
+			break;
+			case 8:
+			tenthang= "Tháng tám";
+			songaytrongthang= 31;
+			break;
+			case 9:
+			tenthang= "Tháng chín";
+			songaytrongthang= 30;
+			break;
+			case 10:
+			tenthang= "Tháng mười";
+			songaytrongthang= 31;
+			break;
+			case 11:
+			tenthang= "Tháng  mười một";
+			songaytrongthang= 30;
+			break;
+			case 12:
+			tenthang= "Tháng mười hai";
+			songaytrongthang= 31;
+			break;
+			
+					
+		}
+		
+		// Hiển thị kết quả
+
+		document.write("Tình hình chuyên cần lớp 1801: ");
+		document.write("<br>__________________________<br>");
+		document.write( tenthang + " năm 2018: ");
+		document.write("<br>__________________________<br>");
+
+		document.write("<br>");
+			document.write(" STT \t  Họ và tên \t Ngày \t ");
+
+				for (var i = 1; i <= songaytrongthang; i++) {
+
+					document.write(i + "\t ");
+				}
+	// In thông tin từng sinh viên
+
+		document.write("<br>------------------------	<br>");
+		document.write(" 1. " + "\t " + tenHS1 );
+		for(var i=1;i<=songaytrongthang;i++){
+			if(i==nnHS1){
+				document.write(" \t "  + "x");
+			}else{
+				document.write(" \t ");
+			}
+		}
+		document.write("<br>");
+		document.write(" 2. " + "\t  " + tenHS2);
+		for(var i=1;i<=songaytrongthang;i++){
+			if(i==nnHS2){
+				document.write(" \t " + "x");
+			}else{
+				document.write(" \t " );
+			}
+		}
+		document.write("<br>");
+		document.write(" 3. " + " \t " + tenHS3 );
+		for(var i=1;i<=songaytrongthang;i++){
+			if(i==nnHS3){
+				document.write(" \t " + "x");
+			}else{
+				document.write(" \t " );
+			}
+		}
+		document.write("<br>_________________________<br>");
+
+		// Hiển thị kết thúc chương trình
+
+		document.write(" Chương trình kết thúc!!");
+
+</script>
+</pre>

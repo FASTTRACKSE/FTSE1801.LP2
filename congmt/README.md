@@ -15,4 +15,4 @@
 5. [Bài tập html3-bài tập 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/congmt/HTML3/Assignment3/BT2/pager/bt2.html)
 6. [Bài tập html2-bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/congmt/HTML2/Assignment2/pagre/baitap1.html)
 7. [Bài tập html1- bài tập1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/congmt/HTML1/HTML1/baitap1/baitap1.html)
-
+8. [Bài html7- assignment7](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/congmt/javascript/assignment.html) 

@@ -1,0 +1,18 @@
+
+<pre>
+<script type="text/javascript">
+	var soNguyen=[2,7,5,9,4,5];
+	var tong;
+	var a=20
+	tong=0;
+	for(var i=0; i<soNguyen.length; i++){
+		if(tong+soNguyen[i]<=a){
+			tong=tong+soNguyen[i];
+		}else{
+			break;
+		}
+		}
+		document.write("Tổng các nguyên là "+tong+"<br>");
+		document.write("Vị trí dừng tại: "+i+" là số "+soNguyen[i-1]);
+</script>
+</pre>
