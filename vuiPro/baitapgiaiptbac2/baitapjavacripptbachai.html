@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phương Trình Bậc Hai</title>
+	<script src="C:\Users\PC\Desktop\jquery\jquery-3.3.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+</head>
+<body>
+	<form id="form1" action="javascript:void(0)">
+		<p id="pt">ax + b + c = 0</p>
+		<label>Số A </label>
+		<input id ="nhap1"  type="number" required="" name="a" value="" ><br>
+		<label>Số B </label>
+		<input id="nhap2"  type="number" required="" name="b" value="" ><br>
+		<label>Số C </label>
+		<input id="nhap3"  type="number" required="" name="c" value="" ><br>	
+		<label>Phương trình: </label>
+		<p id="ketqua"></p>
+		<button>Tính toán</button>
+	</form>
+		<script>
+			var rs = $('#form1').validate({
+
+				messages: {
+					a: {
+						required:'Vui lòng nhập a',
+					},
+					b: {
+						required:'Vui lòng nhập b'
+					},
+					c: {
+						required:'Vui lòng nhập c' 
+					}
+				}
+			});
+
+			$('#form1').on('submit',function(){
+			if (rs.valid() == true) {
+				timnghiem();
+			}
+		})
+            function timnghiem() {
+			
+			var a = $('#nhap1').val();
+			var b = $('#nhap2').val();
+			var c = $('#nhap3').val();
+			$("#pt").text(a + "x + " + b + "x + " + c + "= 0" )
+
+			if(a == 0){
+				if ((b == 0)&&(c ==0)) {
+					ketqua = "Có vô số nghiệm";
+					document.getElementById('ketqua').innerHTML = ketqua;
+				}
+				else if((b == 0)&&(c != 0)){
+					ketqua = "Vô nghiệm";
+					document.getElementById('ketqua').innerHTML = ketqua;
+				}
+				else{
+					ketqua = -c/b;
+					document.getElementById('ketqua').innerHTML = ketqua;
+				}
+			}
+			else{
+				var dt=b*b-4*a*c;
+				var y1 =(-b + Math.sqrt(dt))/(2*a);
+				var y2 =(-b - Math.sqrt(dt))/(2*a);
+
+				if (dt < 0) {
+					ketqua = "Vô nghiệm";
+					document.getElementById('ketqua').innerHTML = ketqua;
+				}else if (dt == 0) {
+					ketqua="Có nghiệm kép" + -b/(2*a);
+					document.getElementById('ketqua').innerHTML = ketqua;
+				}else if(dt > 0){
+					ketqua = "Có hai nghiệm phân biệt" + y1+" Và  " + y2;
+					document.getElementById('ketqua').innerHTML = ketqua;
+
+				}
+			}
+		}
+
+	</script>
+
+</body>
+</html>
