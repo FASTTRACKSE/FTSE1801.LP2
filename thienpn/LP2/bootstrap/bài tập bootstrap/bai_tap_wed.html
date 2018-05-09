@@ -1,0 +1,59 @@
+<html>
+	<head><title></title>
+
+        <script type="text/javascript" src ="jquery-3.3.1.js"></script>
+       <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <script type="text/javascript" src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div>
+			<head>
+				<div class="row header-top">
+					<div class="col-xs-4 col-sm-4 col-md-7 but">
+						<h1>Learning HTML5</h1>
+						<p> A responsive wedsite tutorial</p>
+					</div>
+					<nav class="col-xs-8 col-sm-8 col-md-5 right">
+						<ul class="nav navbar-nav">
+							<li><a href="#">HOME</a></li>
+							<li><a href="#">PORTFOLIO</a></li>
+							<li><a href="#">ABOUT</a></li>
+						</ul>
+					</nav>
+				</div>
+			</head>
+			<div>
+				<div class="thu">
+					<h2>Lorem</h2>
+					<p>A responsive wedsite tutorialA responsive wedsite tutorialA responsive wedsite tutorialA responsive wedsite tutorial</p>
+					<h4>MORE</h4>
+				</div>
+				<div>	
+						<img class="slide" src="slide1.jpg" style="width:100%">
+						<img class="slide" src="slide2.jpg" style="width:100%">
+						<img class="slide" src="slide3.jpg" style="width:100%">
+						<img class="slide" src="slide4.jpg" style="width:100%">
+						<img class="slide" src="slide5.jpg" style="width:100%">
+					
+				</div>
+				<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slide");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
+			</div>
+		</div>
+	</body>
+</html>
