@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phương Trình Bậc Nhất</title>
+</head>
+<body>
+	<label>Số A </label>
+	<input id ="nhap1"  type="number" name="Phương trình bậc nhất" value="" ><br>
+	<label>Số B </label>
+	<input id="nhap2"  type="number" name="Phương trình bậc nhất" value="" ><br>
+	<label>Phương trình: </label>
+	<p id="ketqua"></p>
+	<button onclick="timnghiem()">Tính toán</button>
+	<script>
+		function timnghiem() {
+			var x1=document.getElementById('nhap1');
+			var x2=document.getElementById('nhap2');
+			var a =x1.value;
+			var b = x2.value;
+			var nghiem = -b/a;
+			if ((a == 0)&&(b ==0)) {
+				ketqua = "Có vô số nghiệm";
+			document.getElementById('ketqua').innerHTML = ketqua;
+		}
+		else if((a == 0)&&(b != 0)){
+			ketqua = "Vô nghiệm";
+			document.getElementById('ketqua').innerHTML = ketqua;
+		}
+		else{
+			ketqua = nghiem;
+			document.getElementById('ketqua').innerHTML = ketqua;
+		}
+		}
+
+	</script>
+
+</body>
+</html>

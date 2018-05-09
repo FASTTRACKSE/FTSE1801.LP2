@@ -15,3 +15,4 @@
 1. [Bài 1 - PTBN](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/sonvd/JS/JS1/Assigment06-1.html)
 2. [Bài 2 - PTB2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/sonvd/JS/JS1/Assigment06-2.html)
 3. [Bài 3 - ĐTB&XL](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/sonvd/JS/JS1/Assigment06-3.html)
+4. [Bài 4 - Aassignment7](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/sonvd/JS/JS2/Assignment7.html)
