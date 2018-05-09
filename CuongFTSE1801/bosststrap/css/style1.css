@@ -1,0 +1,51 @@
+.bold{font-family: lato-bold;}
+.light{font-family: lato-light;}
+.regular{font-family: lato-regular;}
+.italic{font-family: lato-italic;}
+.white{color: white;}
+/* bắt đầu css cho phần header-menu*/
+.header-top{
+	background:#fff;
+}
+.logo{
+	padding:15px 0px 15px 30px;
+}
+.header-menu{
+	padding: 28px 0px;
+	text-align: center;
+}
+.header-menu li{
+	padding: 0px 5px;
+}
+.header-menu a{
+	padding: 15px;
+	color:#000;
+}
+.header-menu a:hover{
+	background:#1bbc9b;
+	text-decoration: none;
+	color: #fff;
+}
+/* kết thúc css cho phần header- meu*/
+/*bắt đầu css cho phần header-title*/
+.header-title{
+	background: url(../images/headerbg.jpg);
+	background-repeat: repeat;
+	text-align: center;
+}
+.title{
+	padding: 80px 0px;
+}
+.title span{
+	font-size: 55px;
+	padding: 0px 5px
+}
+.title p{
+	font-size: 18px
+	padding:20px 0px;
+}
+.button{
+	background: #1bbc9b
+}
+
+/* kết thúc css cho phần header-title*/
