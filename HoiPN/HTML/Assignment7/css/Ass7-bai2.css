@@ -1,0 +1,19 @@
+ul{
+	padding-top: 20px;
+}
+.header{
+	width: 100%;
+	height: 100px;
+	background-color: #ebe8de;
+}
+.mySlides {display:none;}
+.Search{
+	width: 100%;
+	height: 60px;
+	background-color: #e56038;
+}
+.dongchu{
+	position: absolute;
+	top: 150px;
+	left: 50px;
+}
