@@ -1,4 +1,3 @@
 # FTSE1801.LP2-khai
-#bt1
-#bt2
-HTML, CSS &amp; JavaScript
+#HTML
+1.[bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/tree/master/khaigia/HTML/Assigment1)
