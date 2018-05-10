@@ -16,3 +16,4 @@
 #### Bootstrap
 1. [Bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/CuongFTSE1801/bosststrap/DKTT.html)
 2. [Bài tập 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/CuongFTSE1801/bosststrap/webHtml.html)
+3. [Bài tập 3](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/CuongFTSE1801/bosststrap/DKTT.html)
