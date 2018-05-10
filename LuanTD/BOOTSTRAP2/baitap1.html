@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài tập 1</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js-3.3.1.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<style type="text/css">
+		p {
+		    margin: 5px 0;
+		    line-height: 25px;
+		}
+		header{
+			border-top: 3px solid #e56038;
+		}
+		.logo h1 {
+		    margin: 35px 0 0 0;
+		    font-size: 55px;
+		    color: #e56038;
+		    font-family: 'Baumans';
+		}
+		.logo p {
+		    font-size: 16px;
+		}
+		.header-menu{
+			padding-top: 50px;
+		}
+		.header-menu a{
+			color: #999999;
+		}
+		.header-menu a:hover{
+			color: white;
+		}
+		.more:hover{
+			text-decoration: none;
+		}
+		#more2 a{
+			border-radius: 0px;
+			color: #999999;
+		}
+		#more2 a:hover{
+			text-decoration: none;
+		}
+		.tren{
+			width: 25%;
+			margin-top: 20px;
+			margin-left: 170px; 
+			position: absolute;
+			z-index: 2;
+		}
+		.tren h3 {
+			opacity: 0.6;
+		    color: #EBE8DE;
+		    font-weight: bold;
+		    margin-bottom: 10px;
+		    background-color: #333333;
+		    padding: 10px 15px;
+		    border-radius: 15px 0 15px 0;
+		    display: inline-block;
+		}
+		.tren ul{
+			padding-top:  20px;
+		}
+		.tren p{
+			opacity: 0.6;
+			background-color: white;
+			border-radius: 8px;
+			height: 130px;
+			padding: 15px;
+		}
+		.w3-section{
+			position: relative;
+		}
+		.hinh1{
+			position: absolute;
+		}
+		.hinh2{
+			background: black;
+			width: 250px;
+			height: 150px;
+			position: relative;
+			opacity: 0;
+		}
+		.hinh2 img{
+			padding: 25% 40%;
+		}
+		.hinh2:hover{
+			opacity: 0.3;
+		}
+		input{
+			height: 40px;
+			border-radius: 5px;
+		}
+		.rocket, .clock {
+		    width: 80px;
+		    height: 80px;
+		}
+
+		/*Rocket Animation*/
+		.rocket:hover{
+		    animation: blashoff ease 1s;
+		    animation-iteration-count: infinite;
+		}
+
+		@keyframes blashoff{
+		  0% {
+		    opacity:1;
+		    transform:  translate(0px,0px)  ;
+		  }
+		  100% {
+		    opacity:0.4;
+		    transform:  translate(250px,-200px)  ;
+		  }
+		}
+
+		/*Clock Animation*/
+		.clock:hover{
+		    animation: shake linear 0.1s;
+		    animation-iteration-count: infinite;
+		}
+
+		@keyframes shake{
+		  0% {
+		    transform:  translate(0px,0px)  ;
+		  }
+		  100% {
+		    transform:  translate(20px,0px)  ;
+		  }
+		}
+		#ul li{
+			list-style-image: url("img/arrowright2.png");
+			margin-left: -40px;
+			border-bottom: 0.5px solid;
+			padding: 8px 0px;
+			color: #999999;
+		}
+		#ul li a{
+			color:  #999999;
+		}
+		#ul li a:hover{
+			color: white;
+			text-decoration: none;
+		}
+		.eram{
+			color: #999999;
+		}
+		.eram:hover{		
+			color: white;
+			text-decoration: none;
+		}
+		.eram img:hover{
+			color: white;
+			text-decoration: none;
+		}
+		#icon a img{
+			opacity: 0.3;
+		}
+		#icon a img:hover{
+			opacity: 1;
+		}
+		#exam{
+			color: #ababab;
+		}
+		#exam:hover{
+			text-decoration: none;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<header>
+			<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-7 logo">
+				<h1>Learning HTML5</h1>
+				<p>A responsive website tutorial</p>
+			</div>
+			<nav class="col-xs-8 col-sm-8 col-md-5 header-menu">
+				<ul class="nav navbar-nav">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">PORTFOLIO</a></li>
+					<li><a href="#">ABOUT</a></li>
+				</ul>
+			</nav>
+			</div>
+			<div>
+				<div class="tren">
+				<h3>Lorem</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, deserunt, necessitatibus? Adipisci reprehenderit soluta quisquam iure deserunt ea corrupti illo. <a class="more" href="#" style="color: black;">More...</a></p>
+				<h3 id="more2"><a href="#">More</a></h3>
+				</div>
+				<div class="w3-content w3-section" style="max-width:100%">		
+					<img class="mySlides" src="img/slide1.jpg" style="width:100%">
+					<img class="mySlides" src="img/slide2.jpg" style="width:100%">
+					<img class="mySlides" src="img/slide3.jpg" style="width:100%">
+					<img class="mySlides" src="img/slide4.jpg" style="width:100%">
+					<img class="mySlides" src="img/slide5.jpg" style="width:100%">
+				</div>
+			<script>
+
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+			    var i;
+			    var x = document.getElementsByClassName("mySlides");
+			    for (i = 0; i < x.length; i++) {
+			       x[i].style.display = "none";  
+			    }
+			    myIndex++;
+			    if (myIndex > x.length) {myIndex = 1}    
+			    x[myIndex-1].style.display = "block";  
+			    setTimeout(carousel, 2000); // Change image every 2 seconds
+			}
+			</script>
+			</div>
+			<div style="background-color: #e56038; height: 100px; padding-top: 40px;">
+				<p class="col-xs-6 col-sm-6 col-md-6" style="font-size: 16px; color: white; padding-left: 100px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit?</p>
+				<input class="col-xs-3 col-sm-3 col-md-3" type="text" value="Enter the word...">
+				<input class="col-xs-3 col-sm-3 col-md-3" type="submit"  value="Search" style="background-color: #333333; color: white; width: 100px; ">
+			</div>
+		</header>
+		<div style="margin-top: 30px; margin-left: 20%; padding-top: 100px;">
+			<div class="col-xs-6 col-sm-4 col-md-3">
+				<div style="float: left; height: 130px;">
+				<img src="img/icon1.png">
+				</div>
+				<h3 style="margin-top: 0px;">Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem magnam tenetur culpa</p>
+			</div>
+			<div class="col-xs-6 col-sm-4 col-md-3">
+				<div style="float: left; height: 130px;">
+				<img src="img/icon2.png">
+				</div>
+				<h3 style="margin-top: 0px;">Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem magnam tenetur culpa</p>
+			</div>
+			<div class="col-xs-6 col-sm-4 col-md-3">
+				<div style="float: left; height: 130px;">
+				<img src="img/icon3.png">
+				</div>
+				<h3 style="margin-top: 0px;">Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem magnam tenetur culpa</p>
+			</div>
+		</div>
+		<div class="container container-max" style="clear: left; padding-top: 100px;">
+			<h3 style="border-bottom: 1px solid #999999;">Lorem ipsum</h3>
+			<div class="col-xs-8 col-sm-3 col-md-3">
+				<div class="hinh1">
+				<img src="img/lightbox-1.jpg" width="250px" height="150px">
+				<h4 style="border-bottom: 1px solid #999999;">Photo by: Lorem</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="hinh2">
+					<div data-toggle="modal" data-target="#myModal1">
+						<img src="img/zoom.png">
+					</div>
+					
+				</div>
+				<div id="myModal1" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<img src="img/lightbox-1.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-8 col-sm-3 col-md-3">
+				<div class="hinh1">
+				<img src="img/lightbox-2.jpg" width="250px" height="150px">
+				<h4 style="border-bottom: 1px solid #999999;">Photo by: Ipsum</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="hinh2">
+					<div data-toggle="modal" data-target="#myModal2">
+						<img src="img/zoom.png">
+					</div>
+					
+				</div>
+				<div id="myModal2" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<img src="img/lightbox-2.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-8 col-sm-3 col-md-3">
+				<div class="hinh1">
+				<img src="img/lightbox-3.jpg" width="250px" height="150px">
+				<h4 style="border-bottom: 1px solid #999999;">Photo by: Dolor</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="hinh2">
+					<div data-toggle="modal" data-target="#myModal3">
+						<img src="img/zoom.png">
+					</div>
+					
+				</div>
+				<div id="myModal3" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<img src="img/lightbox-3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-8 col-sm-3 col-md-3">
+				<div class="hinh1">
+				<img src="img/lightbox-4.jpg" width="250px" height="150px">
+				<h4 style="border-bottom: 1px solid #999999;">Photo by: Amet</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="hinh2">
+					<div data-toggle="modal" data-target="#myModal4">
+						<img src="img/zoom.png">
+					</div>
+					
+				</div>
+				<div id="myModal4" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<img src="img/lightbox-4.jpg">
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="col-xs-8 col-sm-6 col-sm-6" style=" padding-top: 200px;">
+				<h3 style="border-bottom: 1px solid #999999;">Dolor sit amet</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aperiam optio eius nesciunt ipsa velit culpa assumenda perspiciatis dicta. Maiores, eum saepe, accusantium voluptatum est officiis deserunt nesciunt voluptas aut?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem labore, iste ratione suscipit quidem vero aliquam ducimus doloremque voluptate veritatis sapiente sequi impedit deserunt totam aperiam illo similique quia dolor.</p>
+				</div>
+				<div class="col-xs-8 col-sm-6 col-sm-6" style="margin-top: 50px; padding-top: 200px; padding-bottom: 100px;">
+					<div>
+						<img class="rocket" src="img/icon4.png"  style="float: left; padding-right:20px;">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div style="clear: left;">
+						<img class="clock" src="img/icon5.png" style="float: left;  padding-right:20px;">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div style="background: #333333;color: white;">
+			<div class="container container-max">
+				<div class="col-xs-6 col-sm-4 col-md-4">
+					<h3 style="border-bottom: 1px solid; color: #999999;">Lorem ipsum</h3>
+					<p style="color: #999999;">Eram consequat si anim aute, voluptate nisi culpa fabulas culpa. Ea ab nulla commodo, dolore est excepteur ut fugiat, probant cohaerescant id doctrina, de noster quorum qui commodo, eram nam expetendis do est quid fugiat ex laboris ex de nam fugiat laboris, nulla offendit iis expetendis.</p>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4">
+					<h3 style="border-bottom: 1px solid; color: #999999;">Consectetuer</h3>
+					<ul style="list-style-position: inside;" id="ul">
+						<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+						<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+						<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+						<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4">
+					<h3 style="border-bottom: 1px solid; color: #999999;">Dolor sit amet</h3>
+					<div style="float: left; padding-bottom: 10px;">
+						<a class="eram" href="#"><img src="img/lightbox-1sml.jpg" style="float: left; width: 25%; border:3px solid #444444;">Eram consequat si anim aute, voluptate nisi.</a>
+					</div>
+					<div style="float: left; padding-bottom: 10px;">
+						<a class="eram" href="#"><img src="img/lightbox-2sml.jpg" style=" clear: left; float: left; width: 25%; border:3px solid #444444;">Eram consequat si anim aute, voluptate nisi.</a>
+					</div>
+					<div style="float: left;">
+						<a class="eram" href="#""><img src="img/lightbox-3sml.jpg" style=" clear: left;float: left; width: 25%; border:3px solid #444444;">Eram consequat si anim aute, voluptate nisi.</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="color: #5e5e5e; text-align: center; height: 100px; background-color: black;">
+			<div class="col-xs-8 col-sm-8">
+				<h4 style="padding-top: 20px;">© Copyright 2016 by <a id="exam" href="#";">Example</a>. All Rights Reserved.</h4>
+			</div>
+			<div id="icon" class="col-xs-4 col-sm-4" style="padding-top: 20px; height: 39px;">
+				<a href="#"><img src="img/icon6.png"></a>
+				<a href="#"><img src="img/icon7.png"></a>
+				<a href="#"><img src="img/icon8.png"></a>
+				<a href="#"><img src="img/icon9.png"></a>
+				<a href="#"><img src="img/icon10.png"></a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
