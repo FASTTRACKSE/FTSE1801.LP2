@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ví dụ 1</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js-3.3.1.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		.container{
+			padding: 20px;
+		}
+		.header-top{
+			background-color: #fff;
+		}
+		.logo{
+			padding: 15px 0px 15px 30px;
+		}
+		.header-menu{
+			padding: 28px 0px;
+			text-align: center;
+		}
+		.header-menu li{
+			padding: 0px 5px;
+		}
+		.header-menu a{
+			padding: 15px;
+			color: #000;
+		}
+		.header-menu ul li a:hover {
+			background: #1bbc9b;
+			text-decoration: none;
+			color: white;
+		}
+		.header-title{
+			background-image: url(img/headerbg.jpg);
+			text-align: center;
+		}
+		.title{
+			padding: 80px 0px;
+		}
+		.title span{
+			font-size: 55px;
+			padding: 0px 20px;
+			color:  white;
+		}
+		.title p{
+			font-size: 18px;
+			padding: 20px 0px;
+			color: white;
+		}
+		.button{
+			background: #1bbc9b;
+		}
+		#portfolio{
+			background: #fff;
+			text-align: center;
+			padding: 0px 50px;
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+		.portfolio-title{
+			padding-bottom: 30px;
+		}
+		.portfolio-title p{
+			font-size: 16px;
+		}
+		.portfolio-list-btn{
+			margin: 0 20%;
+			padding-bottom: 25px;
+		}
+		.portfolio-btn{
+			padding: 5px 0px;
+		}
+		.portfolio-btn a:hover{
+			color: #fff;
+		}
+		.portfolio-icon{
+			padding: 15px 0px;
+		}
+		#about-us{
+			background: #1bbc9b;
+			text-align: center;
+			padding: 50px 10%;
+		}
+		.about-title{
+			padding-bottom: 45px;
+		}
+		.about-post{
+			padding: 10px 0px;
+		}
+		.about-text{
+			background: #fff;
+			width: 220px;
+			margin: 0 auto;
+			padding: 10px 5px; 
+		}
+		.about-text span{
+			font-size: 18px;
+		}
+		.about-text p{
+			font-size: 14px;
+		}
+		.footer{
+			background: #2d3e50;
+			padding: 20px 0px;
+		}
+		.footer-left{
+			font-size: 14px;
+			color: #fff
+		}
+		.footer-left p{
+			line-height: 45px;
+		}
+		.footer-right a{
+			background: #1bbc9b;
+			color: #fff;
+			float: right;
+			padding: 15px;
+			text-decoration: none;
+		}
+		.footer-right a:hover{
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="container container-max">
+		<header>
+			<div class="row header-top">
+				<div class="col-xs-4 col-sm-4 col-md-7 logo">
+					<h1><a href="#"><img src="img/logo.png"></a></h1>
+				</div>
+				<nav class="col-xs-8 col-sm-8 col-md-5 header-menu">
+					<ul class="nav navbar-nav">
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">PROFILO</a></li>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+					
+				</nav >
+			</div>
+			<div class="row header-title">
+				<div class="col-xs-12 title">
+					<span class="text-light-white">WE BUILD </span><span class="text-boldwhite"><b>BRAND</b></span>
+					<p class="text-regularwhite">
+						Lorem  iprum dolor  sit amet, consectetur adipiscing elit, sed do eiusmod,  tempor incididunt ut labore magna aliqua
+					</p>
+					<button class="button btn white">LEARN MORE</button>
+					<p><a href="#"><img src="img/btn.png"></a></p>
+				</div>
+			</div>
+		</header>
+		<div id="portfolio">
+			<div class="row portfolio-title">
+				<h2 class="regular">Portfolio</h2>
+				<p class="regular">Lorem ipsum dolor sit amet, consectetuer adipscing elit</p>
+			</div>
+			<div class="row portfolio-list-btn">
+				<div class="col-xs-12 col-sm-12 col-md-3 portfolio-btn"><a class="btn button" href="#">All</a></div>
+				<div class="col-xs-12 col-sm-12 col-md-3 portfolio-btn"><a class="btn button" href="#">WEB DESIGN</a></div>
+				<div class="col-xs-12 col-sm-12 col-md-3 portfolio-btn"><a class="btn button" href="#">GRAPHIC DESIGN</a></div>
+				<div class="col-xs-12 col-sm-12 col-md-3 portfolio-btn"><a class="btn button" href="#">FLAT DESIGN</a></div>
+			</div>
+			<div class="row portfolio-list-icon">
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<a href="#"><img class="img-circle" src="img/img-2.png"></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<a href="#"><img class="img-circle" src="img/img-4.png"></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<a href="#"><img class="img-circle" src="img/img-6.png"></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<a href="#"><img class="img-circle" src="img/img-5.png"></a>
+				</div>
+			</div>
+			<div class="row portfolio-list-icon">
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<a href="#"><img class="img-circle" src="img/img-4.png"></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<a href="#"><img class="img-circle" src="img/img-3.png"></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<a href="#"><img class="img-circle" src="img/img-2.png"></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<a href="#"><img class="img-circle" src="img/img-1.png"></a>
+				</div>
+			</div>
+		</div>
+		<div id="about-us" style="margin-left: -15px; margin-right: -15px;">
+			<div class="row about-title">
+				<h2 style="color: white;">About us</h2>
+				<p style="color: white;">Lorem ipsum dolor sit amet, consectetuer adipscing elit</p>
+			</div>
+			<div class="row about-list-post">
+				<div class="col-xs-12 col-sm-12 col-md-4 about-post">
+					<div class="about-img"><img src="img/ava-1.jpg"></div>
+					<div class="about-text">
+						<span>Melannie Doe</span>
+						<p class="italic">Project Manager</p>
+						<p class="regular text-left">Ut wisi enim ad minim veniam, quis nostrud exerci tationullamcorper suscupit lobortis nislut aliquip ẽ ea commodo consequat.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 about-post">
+					<div class="about-img"><img src="img/ava-2.jpg"></div>
+					<div class="about-text">
+						<span>Melannie Doe</span>
+						<p class="italic">Project Manager</p>
+						<p class="regular text-left">Ut wisi enim ad minim veniam, quis nostrud exerci tationullamcorper suscupit lobortis nislut aliquip ẽ ea commodo consequat.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 about-post">
+					<div class="about-img"><img src="img/ava-3.jpg"></div>
+					<div class="about-text">
+						<span>Melannie Doe</span>
+						<p class="italic">Project Manager</p>
+						<p class="regular text-left">Ut wisi enim ad minim veniam, quis nostrud exerci tationullamcorper suscupit lobortis nislut aliquip ẽ ea commodo consequat.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contact"  style="background-color: #ebeff0; margin-left: -15px; margin-right: -15px;">
+			<div class="row contact-title" style="text-align: center;">
+				<h2 class="regular">Contact us</h2>
+				<p class="regular">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+			</div>
+			<div class="row contact-form">
+				<div class="col-xs-12 col-sm-12 col-md-6 form-left" style="text-align: right; padding-left: 50px;">
+					<form method="post" class="form-group">
+						<input class="form-control" type="text" placeholder="Your name" required="" style="width: 200px; float: left;">
+						<input class="form-control form-email" type="email" placeholder="Your email" required="" style="width: 200px; float: right;">
+						<textarea rows="5" class=" form-control" placeholder="Your Messenger"></textarea>
+						<button class="btn button" type="submit">Submit</button>
+					</form>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 form-right">
+					<p class="regular">INFOMATION</p>
+					<P class="regular">Bak-One Company<br>
+						12345 Hollywood Bvld Street<br>
+						Los Angeles, California<br></P>
+					<p class="regular">+444 (Phone) 123456</p>	
+					<p class="regular">+123 (Fax) 00011223</p>
+					<p class="regular">info@bak-onecompany.com</p>
+				</div>
+
+			</div>
+		</div>
+		<div class="row footer">
+			<div class="col-xs-12 col-sm-6 footer-left">
+				<p class="regular">&copy Copyright 2013 Bak-one ! One page Flat Template</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 footer-right">
+				<a href="#header" class="glyphicon glyphicon-chevron-up"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

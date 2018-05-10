@@ -1,0 +1,52 @@
+
+
+body {
+	font-size: 63%;
+	font-family: Helvetica, sans-serif;
+	
+}
+
+p {
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+
+#noidung {
+	width: 700px;
+	background: white;
+	padding: 20px;
+	margin: 30px auto;
+	height: 500px;
+	
+	
+}
+
+#div2 {
+	width: 600px;
+	margin-top: 30px;
+}
+
+#div2 input, #div2 textarea {
+	padding: 5px;
+	width: 470px;
+	font-family: Helvetica, sans-serif;
+	font-size: 18px;
+	margin:10px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+
+
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 18px;
+}
+#submit{
+	float: right;
+	width: 10%;
+}

@@ -1,0 +1,19 @@
+img{
+ float: left;
+ margin-right: 10px; 
+}
+.d2{
+	margin-left: 5px;
+}
+p{
+	width: 1100px;
+	margin-left: 5px;
+	
+}
+h3{
+	width: 1200px;
+
+}
+.clr{
+	clear: both;
+}

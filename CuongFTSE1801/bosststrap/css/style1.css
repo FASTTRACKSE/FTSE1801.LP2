@@ -1,0 +1,152 @@
+.bold{font-family: lato-bold;}
+.light{font-family: lato-light;}
+.regular{font-family: lato-regular;}
+.italic{font-family: lato-italic;}
+.white{color: white;}
+/* bắt đầu css cho phần header-menu*/
+.header-top{
+	background:#fff;
+}
+.logo{
+	padding:15px 0px 15px 30px;
+}
+.header-menu{
+	padding: 28px 0px;
+	text-align: center;
+}
+.header-menu li{
+	padding: 0px 5px;
+}
+.header-menu a{
+	padding: 15px;
+	color:#000;
+}
+.header-menu a:hover{
+	background:#1bbc9b;
+	text-decoration: none;
+	color: #fff;
+}
+/* kết thúc css cho phần header- meu*/
+/*bắt đầu css cho phần header-title*/
+.header-title{
+	background: url(../images/headerbg.jpg);
+	background-repeat: repeat;
+	text-align: center;
+}
+.title{
+	padding: 80px 0px;
+}
+.title span{
+	font-size: 55px;
+	padding: 0px 15px
+}
+.title p{
+	font-size: 18px
+	padding:20px 0px;
+}
+.button{
+	background: #1bbc9b
+}
+/* kết thúc css cho phần header-title*/
+/*Bắt đầu phần portfolio*/
+#Portfolio{
+	background:#fff;
+	text-align: center;
+	padding: 50px 0px;
+}
+.Portfolio-tilte{
+	padding-bottom: 30px;
+}
+.Portfolio-tilte p{
+	font-size: 16px;
+}
+.Portfolio-list-btn{
+	margin:0 20%;
+	padding: 25px;
+}
+.Portfolio-btn{
+	padding: 5px 0px
+}
+.Portfolio-btn a:hover{
+	color:#fff;
+}
+.Portfolio-icon{
+	padding: 15px 0px;
+}
+/*Bắt đầu CSS phần about us*/
+#about-us{
+	background:#1bbc9b;
+	text-align: center;
+	padding: 50px 10%;
+}
+.about-title{
+	padding-bottom: 45px;
+}
+.about-post{
+	padding: 10px 0px;
+	
+}
+.about-text{
+	background:#fff;
+	width:220px;
+	margin: 0 auto;
+	padding: 10px 5px;
+
+}
+.about-text span{
+	font-size:  18px;
+}
+.about-text p{
+	font-size: 14px;
+}
+
+
+.footer{
+	background:#2d3e50;
+	padding: 20px 0px;
+}
+.footer-left{
+	font-size: 14px;
+	color: #fff;
+}
+.footer-left p{
+	line-height: 45px;
+}
+.footer-right a{
+	background: #1bbc9b;
+	color: #fff;
+	float: right;
+	padding: 15px;
+	text-decoration: none;
+}
+.footer-right a:hover{
+	color: #000;
+}
+.form-email{
+	float: right;
+}
+.form-text{
+	float: left;
+	margin-bottom: 20px;
+}
+.form-control{
+	margin-bottom: 20px;
+}
+.form-button{
+	float: right;
+}
+.form-left{
+	margin-left: 20px;
+}
+.form-contact{
+	margin-left: 500px;
+}
+h2 {
+	margin-left: 800px
+}
+.p{
+	margin-left: 700px
+}
+.footer-row{
+	margin-top: 50px
+}
