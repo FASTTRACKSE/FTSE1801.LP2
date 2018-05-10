@@ -1,0 +1,39 @@
+body{
+	border-top: solid 5px #e56038;
+    background: #ebe8de;
+    font-family: "Open Sans",Sans-serif;
+    
+}
+ 
+.but{padding: 15px 0px 15px 80px;
+      
+}
+.but h1{
+	color:#e56038;
+}
+.right{
+	padding: 30px 20px 0px 50px;
+	font-size: 20px;
+}
+.thu{
+
+	position: absolute;
+	z-index: 2;
+
+}
+.thu h2{
+	border: solid #2a5b6c;
+	background-color: #2a5b6c;
+	width: 100px;
+}
+
+.thu p{
+	border:solid white;
+	background-color: white;
+	width: 300px;
+}
+.thu h4{
+	border: solid #2a5b6c;
+	background-color: #2a5b6c;
+	width: 70px;
+}
