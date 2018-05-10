@@ -1,0 +1,195 @@
+.d1{
+	background-color: #272822;
+	height: 100px;
+}
+.im{
+	float: left;
+	margin-left: 60px;
+}
+.im2{
+	float: left;
+	margin-left: 60px;
+	margin-top: 35px;
+}
+.im3{
+	float: left;
+	margin-left: 30px;
+	margin-top: 45px;
+	font-size: 15px;
+	color: #84857F;
+	display: inline;
+}
+.im4{ 
+	width: 220px;
+	margin-left: -5px;
+	height: 50px;
+}
+.d2{
+	background-color: #373833;
+	height: 50px;
+}
+.clr{
+	clear: both;
+}
+.im5{
+	width: 220px;
+	margin-left: 60px;
+	height: 50px;
+}
+.im6{
+	float: right;
+	margin-right: 50px;
+	margin-top: 30px; 
+}
+
+.information {
+	display: inline-flex;
+	background-color: #E8E3DF;
+	width: 1504px;
+}
+
+.img-content1{
+	
+	
+	position: relative;
+	margin-left: 20px;
+
+
+}
+.img-content2{
+	
+	
+	position: relative;
+	margin-left: -100px;
+}
+.txt-img-1 {
+	position: 	absolute;	
+	top: 	70px;
+	left: 	210px;
+	margin-left: 60px;
+
+}
+
+.txt1 {
+	font-weight: 	600px	;
+	font-size: 23px;
+	color: #505044;
+}
+.txt2 {
+	font-size: 	13pt;
+	color: #758139;
+}
+.im111{
+	margin-top: 20px;
+}
+
+
+
+
+.m8{
+	margin-top: 30px;
+	width: 420px;
+	height: 200px;
+	margin-left: 100px;
+}
+
+	
+.im11{
+	float: left;
+	margin-top: 5px;
+
+}
+.d5{
+	float: left;
+	width: 500px;
+	padding-left: 100px;
+	height: 450px;
+	margin-top: 50px;
+}
+.h5{
+	margin-left: 100px;
+	font-size: 30px;
+
+}
+.im12{
+	float: right;
+	margin-top: 20px;
+}
+.h2{
+	margin-top: 45px; 
+	margin-bottom: 50px;
+	color: #61574E;
+	margin-left: 10px;
+	display: inline;
+}
+.h3{
+	margin-top: 35px;
+	color: #6F7C2A;
+	font-size: 20px;
+}
+.p1{
+	color:  #635A53;
+	font-size: 18px;
+	margin-left: 5px;
+	display: inline;
+	padding: 10px;
+
+}
+.d6{
+	width: 500px;
+	height: 450px;
+	float: right;
+	padding-right: 200px;
+	margin-top: 50px;
+}
+.a1{
+	float: left;
+	display: inline;
+	color: #FF8D00;
+	font-size: 20px;
+	text-decoration: underline;
+	width: 100px;
+	height: 60px;
+}
+.im13{
+	margin-top: 40px;
+	display: inline-flex;
+}
+.p{
+	color: #FF8D00;
+	display: inline;
+	margin-left: 10px;
+	width: 100px;
+	height: 100px;
+}
+.p2{
+	color: #FF8D00;
+	display: inline;
+	margin-left: 13px;
+}
+.d7{
+	background-color: #E7E2DE;
+	height: 100px;
+
+}
+.h4{
+	float: right;
+	margin-top: 35px;
+	margin-right: 100px;
+	color: #61584F;
+	 font-style: italic;
+}
+
+.clock-link {
+	width: 70px;
+	padding-right: 15px;
+}
+
+.char-sub {
+	color: #FF8D00;
+    font-size: 20px;
+}
+
+.txt-content {
+	padding-left: 15px;
+}
