@@ -2,16 +2,50 @@
 <html>
 <head>
 	<title>bài 1</title>
+	<script src="jquery-3.3.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
 </head>
 <body>
+	<form id="form1" action="javascript:void(0)">
+		<p id="pt">ax+b=0</p>
 	<label>số A: </label>
-	<input id="nhap1"  type="number" name="phương trình bậc nhất" value="" ><br><br>
+	<input id="nhap1"  type="text" name="giatri_a" value="" ><br><br>
 	<label>số B: </label>
-	<input id="nhap2"  type="number" name="phương trình bậc nhất" value="" ><br><br>
+	<input id="nhap2"  type="text" name="giatri_b" value="" ><br><br>
     <label>Phương trình bậc nhất:</label>
      <p id="ketqua"></p>
-     <button  onclick="tinh()">Tính toán</button>
-     <script>
+     <button >Giải pt</button>
+     <script type="text/javascript">
+
+	 var rs=$("#form1").validate({//tên form
+rules:{
+	 
+	 giatri_a:{
+	 required: true,
+	 number: true
+	},
+	giatri_b: 'required'
+	//compound rule
+
+},
+messages:{
+	giatri_a:{
+		required:'vui lòng nhập a',
+		number:'giá trị a chỉ được nhập số'
+	},
+	giatri_b:{
+		required:'vui lòng nhập số b',
+	}
+}
+});
+	 $("#form1").on('submit',function(){
+	 	if(rs.valid()==true){
+	 		tinh();
+	 	}
+
+	 })
+</script>
+     <script type="text/javascript">
 
 		function tinh() {
 			var x1=document.getElementById('nhap1');
@@ -34,5 +68,7 @@
 	}
 
 	</script>
+	
+</script>
 </body>
 </html>
