@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/web.css">
+	
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.css"	>
+	<script src="../jquery-3.3.1/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	
+</head>
+<body>
+	<header class="header  ">
+    <div class="col-xs-12 col-sm-6 col-md-6">	
+    <h1 class="header-h1">Learning HTML5</h1>
+    <p class="header-p">A responsive website tutorial</p>
+   	</div>
+    <nav class="row col-xs-12 col-sm-6 col-md-6  menu">
+			<ul class="nav navbar-nav pull-right">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">PROFILO</a></li>
+				<li><a href="#">ABOUT</a></li>
+						
+			</ul>
+	</nav><!--end header menu-->
+    
+	</header>
+	
+	
+   <div class="">
+    	<div class="hienthitext">
+        	<h3>Lorem</h3>
+	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, deserunt, necessitatibus? Adipisci reprehenderit soluta quisquam iure deserunt ea corrupti illo.More...<br></p>
+	        <a class="button" href="javascript:void(0)">More</a>
+   		</div>
+	 	 <div class="anhnen" >
+	  		<img class="mySlides" src="../img/slide1.jpg" style="width:100%">
+	  		<img class="mySlides" src="../img/slide2.jpg" style="width:100%">
+	  		<img class="mySlides" src="../img/slide3.jpg" style="width:100%">
+	  		<img class="mySlides" src="../img/slide4.jpg" style="width:100%">
+	  		<img class="mySlides" src="../img/slide5.jpg" style="width:100%">
+		</div>
+
+		<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("mySlides");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";  
+		    setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+		</script>
+	</div >
+	<div style="clear: both;"></div>
+	<div class="buttom ">
+		<label style="color: #fff;" >Lorem ipsum dolor sit amet, consectetur adipisicing elit</label>
+		<input type="text" name="text" value="Enter a word...">
+		<button  type="button" class="btn btn-primary">Search</button>
+	</div>
+	<div class="container">
+		<div class="row phanthan center-block">
+			<div class="col-xs-12 col-sm-6 col-md-3 phanthan1">
+				<img class="" src="../img/icon1.png">
+				
+				<h3>Lorem ipsum</h3>
+	       		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem magnam tenetur culpa</p>
+	       		
+	    	</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 phanthan1">
+
+				<img src="../img/icon2.png">
+				
+				<h3>Consectetuer</h3>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem magnam tenetur culpa</p>
+		        
+	    	</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 phanthan1">
+				<img src="../img/icon3.png">
+				
+				<h3>Dolor sit amet</h3>
+		      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem magnam tenetur culpa</p>
+		        
+	    	</div>
+		</div>
+	</div>
+	<div class="container">
+		
+			<h2 class="regular phangiua-h2">Lorem ipsum</h2>
+		<div class="row">	
+			<div class="col-xs-12 col-sm-6 col-md-3 phangiua-div" >
+				<a href="#img2" title="Some title">
+					<div class="zoomin"></div>
+					<img width="80%" height="80%" src="../img/lightbox-1.jpg">
+				</a>
+				<p class="phangiua-div-p1">Photo by: Lorem</p>
+				<p class="phangiua-div-p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 phangiua-div" >
+				<a href="#img2" title="Some title">
+					<div class="zoomin"></div>
+					<img width="80%" height="80%" src="../img/lightbox-2.jpg">
+				</a>
+				<p class="phangiua-div-p1">Photo by: Ipsum</p>
+				<p class="phangiua-div-p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 phangiua-div" >
+				<a href="#img2" title="Some title">
+					<div class="zoomin"></div>
+					<img width="80%" height="80%" src="../img/lightbox-3.jpg">
+				</a>
+				<p class="phangiua-div-p1">Photo by: Dolor</p>
+				<p class="phangiua-div-p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 phangiua-div" >
+				<a href="#img2" title="Some title">
+					<div class="zoomin"></div>
+					<img width="80%" height="80%" src="../img/lightbox-4.jpg">
+				</a>
+				<p class="phangiua-div-p1">Photo by: Amet</p>
+				<p class="phangiua-div-p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<h2 class="regular phantext-h2">Dolor sit amet</h2>
+			<div class="col-xs-12 col-sm-6 col-md-6 phantext-p">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aperiam optio eius nesciunt ipsa velit culpa assumenda perspiciatis dicta. Maiores, eum saepe, accusantium voluptatum est officiis deserunt nesciunt voluptas aut?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem labore, iste ratione suscipit quidem vero aliquam ducimus doloremque voluptate veritatis sapiente sequi impedit deserunt totam aperiam illo similique quia dolor</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 phantext-div">
+				<div class="phantext-div1">
+					<img class="phantext-img" src="../img/icon4.png">
+					<p class="phantext-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+				</div>
+				<div style="clear: both;"></div>
+				<div>
+					<img class="phantext-img" src="../img/icon5.png">
+					<p class="phantext-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ad quis nulla eum saepe.</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="phancuoi">
+		<div class="container ">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4 phancuoi-div1">
+					<h2 class="phancuoi-div2-li">Lorem ipsum</h2>
+					<p>Eram consequat si anim aute, voluptate nisi culpa fabulas culpa. Ea ab nulla commodo, dolore est excepteur ut fugiat, probant cohaerescant id doctrina, de noster quorum qui commodo, eram nam expetendis do est quid fugiat ex laboris ex de nam fugiat laboris, nulla offendit iis expetendis.</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 phancuoi-div2">
+					<h2 class="phancuoi-div2-li">Consectetuer</h2>
+					<ul >
+						
+						<li class="phancuoi-div2-li" ><a href="#">Lorem ipsum dolor sit amet.</a></li>
+						<li class="phancuoi-div2-li"><a href="">Lorem ipsum dolor sit amet.</a></li>
+						<li class="phancuoi-div2-li"><a href="">Lorem ipsum dolor sit amet.</a></li>
+						<li class="phancuoi-div2-li"><a href="">Lorem ipsum dolor sit amet.</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 phancuoi-div3">
+					<h2 class="phancuoi-div2-li" style="color: #fff;">Dolor sit amet</h2>
+					<div class="phancuoi-div3">
+						<a href="#"><img class="phancuoi-img img-thumbnail" width="30%" height="30%" src="../img/lightbox-1.jpg"></a>
+						<p class="phancuoi-p1">Eram consequat si anim aute, voluptate nisi. </p>
+					</div>
+					<div class="phancuoi-div3">
+						<a href="#"><img class="phancuoi-img img-thumbnail" width="30%" height="30%" src="../img/lightbox-2.jpg"></a>
+						<p class="phancuoi-p1">Eram consequat si anim aute, voluptate nisi. </p>
+					</div>
+					<div class="phancuoi-div3">
+						<a href="#"><img class="phancuoi-img img-thumbnail" width="30%" height="30%" src="../img/lightbox-3.jpg"></a>
+						<p class="phancuoi-p1">Eram consequat si anim aute, voluptate nisi. </p>
+						
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="container-max finish">
+		<div class="col-xs-7 col-sm-7 col-xs-7">
+			<p>© Copyright 2016 by <a href="">Example</a>. All Rights Reserved.</p>
+		</div>
+		<div class="col-xs-5 col-sm-5 col-md-5 finish-ul">
+			<ul class="nav navbar-nav">
+				<li><a href=""><img src="../img/icon6.png" class="finish-img"></a></li>
+				<li><a href=""><img src="../img/icon7.png" class="finish-img"></a></li>
+				<li><a href=""><img src="../img/icon8.png" class="finish-img"></a></li>
+				<li><a href=""><img src="../img/icon9.png" class="finish-img"></a></li>
+				<li><a href=""><img src="../img/icon10.png" class="finish-img"></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

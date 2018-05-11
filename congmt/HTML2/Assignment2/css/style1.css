@@ -1,0 +1,42 @@
+div.d1{
+	border: 10px dotted #FFCED7;
+	background-color: #FFFFFF;
+	height: 520px; width: 850px;
+
+}
+p.p1{
+	margin-top: 5px;
+}
+p.p2{
+	margin-top: 5px;
+	padding-left: 1px;
+}
+div.dv2{
+	border: 10px solid #038203;
+	
+	border-left: 5px solid #038203; 
+	background-color: #FFFFFF; 
+	 height: 520px; width: 850px;
+}
+table, tr,th,td{
+	border: 2px solid red;
+	border-collapse: collapse; 
+}
+div.dd1{
+	border: 2px solid black;
+	width: 450px; 
+	float: right;
+}
+.dd2{
+	border: 2px solid #004FF2;
+	width: 450px;
+	float: right;
+}
+.dd3{
+	border: 2px solid green;
+	width: 450px;
+	float: right;
+}
+.p3{
+	color: red;
+}

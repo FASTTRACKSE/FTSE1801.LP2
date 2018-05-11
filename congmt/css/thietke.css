@@ -1,0 +1,169 @@
+.bold{
+	font-family: Lato-Bold;
+}
+.light{
+	font-family: Lato-Light;
+}
+.regular{
+	font-family: Lato-Regular;
+}
+.italic{
+	font-family: Lato-Italic;
+}
+.white{
+	color: white;
+}
+/* Bắt đầu CSS cho phần header-menu */
+.header-top{
+	background: #fff;
+}
+.logo{
+	padding: 15px 0px 15px 30px;
+}
+.header-menu{
+	padding: 28px 0px;
+}
+.header-menu li{
+	padding: 0px 5px;
+}
+.header-menu a{
+	padding:  15px;
+	color: #000;
+}
+.header-menu a:hover{
+	background: #1bbc9b;
+	text-decoration: none;
+	color: #fff;
+}
+/* Kết thúc CSS cho phần header-menu */
+/* Bắt đầu CSS cho phần header-title */
+.header-title{
+	background: url(../img/headerbg.jpg);
+	text-align: center;
+}
+.title{
+	padding: 80px 0px;
+}
+.title span{
+	font-size: 55px;
+	padding: 20px 0px;
+}
+.title p{
+	font-size: 18px;
+	padding: 20px 0px;
+}
+.button{
+	background: #1bbc9b;
+}
+/* Kết thúc CSS cho phần header-title */
+/* Bắt đầu CSS cho phần portfolio */
+#portfolio{
+	background: #fff;
+	text-align: center;
+	padding: 50px 0px;
+}
+.portfolio-title{
+	padding-bottom: 30px;
+}
+.portfolio-title p{
+	font-size: 20px;
+}
+.portfolio-list-btn{
+	
+	
+	margin: 0 20%;
+	padding-bottom: 25px;
+}
+.portfolio-btn{
+	padding: 5px 0px;
+}
+.portfolio-btn a:hover{
+	content: #fff;
+}
+.portfolio-icon{
+	padding: 15px 0px;
+}
+#about{
+	background-color: #1bbc9b;
+	text-align: center;
+	padding: 50px 10%;
+}
+.about-img{
+	position: relative;
+	width: 300px;
+}
+.about-title{
+	padding-bottom: 45px;
+}
+.about-post{
+	padding: 10px 0px;
+}
+.about-text{
+	background-color: #fff;
+	width: 220px;
+	margin: 0 auto;
+	padding: 10px 5px;
+}
+.about-text span{
+	font-size: 18px;
+}
+.about-text p{
+	font-size: 14px;
+}
+#contact{
+	background-color: #ECF0F1;
+	padding: 20px;
+}
+.contact1{
+	text-align: center;
+	font-size: 20px;
+}
+.contact2{
+	margin-top: 30px;
+}
+.input{
+	display:inline;
+	margin-left: 28px;
+}
+.input1{
+	float: right;
+}
+.control{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width:475px;
+	height: 140px;
+	margin-left: 30px;
+}
+
+.butom{
+	float: right;
+	margin-right: 15px;
+	margin-top: -5px;
+}
+.fotter{
+	background-color: #2d3e50;
+	padding: 20px 0;
+	width: 1154px;
+	margin-left: 10px;
+}
+.foter-left{
+	font-size: 14px;
+}
+.p1{
+	font-size: 14px;
+	color: #fff;
+	margin-top: 10px;
+	margin-left: 10px;
+
+}
+.a1{
+	background-color: #1bbc9b;
+	color: #fff;
+	float: right;
+	padding: 15px;
+	text-decoration: none;
+}
+.a1 a:hover{
+	color: #000;
+}
