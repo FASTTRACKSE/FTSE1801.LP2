@@ -1,0 +1,3 @@
+for ( i=1; i<=n; i++); khong can khai báo bi?n cung nhu g?n giá tr? phái trên
+tong +=i
+for (i=n; i>=1; i--);
