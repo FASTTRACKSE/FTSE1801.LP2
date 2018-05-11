@@ -8,7 +8,8 @@
 4. [Bài 4 - Aassignment4](https://github.com/FASTTRACKSE/FTSE1801.LP2/tree/master/sonvd/HTML/HTML4/Assignment4)
 5. [Bài 5 - Aassignment5](https://github.com/FASTTRACKSE/FTSE1801.LP2/tree/master/sonvd/HTML/HTML5/Assignment5)
 6. [Bài 7 - Bootstrap - BT về nhà](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/sonvd/HTML/Bootstrap1/Bootstrap1.html)
-<7
+7. [Bài 8 - Bootstrap - BT về nhà](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/sonvd/HTML/bootstrap/bootstrap.html)
+
 ### CSS
 
 
