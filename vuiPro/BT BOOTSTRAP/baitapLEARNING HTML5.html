@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container-max">
+		<header>
+			<div class="nen">
+				<div class="row">
+					<div class="col-xs-5 col-sm-5 col-md-8 head">
+						<h1>Learning HTML5</h1>
+						<p>A responsive website tutorial</p>
+					</div>
+					<nav class="col-xs-7 col-sm-7 col-md-4 head">
+						<ul class="nav navbar-nav">
+							<li><a href="">HOME</a></li>
+							<li><a href="">PROTFOLIO</a></li>
+							<li><a href="">ABOUT</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="chu-slide">
+					<h2>Lorem</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, deserunt, necessitatibus? Adipisci reprehenderit soluta quisquam iure deserunt ea corrupti illo. More...</p>
+					<a class="button" href="">More</a>
+				</div>
+				<div class="col-xs-12 hinh-slide">
+					<div class="w3-content w3-section" style="max-width:100%">
+					  <img class="mySlides" src="images/34.jpg" style="width:100%">
+					  <img class="mySlides" src="images/38.jpg" style="width:100%">
+					  <img class="mySlides" src="images/37.jpg" style="width:100%">
+					  <img class="mySlides" src="images/35.jpg" style="width:100%">
+					  <img class="mySlides" src="images/36.jpg" style="width:100%">
+					</div>
+					<script>
+						var myIndex = 0;
+						carousel();
+
+						function carousel() {
+						    var i;
+						    var x = document.getElementsByClassName("mySlides");
+						    for (i = 0; i < x.length; i++) {
+						       x[i].style.display = "none";  
+						    }
+						    myIndex++;
+						    if (myIndex > x.length) {myIndex = 1}    
+						    x[myIndex-1].style.display = "block";  
+						    setTimeout(carousel, 2000);
+						}
+					</script>
+				</div>
+			</div>
+			<div class="row than">
+				<div class="col-xs-5 col-sm-5 col-md-8 chu">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit?</p>
+				</div>
+				<div class="col-xs-7 col-sm-7 col-md-4 chu">
+					<form>
+						<input type="text" name="" placeholder="Enter a word...">
+						<input type="button" value="Search" class="input">
+					</form>
+				</div>		
+			</div>
+		</header>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4 col-md-4 col-md-4 phan1">
+				<div class="phan2">
+					<img src="images/8.png">
+				</div>	
+					<h2>Lorem ipsum</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem magnam tenetur culpa</p>	
+			</div>
+			<div class="col-xs-4 col-md-4 col-md-4 phan1">
+				<div class="phan2">
+					<img src="images/9.png">
+				</div>	
+					<h2>Consectetuer</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem magnam tenetur culpa</p>	
+			</div>
+			<div class="col-xs-4 col-md-4 col-md-4 phan1">
+				<div class="phan2">
+					<img src="images/10.png">
+				</div>	
+					<h2>Dolor sit amet</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem magnam tenetur culpa</p>	
+			</div>
+		</div>
+	</div>
+	<dir class="container">
+		<h2 class="khung">Lorem ipsum</h2>
+		<div class="row">
+			<div class="col-xs-3 col-md-3 col-md-3">
+				<div class="anh1">
+					<a href=""><img src="images/25.jpg" width="260" height="150"></a>
+					<p class="border">Photo by: Lorem</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="hinh1"  data-toggle="modal" data-target="#myModal">
+					<img src="images/40.png">
+				</div>
+				<div id="myModal" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<img src="images/25.jpg" style="">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-3 col-md-3 col-md-3">
+				<div class="anh1">
+					<img src="images/26.jpg" width="260" height="150">
+					<p class="border">Photo by: Lorem</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="hinh1" data-toggle="modal" data-target="#myModal1">
+					<img src="images/40.png">
+				</div>
+				<div id="myModal1" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<img src="images/26.jpg" style="">
+					</div>
+				</div>	
+			</div>	
+			<div class="col-xs-3 col-md-3 col-md-3">
+				<div class="anh1">
+					<img src="images/29.jpg" width="260" height="150">
+					<p class="border">Photo by: Lorem</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="hinh1" data-toggle="modal" data-target="#myModal2">
+					<img src="images/40.png">
+				</div>
+				<div id="myModal2" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<img src="images/29.jpg" style="">
+					</div>
+				</div>	
+			</div>
+			<div class="col-xs-3 col-md-3 col-md-3">
+				<div class="anh1">
+					<img src="images/30.jpg" width="260" height="150">
+					<p class="border">Photo by: Lorem</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="hinh1" data-toggle="modal" data-target="#myModal3">
+					<img src="images/40.png">
+				</div>
+				<div id="myModal3" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<img src="images/30.jpg" style="">
+					</div>
+				</div>	
+			</div>					
+	</dir>
+	<div class="container padding">
+		<div class="row">
+			<div class="col-xs-7 col-sm-7 col-md-7 vien">
+				<h2>Dolor sit amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aperiam optio eius nesciunt ipsa velit culpa assumenda perspiciatis dicta. Maiores, eum saepe, accusantium voluptatum est officiis deserunt nesciunt voluptas aut?<br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem labore, iste ratione suscipit quidem vero aliquam ducimus doloremque voluptate veritatis sapiente sequi impedit deserunt totam aperiam illo similique quia dolor.</p>
+			</div>
+			<div class="col-xs-5 col-sm-5 col-md-5">
+				<div class="body1">
+					<img src="images/11.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="body2">
+					<img src="images/12.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="end">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-4 col-sm-4 col-md-4">
+					<h3 style="color: white">Lorem ipsum</h3>
+					<p class="end-text" style="color: #606060">Eram consequat si anim aute, voluptate nisi culpa fabulas culpa. Ea ab nulla commodo, dolore est excepteur ut fugiat, probant cohaerescant id doctrina, de noster quorum qui commodo, eram nam expetendis do est quid fugiat ex laboris ex de nam fugiat laboris, nulla offendit iis expetendis.</p>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 end-ul">
+					<h3 >Consectetuer</h3>
+					<ul>
+						<li><a href=""><img src="images/1.png"> Lorem ipsum dolor sit amet.</a></li>
+						<li><a href=""><img src="images/1.png"> Lorem ipsum dolor sit amet.</a></li>
+						<li><a href=""><img src="images/1.png"> Lorem ipsum dolor sit amet.</a></li>
+						<li><a href=""><img src="images/1.png">Lorem ipsum dolor sit amet.</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4">
+					<h3 style="color: white; border-bottom: 0.2px solid #606060; padding-bottom: 10px;">Dolor sit amet</h3>
+					<div class="end-img">
+						<a href=""><img src="images/24.jpg" width="25%"/>
+							<p class="end-p">Eram consecteturquat si anim aute, voluptate nisi</p>
+						</a>
+					</div>
+					<div class="end-img">
+						<a href=""><img src="images/25.jpg" width="25%"/>
+							<p class="end-p">Eram consecteturquat si anim aute, voluptate nisi</p>
+						</a>
+					</div>
+					<div class="end-img">
+						<a href=""><img src="images/26.jpg"  width="25%"/>
+							<p class="end-p">Eram consecteturquat si anim aute, voluptate nisi</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-max finish">
+		<div class="col-xs-7 col-sm-7 col-xs-7">
+			<p>© Copyright 2016 by <a href="">Example</a>. All Rights Reserved.</p>
+		</div>
+		<div class="col-xs-5 col-sm-5 col-md-5 finish-ul">
+			<ul class="nav navbar-nav">
+				<li><a href=""><img src="images/13.png" class="finish-img"></a></li>
+				<li><a href=""><img src="images/14.png" class="finish-img"></a></li>
+				<li><a href=""><img src="images/15.png" class="finish-img"></a></li>
+				<li><a href=""><img src="images/16.png" class="finish-img"></a></li>
+				<li><a href=""><img src="images/17.png" class="finish-img"></a></li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>
