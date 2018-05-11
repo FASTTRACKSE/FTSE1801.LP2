@@ -1,4 +1,5 @@
 # FTSE1801.LP2 - sonvd
+### Thư mục bài tập của tôi
 
 ### HTML
 1. [Bài 1 - Aassignment1](https://github.com/FASTTRACKSE/FTSE1801.LP2/tree/master/sonvd/HTML/HTML1/Assignment1/assignment1)
@@ -6,7 +7,8 @@
 3. [Bài 3 - Aassignment3](https://github.com/FASTTRACKSE/FTSE1801.LP2/tree/master/sonvd/HTML/HTML3/Assignment3)
 4. [Bài 4 - Aassignment4](https://github.com/FASTTRACKSE/FTSE1801.LP2/tree/master/sonvd/HTML/HTML4/Assignment4)
 5. [Bài 5 - Aassignment5](https://github.com/FASTTRACKSE/FTSE1801.LP2/tree/master/sonvd/HTML/HTML5/Assignment5)
-
+6. [Bài 7 - Bootstrap - BT về nhà](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/sonvd/HTML/Bootstrap1/Bootstrap1.html)
+<7
 ### CSS
 
 
