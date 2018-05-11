@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="../jquery-3.3.1/jquery-3.3.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+</head>
+<body>
+	<h1>Giải phương trình bậc nhất 1 ẩn:</h1>
+	<p id="pt">ax + b = 0</p>
+	<form id="form1" action="javascript:void(0)">
+		<label>Nhập a:</label>
+		<input id="a" type="text" name="giatri_a" value=""><br><br/>
+		<label>Nhập b:</label>
+		<input id="b" type="text" name="giatri_b" value=""><br><br/>
+
+		<input type="submit" name="submit" value="Giải phương trình" >
+		
+	</form>
+	<script type="text/javascript">
+		var rs =$("#form1").validate({
+			rules:{
+				giatri_a:{
+					required: true,
+					number: true
+				},
+				giatri_b:{
+					required: true,
+					number: true
+				},
+			},
+			messages:{
+				giatri_a:{
+					required: "Vui lòng nhập a",
+					number:"Giá trị a chỉ được nhập số"
+				},
+				giatri_b:{
+					required:"Vui lòng nhập b",
+					number:"Giá trị b chỉ được nhập số"
+				},
+			}
+		});
+		$("#form1").on("submit", function(){
+			if (rs.valid()==true) {
+				tinh();
+			}
+		})
+	</script>
+	<script type="text/javascript">
+		
+		function tinh(){
+			
+			var a = $("#a").val();
+			var b = $("#b").val();
+			$("#pt").text( "Phương trình :" + a + "x + " + b + " = 0");
+			var x = -b/a;
+			if((a==0)&&(b==0)){
+			alert("Phương trình có vô số nghiệm");
+			
+			}
+
+			else if((a==0)&&(b!==0)){
+			alert("Phương trình vô nghiệm");
+			}
+		
+
+			else{
+			
+			alert("Phương trình có nghiệm x = "+ x);
+			}
+		
+		}
+		
+	</script>
+</body>
+</html>

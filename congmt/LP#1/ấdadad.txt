@@ -1,0 +1,15 @@
+ôn t?p:
+- Ki?u d? li?u: s?, chu?i, logic(true, false), m?ng(1,2,3,4,5) luu t?t c? thông tin thành ki?u gói,
+null
+- bi?n, các phép toán t?
+  	- Toán t? gán :=;
+	- s? h?c: +-*/
+	- so sánh: <, <=, >, >=, ==, !=
+	- Logic: d?u và (&&), d?u ho?c(||);( tuoi>18 && tuoi<25) tu?i=26
+	+ !(!(x>15)) x=16;
+- Câu l?nh r? nhánh: if, else
+ 	- tìm s? nuyên t?: n%n==0., n%1==0
+- Câu l?nh for, while,do/while
+
++ dùng for khi dã bi?t tru?c di?u ki?n cho phép th?c hi?n, m?c cho s?n , các bu?c nh?y
+ + dung while khi không pik nào câu l?nh s? d?ng , chua có di?m d?ng c? th?

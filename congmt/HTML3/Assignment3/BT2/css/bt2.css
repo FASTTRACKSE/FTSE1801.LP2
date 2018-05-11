@@ -1,0 +1,32 @@
+.d1{
+	
+	border-top: 2px solid #E6E6E6;
+	width: 1000px;
+}
+img{
+	float: left;
+	margin-right: 10px; 
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+h1{
+	border-bottom: 5px solid #FEC810;
+	width: 1000px;
+}
+p{
+	width: 1000px;
+	margin-top: -5px;
+}
+h3{
+	width: 1000px;
+}
+.p{
+	font-size: 18px;
+	color: #FFD8B8;
+}
+.dr{
+	clear: both;
+}
+.im{
+	margin-top: 20px;
+}
