@@ -17,3 +17,4 @@ HTML, CSS &amp; JavaScript
 1. [Bài tập lap3](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/phuongnt/bootstrap-3.3.7-dist/bs2.html)
 2. [Bài tập HTML 5](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/phuongnt/bootstrap-3.3.7-dist/html5.html)
 3. [Bài tập lap4](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/phuongnt/bootstrap-3.3.7-dist/lap4.html)
+4. [Bài tập](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/phuongnt/bootstrap-3.3.7-dist/Bootstrap1/html5.html)
