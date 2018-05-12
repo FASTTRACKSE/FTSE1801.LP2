@@ -1,6 +1,4 @@
-# FTSE1801.LP2
-
-###Huynhanhan
+# FTSE1801.LP2-Huynhanhan
 
 THƯ MỤC BÀI TẬP CỦA TÔI
 
@@ -16,7 +14,6 @@ html
 7. [Assignment4](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/anhan/b%C3%A0i%20t%E1%BA%ADp%208/Assignment4.html)
 8. [Bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/anhan/b%C3%A0i%20t%E1%BA%ADp%209/b%C3%A0i%20t%E1%BA%ADp2-bootstrap/bootstrap.html)
 9. [Bài tập 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/anhan/b%C3%A0i%20t%E1%BA%ADp%209/b%C3%A0i%20t%E1%BA%ADp2-bootstrap/bootstrap.html)
-
 
 
 css

@@ -39,7 +39,7 @@ body{
 	width: 70px;
 }
 .color{
-	height: 70px;
+	height: 80px;
 	background-color: #e56038;
 }
 .style{
@@ -71,8 +71,38 @@ body{
 	padding-bottom: 20px;
 	border-bottom: solid 2px #c1c1c1;
 }
-.btn{border-bottom: solid 2px #c1c1c1;
-     margin-left: -10px;}
+.btn{
+     margin-top: -5px;
+     margin-left: -11px;}
+
+.img-item a {
+    position: relative;
+    display: block;
+}
+.zoomin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 78%;
+    height: 116px;
+    background: #000 url("zoom.png") center center no-repeat;
+    z-index: 99;
+    opacity: 0;
+}
+.zoomin:hover {
+    opacity: 0.5;
+}
+
+
+.img-item p{
+	border-top:solid 2px #c1c1c1;
+	padding-top: 10px;
+	
+
+}
+
+
+
 .i{
 	width: 200px;
 	
@@ -119,11 +149,24 @@ body{
 }
 .in li{
 	list-style-image: url("arrowright2.png");
+	
+	border-bottom: solid 2px white;
+	list-style-position: inside;
+	margin-left: -20px;
+	width: 300px;
+
+
+}
+.in a{
+	color:#c1c1c1;
+}
+.in a:hover{
+	text-decoration: none;
 	color: white;
 }
 .a{
 	width: 250px;
-	color: white;
+	color: #c1c1c1;;
 }
 
 .html{
@@ -139,7 +182,7 @@ body{
 }
 .because p{
 	width: 190px;
-	color: white;
+	
 }
 .css{background-color: #333333;
       margin-top: 20px;
@@ -149,7 +192,15 @@ body{
 	width: 300px;
 	color: white;
 	margin-bottom: 15px;
+	border-bottom: solid 2px white;
 }
 .css p,li{
-	font-size: 110%;
+	font-size: 105%;
+}
+.xyz a{
+	 color:#c1c1c1;
+}
+.xyz a:hover{
+	text-decoration: none;
+	color: white;
 }

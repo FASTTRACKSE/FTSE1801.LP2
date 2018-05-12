@@ -14,20 +14,21 @@
 	
 </head>
 <body>
-	<header class="header  ">
-    <div class="col-xs-12 col-sm-6 col-md-6">	
-    <h1 class="header-h1">Learning HTML5</h1>
-    <p class="header-p">A responsive website tutorial</p>
-   	</div>
-    <nav class="row col-xs-12 col-sm-6 col-md-6  menu">
-			<ul class="nav navbar-nav pull-right">
-				<li><a href="#">HOME</a></li>
-				<li><a href="#">PROFILO</a></li>
-				<li><a href="#">ABOUT</a></li>
-						
-			</ul>
-	</nav><!--end header menu-->
-    
+	<header class="header ">
+		<div class="row">
+		   	 <div class="col-xs-12 col-sm-6 col-md-8">	
+		   	 	<h1 class="header-h1">Learning HTML5</h1>
+	    		<p class="header-p">A responsive website tutorial</p>
+	   		</div>
+	    	<nav class="row col-xs-12 col-sm-6 col-md-4  menu">
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">PROFILO</a></li>
+					<li><a href="#">ABOUT</a></li>
+							
+				</ul>
+			</nav><!--end header menu-->
+    	</div>
 	</header>
 	
 	
@@ -65,8 +66,8 @@
 	<div style="clear: both;"></div>
 	<div class="buttom ">
 		<label style="color: #fff;" >Lorem ipsum dolor sit amet, consectetur adipisicing elit</label>
-		<input type="text" name="text" value="Enter a word...">
-		<button  type="button" class="btn btn-primary">Search</button>
+		<input class="form-control " style="display: inline;" type="text" name="text" value="Enter a word...">
+		<button  type="button" class="search ">Search</button>
 	</div>
 	<div class="container">
 		<div class="row phanthan center-block">
@@ -99,54 +100,85 @@
 			<h2 class="regular phangiua-h2">Lorem ipsum</h2>
 		<div class="row">	
 			<div class="col-xs-12 col-sm-6 col-md-3 phangiua-div" >
-				<a href="#img2" title="Some title">
-					<div class="zoomin"></div>
-					<img width="80%" height="80%" src="../img/lightbox-1.jpg">
-				</a>
-				<p class="phangiua-div-p1">Photo by: Lorem</p>
-				<p class="phangiua-div-p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				
+					<div class="anh1">
+						<a href=""><img src="../img/lightbox-1.jpg" width="210" height="120"></a>
+						<p class="phangiua-div-p1">Photo by: Lorem</p>
+						<p class="phangiua-div-p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="hinh1"  data-toggle="modal" data-target="#myModal">
+						<img src="../img/zoom.png">
+					</div>
+					<div id="myModal" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<img src="../img/lightbox-1.jpg" style="">
+						</div>
+					</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-3 phangiua-div" >
-				<a href="#img2" title="Some title">
-					<div class="zoomin"></div>
-					<img width="80%" height="80%" src="../img/lightbox-2.jpg">
-				</a>
-				<p class="phangiua-div-p1">Photo by: Ipsum</p>
-				<p class="phangiua-div-p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<div class="anh1">
+						<a href=""><img src="../img/lightbox-2.jpg" width="210" height="120"></a>
+						<p class="phangiua-div-p1">Photo by: Lorem</p>
+						<p class="phangiua-div-p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="hinh1"  data-toggle="modal" data-target="#myModal2">
+						<img src="../img/zoom.png">
+					</div>
+					<div id="myModal2" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<img src="../img/lightbox-2.jpg" style="">
+						</div>
+					</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-3 phangiua-div" >
-				<a href="#img2" title="Some title">
-					<div class="zoomin"></div>
-					<img width="80%" height="80%" src="../img/lightbox-3.jpg">
-				</a>
-				<p class="phangiua-div-p1">Photo by: Dolor</p>
-				<p class="phangiua-div-p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<div class="anh1">
+						<a href=""><img src="../img/lightbox-3.jpg" width="210px" height="120px"></a>
+						<p class="phangiua-div-p1">Photo by: Lorem</p>
+						<p class="phangiua-div-p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="hinh1"  data-toggle="modal" data-target="#myModal3">
+						<img src="../img/zoom.png">
+					</div>
+					<div id="myModal3" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<img src="../img/lightbox-3.jpg" style="">
+						</div>
+					</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-3 phangiua-div" >
-				<a href="#img2" title="Some title">
-					<div class="zoomin"></div>
-					<img width="80%" height="80%" src="../img/lightbox-4.jpg">
-				</a>
-				<p class="phangiua-div-p1">Photo by: Amet</p>
-				<p class="phangiua-div-p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<div class="anh1">
+						<a href=""><img src="../img/lightbox-4.jpg" width="210px" height="120px"></a>
+						<p class="phangiua-div-p1">Photo by: Lorem</p>
+						<p class="phangiua-div-p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="hinh1"  data-toggle="modal" data-target="#myModal4">
+						<img src="../img/zoom.png">
+					</div>
+					<div id="myModal4" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<img src="../img/lightbox-4.jpg" style="">
+						</div>
+					</div>
 			</div>
+			
 		</div>
 	</div>
-	<div class="container">
+
+	<div class="container" style="padding-top: 130px;">
 		<div class="row">
 			<h2 class="regular phantext-h2">Dolor sit amet</h2>
 			<div class="col-xs-12 col-sm-6 col-md-6 phantext-p">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aperiam optio eius nesciunt ipsa velit culpa assumenda perspiciatis dicta. Maiores, eum saepe, accusantium voluptatum est officiis deserunt nesciunt voluptas aut?</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem labore, iste ratione suscipit quidem vero aliquam ducimus doloremque voluptate veritatis sapiente sequi impedit deserunt totam aperiam illo similique quia dolor</p>
 			</div>
-			<div class="col-xs-12 col-sm-6 col-md-6 phantext-div">
-				<div class="phantext-div1">
-					<img class="phantext-img" src="../img/icon4.png">
+			<div class="col-xs-12 col-sm-6 col-md-5 phantext-div">
+				<div class="phantext-div1 ">
+					<img class="phantext-img rocket" src="../img/icon4.png">
 					<p class="phantext-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 				</div>
 				<div style="clear: both;"></div>
-				<div>
-					<img class="phantext-img" src="../img/icon5.png">
+				<div class="phantext-div1">
+					<img class="phantext-img clock" src="../img/icon5.png">
 					<p class="phantext-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ad quis nulla eum saepe.</p>
 				</div>
 				
@@ -157,11 +189,11 @@
 		<div class="container ">
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-md-4 phancuoi-div1">
-					<h2 class="phancuoi-div2-li">Lorem ipsum</h2>
+					<h2 class="phancuoi-div2-h2">Lorem ipsum</h2>
 					<p>Eram consequat si anim aute, voluptate nisi culpa fabulas culpa. Ea ab nulla commodo, dolore est excepteur ut fugiat, probant cohaerescant id doctrina, de noster quorum qui commodo, eram nam expetendis do est quid fugiat ex laboris ex de nam fugiat laboris, nulla offendit iis expetendis.</p>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-4 phancuoi-div2">
-					<h2 class="phancuoi-div2-li">Consectetuer</h2>
+					<h2 class="phancuoi-div2-h2">Consectetuer</h2>
 					<ul >
 						
 						<li class="phancuoi-div2-li" ><a href="#">Lorem ipsum dolor sit amet.</a></li>
@@ -170,20 +202,24 @@
 						<li class="phancuoi-div2-li"><a href="">Lorem ipsum dolor sit amet.</a></li>
 					</ul>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-md-3 phancuoi-div3">
-					<h2 class="phancuoi-div2-li" style="color: #fff;">Dolor sit amet</h2>
+				<div class="col-xs-12 col-sm-6 col-md-4 phancuoi-div3">
+					<h2 class="phancuoi-div2-h2" style="color: #fff;">Dolor sit amet</h2>
 					<div class="phancuoi-div3">
-						<a href="#"><img class="phancuoi-img img-thumbnail" width="30%" height="30%" src="../img/lightbox-1.jpg"></a>
-						<p class="phancuoi-p1">Eram consequat si anim aute, voluptate nisi. </p>
+						<a href="#"><img class="phancuoi-img img-thumbnail" width="30%" height="30%" src="../img/lightbox-1.jpg">
+							<p style="margin-top: -15px;font-size: 15px;"> Eram consequat si anim aute, voluptate nisi.</p>
+						</a>
 					</div>
 					<div class="phancuoi-div3">
-						<a href="#"><img class="phancuoi-img img-thumbnail" width="30%" height="30%" src="../img/lightbox-2.jpg"></a>
-						<p class="phancuoi-p1">Eram consequat si anim aute, voluptate nisi. </p>
+						<a href="#"><img class="phancuoi-img img-thumbnail" width="30%" height="30%" src="../img/lightbox-2.jpg">
+						<p style="margin-top: -15px;font-size: 15px;">Eram consequat si anim aute, voluptate nisi.</p>
+						</a>
 					</div>
 					<div class="phancuoi-div3">
-						<a href="#"><img class="phancuoi-img img-thumbnail" width="30%" height="30%" src="../img/lightbox-3.jpg"></a>
-						<p class="phancuoi-p1">Eram consequat si anim aute, voluptate nisi. </p>
-						
+						<a href="#">
+							<img class="phancuoi-img img-thumbnail" width="30%" height="30%" src="../img/lightbox-3.jpg">						
+							<p style="margin-top: -15px;font-size: 15px;">Eram consequat si anim aute, voluptate nisi.</p>
+						</a>
+
 					</div>
 				</div>
 			</div>	
