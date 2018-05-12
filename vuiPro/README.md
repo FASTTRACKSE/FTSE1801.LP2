@@ -6,7 +6,7 @@
 2. [Bài tập 2 - Giải phương trình bậc hai](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/vuiPro/baitapgiaiptbac2/baitapjavacripptbachai.html)
 
 ### Bài tập HTML:
-1. [Bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/vuiPro/htm7/btnha1.html)
+1. [Bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/vuiPro/HTML/btnha1.html)
 2. [Bài tập 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/vuiPro/HTML/btHTM3-1.html)
 
 ### Bài BOOTSTRAP:
