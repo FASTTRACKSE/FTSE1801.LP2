@@ -1,5 +1,5 @@
 # FTSE1801.LP2-khai
-#HTML
+###HTML
 1.[bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/tree/master/khaigia/HTML/Assigment1)
 2.[bài tập 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/tree/master/khaigia/HTML/assignment2)
 3.[bài tập 3](https://github.com/FASTTRACKSE/FTSE1801.LP2/tree/master/khaigia/HTML/assignment3)
@@ -9,7 +9,7 @@
 7.[bài thực hành](https://github.com/FASTTRACKSE/FTSE1801.LP2/tree/master/khaigia/HTML/bai%20thuc%20hanh)
 8.[bt 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/tree/master/khaigia/HTML/BT2)
 9.[bt 3](https://github.com/FASTTRACKSE/FTSE1801.LP2/tree/master/khaigia/HTML/BT3)
-#Javascript
+###Javascript
 1.[bài tập 1](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/khaigia/Java%20Script/script1-PhuongTrinhBacHai.html)
 2.[bài tập 2](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/khaigia/Java%20Script/script1-PhuongTrinhBacNhat.html)
 3.[bài tập 3](https://github.com/FASTTRACKSE/FTSE1801.LP2/blob/master/khaigia/Java%20Script/script1-SoChanLe.html)
