@@ -38,7 +38,7 @@
 }
 .title span{
 	font-size: 55px;
-	padding: 0px 5px
+	padding: 0px 15px
 }
 .title p{
 	font-size: 18px
@@ -47,5 +47,106 @@
 .button{
 	background: #1bbc9b
 }
-
 /* kết thúc css cho phần header-title*/
+/*Bắt đầu phần portfolio*/
+#Portfolio{
+	background:#fff;
+	text-align: center;
+	padding: 50px 0px;
+}
+.Portfolio-tilte{
+	padding-bottom: 30px;
+}
+.Portfolio-tilte p{
+	font-size: 16px;
+}
+.Portfolio-list-btn{
+	margin:0 20%;
+	padding: 25px;
+}
+.Portfolio-btn{
+	padding: 5px 0px
+}
+.Portfolio-btn a:hover{
+	color:#fff;
+}
+.Portfolio-icon{
+	padding: 15px 0px;
+}
+/*Bắt đầu CSS phần about us*/
+#about-us{
+	background:#1bbc9b;
+	text-align: center;
+	padding: 50px 10%;
+}
+.about-title{
+	padding-bottom: 45px;
+}
+.about-post{
+	padding: 10px 0px;
+	
+}
+.about-text{
+	background:#fff;
+	width:220px;
+	margin: 0 auto;
+	padding: 10px 5px;
+
+}
+.about-text span{
+	font-size:  18px;
+}
+.about-text p{
+	font-size: 14px;
+}
+
+
+.footer{
+	background:#2d3e50;
+	padding: 20px 0px;
+}
+.footer-left{
+	font-size: 14px;
+	color: #fff;
+}
+.footer-left p{
+	line-height: 45px;
+}
+.footer-right a{
+	background: #1bbc9b;
+	color: #fff;
+	float: right;
+	padding: 15px;
+	text-decoration: none;
+}
+.footer-right a:hover{
+	color: #000;
+}
+.form-email{
+	float: right;
+}
+.form-text{
+	float: left;
+	margin-bottom: 20px;
+}
+.form-control{
+	margin-bottom: 20px;
+}
+.form-button{
+	float: right;
+}
+.form-left{
+	margin-left: 20px;
+}
+.form-contact{
+	margin-left: 500px;
+}
+h2 {
+	margin-left: 800px
+}
+.p{
+	margin-left: 700px
+}
+.footer-row{
+	margin-top: 50px
+}
