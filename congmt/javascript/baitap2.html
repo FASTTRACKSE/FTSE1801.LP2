@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<script src="../jquery-3.3.1/jquery-3.3.1.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+</head>
+<body>
+	<h1>Giải phương trình bậc 2 một ẩn:</h1>
+	<p id="pt">Phương trình ax2 + bx + c = 0</p>
+	<form id="form2" action="javascript:void(0)">
+		<label>Nhập a:</label>
+		<input id="a" type="text" name="gta" value=""><br><br/>
+		<label>Nhập b:</label>
+		<input id="b" type="text" name="gtb" value=""><br><br/>
+		<label>Nhập c:</label>
+		<input id="c" type="text" name="gtc" value=""><br><br/>
+		<input type="submit" name="submit" value="Giải phương trình">
+	</form>
+	<script type="text/javascript">
+		var rs =$("#form2").validate({
+			rules:{
+				gta:{
+					required: true,
+					number: true},
+				gtb:{
+					required: true,
+					number: true},
+				gtc:{
+					required: true,
+					number: true},
+			},
+			messages:{
+				gta:{
+					required: "Vui lòng nhập a",
+					number:"Giá trị a chỉ được nhập số"},
+				gtb:{
+					required:"Vui lòng nhập b",
+					number:"Giá trị b chỉ được nhập số"},
+				gtc:{
+					required:"Vui lòng nhập b",
+					number:"Giá trị c chỉ được nhập số"},
+			}
+		});
+		$("#form2").on("submit", function(){
+			if (rs.valid()==true) {
+				tinh();
+			}
+		})
+	</script>
+	<script type="text/javascript">
+		function tinh() {
+			// body...
+		
+		
+		var a = $("#a").val();
+		var b = $("#b").val();
+		var c = $("#c").val();
+		$("#pt").text( "Phương trình :" + a + "x2 + " + b + "x +" + c + " = 0");
+		var dt;
+		var x, x1, x2, x3;
+		switch(true){
+			case(a==0):
+				switch(true){
+					case(b==0)&&(c==0):
+					alert("Phương trình có vô số nghiệm");
+					
+					break;
+
+					case(b==0)&&(c!==0):
+					alert("Phương trình vô nghiệm");
+					
+					break;
+
+					default:
+					x3 = -c/b
+					alert("Phương trình có nghiệm x = "+ x3);
+					
+					
+					break;
+
+				}
+				break;
+			default:
+				dt= b*b- 4*a*c;
+				switch(true){
+
+					case(dt<0):
+						alert("Phương trình vô nghiệm");
+						
+						break;
+					case(dt==0):
+						x= -b/(2*a);
+						alert("Phương trình có nghiệm kép x = " + x);
+						
+						break;
+					default:
+						x1= (-b + Math.sqrt(dt))/(2*a);
+						x2= (-b - Math.sqrt(dt))/(2*a);
+						alert("Phương trình có 2 nghiệm phân biệt x1 = " + x1 + " và x2 = " + x2);
+						
+						break;
+
+				}
+
+				break;
+
+			}
+		}
+
+	</script>
+</body>
+</html>

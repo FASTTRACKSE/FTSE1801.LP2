@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Assignment 7 - Bài 2</title>
-	<link rel="stylesheet" type="text/css" href="css/Ass7-bai2.css">
+	<script type="text/javascript" src="jquery/jquery-3.3.1."></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<!-- Optional theme -->
@@ -10,7 +10,7 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+	<link rel="stylesheet" type="text/css" href="css/Ass7-bai2.css">
 </head>
 <body>
 	<div class="row header">
@@ -35,9 +35,12 @@
 		<img class="mySlides" src="images/slide5.jpg">
 	
 	<div class="dongchu">
-		<h2 style="border-radius: 20px 0px;background-color: #6c6c6c;color: white;width: 150px; text-align: center;">Lorem</h2>
-		<p  style="width: 300px; height: 80px; background-color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, deserunt, necessitatibus? Adipisci reprehenderit soluta quisquam iure deserunt ea corrupti illo. More...</p>
-		<input type="submit" name="more" value="More" style="background-color:#6c6c6c;color: white; ">
+		<h2 style="border-radius: 20px 0px;background-color: #6c6c6c;color: white;width: 150px; text-align: center;    opacity: 0.5;
+    filter: alpha(opacity=50);">Lorem</h2>
+		<p  style="width: 300px; height: 80px; background-color: white;    opacity: 0.5;
+    filter: alpha(opacity=50);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, deserunt, necessitatibus? Adipisci reprehenderit soluta quisquam iure deserunt ea corrupti illo. More...</p>
+		<input type="submit" name="more" value="More" style="background-color:#6c6c6c;color: white;     opacity: 0.5;
+    filter: alpha(opacity=50);">
 	</div>
 	</div>
 	<script>
@@ -92,34 +95,47 @@
 			<b style="margin-bottom: 40px;">Lorem ipsum</b>
 			<div class="row" style="border-top: 1px solid black; margin-top: 30px; margin-bottom: 60px;">
 				<div class="col-md-3" style="padding-top: 20px;">
-					<div style="border-bottom: 1px solid black;margin-bottom: 10px;">
-						<img src="images/lightbox-1.jpg" width="200" height="120" >
+					<div class="zoom" style="border-bottom: 1px solid black;margin-bottom: 10px;">
+						<a href=""><img src="images/lightbox-1.jpg" width="200" height="113" ></a>
 						<p>Photo by: Lorem</p>
 					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<div class="zoom1" style="  width:200px; height:113px">
+						<img src="images/zoom.png" >
+					</div>
+					<p style="padding-top: 50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 				<div class="col-md-3" style="padding-top: 20px;">
-					<div style="border-bottom: 1px solid black;margin-bottom: 10px;">
-						<img src="images/lightbox-2.jpg" width="200" height="120">
+					<div class="zoom" style="border-bottom: 1px solid black;margin-bottom: 10px;">
+						<a  href=""><img src="images/lightbox-2.jpg" width="200" height="113"></a>
 						<p>Photo by: Ipsum</p>
 					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<div class="zoom1" style="  width:200px; height:113px" >
+						<img src="images/zoom.png">
+					</div>					
+					<p style="padding-top: 50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 				<div class="col-md-3" style="padding-top: 20px;">
-					<div style="border-bottom: 1px solid black;margin-bottom: 10px;">
-						<img src="images/lightbox-3.jpg" width="200" height="120">
+					<div class="zoom" style="border-bottom: 1px solid black;margin-bottom: 10px;">
+						<a href=""><img src="images/lightbox-3.jpg" width="200" height="113"></a>
 						<p>Photo by: Dolor</p>
 					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<div class="zoom1" style="  width:200px; height:113px" >
+						<img src="images/zoom.png">
+					</div>					
+					<p style="padding-top: 50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 				<div class="col-md-3" style="padding-top: 20px;">
-					<div style="border-bottom: 1px solid black;margin-bottom: 10px;">
-						<img src="images/lightbox-4.jpg" width="200" height="120">
+					<div class="zoom" style="border-bottom: 1px solid black;margin-bottom: 10px;">
+						<a href=""><img src="images/lightbox-4.jpg" width="200" height="113"></a>
 						<p>Photo by: Amet</p>
 					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<div class="zoom1" style="  width:200px; height:113px" >
+						<img src="images/zoom.png">
+					</div>					
+					<p style="padding-top: 50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 			</div>
+
 			<b>Dolor sit amet</b>
 			<div class="row" style="margin-top: 30px; ">
 				<div class="col-md-6" style="border-top: 1px solid black; padding-top: 20px;">
@@ -127,11 +143,11 @@
 				</div>
 				<div class="col-md-6" style="padding-top: 20px;" >
 					<div class="row">
-						<div class="col-md-4"><img src="images/icon4.png"></div>
+						<div class="col-md-4"><img src="images/icon4.png" class="rocket" ></div>
 						<div class="col-md-8"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
 					</div>
 					<div class="row" style="margin-top: 30px;">
-						<div class="col-md-4"><img src="images/icon5.png"></div>
+						<div class="col-md-4"><img src="images/icon5.png" class="clock" ></div>
 						<div class="col-md-8"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ad quis nulla eum saepe.</p></div>
 					</div>
 				</div>
@@ -143,9 +159,9 @@
 		<div class="row phan2" style="width: 60%; margin-left: 20%;padding-top: 30px;padding-bottom: 30px;">
 			<div class="col-md-4">
 				<div style="border-bottom: 1px solid black; padding-bottom: 10px;"><b>Lorem</b></div>
-				<div style="padding-top: 10px;"><p>Eram consequat si anim aute, voluptate nisi culpa fabulas culpa. Ea ab nulla commodo, dolore est excepteur ut fugiat, probant cohaerescant id doctrina, de noster quorum qui commodo, eram nam expetendis do est quid fugiat ex laboris ex de nam fugiat laboris, nulla offendit iis expetendis.</p></div>
+				<div style="padding-top: 10px; color: #969696;"><p>Eram consequat si anim aute, voluptate nisi culpa fabulas culpa. Ea ab nulla commodo, dolore est excepteur ut fugiat, probant cohaerescant id doctrina, de noster quorum qui commodo, eram nam expetendis do est quid fugiat ex laboris ex de nam fugiat laboris, nulla offendit iis expetendis.</p></div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4  hover">
 				<div style="border-bottom: 1px solid black;padding-bottom: 10px;"><b>Consectetuer</b></div>
 				<div class="row" style="border-bottom: 1px solid black; padding-top: 10px;padding-bottom: 10px;">
 					<div class="col-md-2"><img src="images/arrowright2.png"></div>
@@ -164,29 +180,29 @@
 					<div class="col-md-10"><a href="">Lorem ipsum dolor sit amet.</a></div>
 				</div>				
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 hover">
 				<div style="border-bottom: 1px solid black;padding-bottom: 10px;"><b>Dolor sit amet</b></div>
 				<div>
 					<div class="row" style="padding-top: 10px;padding-bottom: 10px;"><a href="">
-						<div class="col-md-4"><img src="images/lightbox-1sml.jpg" width="100" height="60"></div>
-						<div class="col-md-8"><p>Eram consequat si anim aute, voluptate nisi.</p></div>
+						<div class="col-md-6"><img class="img-thumbnail mauvien" src="images/lightbox-1sml.jpg"  ></div>
+						<div class="col-md-6"><p>Eram consequat si anim aute, voluptate nisi.</p></div>
 					</a></div>
 					<div class="row" style="padding-top: 10px;padding-bottom: 10px;"><a href="">
-						<div class="col-md-4"><img src="images/lightbox-2sml.jpg" width="100" height="60"></div>
-						<div class="col-md-8"><p>Eram consequat si anim aute, voluptate nisi.</p></div>
+						<div class="col-md-6"><img class="img-thumbnail mauvien" src="images/lightbox-2sml.jpg"></div>
+						<div class="col-md-6"><p>Eram consequat si anim aute, voluptate nisi.</p></div>
 					</a></div>
 					<div class="row" style="padding-top: 10px;padding-bottom: 10px;"><a href="">
-						<div class="col-md-4"><img src="images/lightbox-3sml.jpg" width="100" height="60"></div>
-						<div class="col-md-8" style="padding-right: 5px;"><p>Eram consequat si anim aute, voluptate nisi.</p></div>
+						<div class="col-md-6"><img class="img-thumbnail mauvien" src="images/lightbox-3sml.jpg"></div>
+						<div class="col-md-6" style="padding-right: 5px;"><p>Eram consequat si anim aute, voluptate nisi.</p></div>
 					</a></div>										
 				</div>
 			</div>
 	</div>
 
-	<div class="conttent3" style="background-color: #323232;color: #eae7db;" >
+	<div class="conttent3" style="background-color: #323232;color: #969696;" >
 			<div class="row phan3" style="width: 60%; margin-left: 20%; padding-top: 30px; padding-bottom: 20px;">
-				<div class="col-md-8"><p>© Copyright 2016 by Example. All Rights Reserved.</p></div>
-				<div class="col-md-4 row">
+				<div class="col-md-8 Example"><p>© Copyright 2016 by<a href=""> Example</a>. All Rights Reserved.</p></div>
+				<div class="col-md-4 row icon">
 					<div class="col-md-2"><a href=""><img src="images/icon6.png"></a></div>
 					<div class="col-md-2"><a href=""><img src="images/icon7.png"></a></div>
 					<div class="col-md-2"><a href=""><img src="images/icon8.png"></a></div>

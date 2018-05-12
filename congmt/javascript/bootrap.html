@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.css"	>
+	<script src="../jquery-3.3.1/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+<style type="text/css">
+	.bg{
+		background-color: #5d4384;
+	}
+</style>
+<body>
+	<div class="container">
+		<img src="../img/anh.jpg" class="img-thumbnail " alt="hotgirl" width="30%" height="40%">
+		<img src="../img/anh.jpg" class="img-circle pull-right" alt="hotgirl" width="30%" height="40%">
+		<img src="../img/anh.jpg" class="img-rounged center" alt="hotgirl" width="30%" height="40%">
+		<p class="well well-sm">Buổi học bootstrap ngày thứ 3</p>
+	</div>
+	<div id="alert" class="container">
+			<div class=" alert alert-danger">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close"> &times</a>
+			<p>Khu vực
+				<a href="#" class="alert-link">Bình thường</a></p>
+			</div>
+
+		
+			<div onclick="hide_Arlert()" class=" alert alert-warning">
+			<p>Khu vực <a href="#" class="alert-link"> nguy hiểm</a></p>
+			</div>
+	</div>
+	<script type="text/javascript">
+		function hide_Arlert() {
+			$("#alert-warning").fadeOut();
+        $("#alert-warning").fadeOut("slow");
+        
+		}
+	</script>
+</body>
+</html>
