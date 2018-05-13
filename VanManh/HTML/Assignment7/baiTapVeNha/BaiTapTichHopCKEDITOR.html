@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mẫu đăng kí</title>
+	<script type="text/javascript" src="ckeditor/ckeditor.js"> </script>
+	<style type="text/css">
+		.name{
+			vertical-align: top;
+			text-align: right;
+		}
+		.dong{
+			width: 99.5%;
+		}
+		.nut{
+			text-align: right;
+		}
+
+	</style>
+</head>
+<body>
+	<form id="head">
+		<h1>Form validation</h1>
+		<p>Tích hợp ckeditor vào trường nội dung và valid các thuộc tính sau của form:</p>
+		<table>
+			<tr> 
+				<td class="name">Họ tên: </td>
+				<td><input class="dong" maxlength="50" minlength="10" type="text" required="" name="name"></td>
+			</tr>
+			<tr>
+				<td class="name">Thành phố: </td>
+				<td><input class="dong" type="text" maxlength="50" minlength="10" required="" name="thanhpho"></td>
+			</tr>
+			<tr>
+				<td class="name">Email: </td>
+				<td><input class="dong" type="email" required="" name="email"></td>
+			</tr>
+			<tr>
+				<td class="name">Nội dung: </td>
+				<td><textarea id="messages" type = "text" name="messages" value=""></textarea></td><br>
+			</tr>
+			<tr>
+				<td colspan="2" class="nut"><input type="submit" name="submit" value="Gửi đi"></td>
+			</tr>
+		</table>
+	</form>
+	</div>
+	<script>
+			 CKEDITOR.replace( 'messages');
+	</script>
+
+</body>
+</html>
