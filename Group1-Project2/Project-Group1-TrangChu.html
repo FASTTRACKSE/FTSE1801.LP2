@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website bán đồ ăn nhanh và thức uống</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">	
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/TrangChu.css">
+</head>
+<body>
+	<div class="tongquan">
+		<!-- Phần header -->
+		<div class="header">
+			<img class="logo" src="image/logonhom.jpg" style="width: 150px; height: 100px;">
+			<img class="logo" src="image/logo.png" style="width: 100px; height: 100px;">	
+			<h1>Cửa hàng online</h1>
+			<div class="ngonngu">
+				<img src="image/coAnh.png" style="width: 100px; height: 50px;"><br>
+				<img src="image/coVN.png" style="width: 100px; height: 50px;">
+			</div>
+		</div>
+
+		<!-- Phần menu -->
+		<div class="menu">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav">
+						<li class="menuchinh"><a href="#">Trang chủ</a></li>
+						<li><a href="#">Pizza</a></li>
+						<li><a href="#">Thức uống</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Giới thiệu
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Nhà tài trợ</a></li>
+									<li><a href="#">Nhóm thực hiện</a></li>
+								</ul>
+						</li>
+
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Liên hệ
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Địa chỉ</a></li>
+									<li><a href="#">CSKH</a></li>
+								</ul>
+						</li>						
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+
+		<!-- Phần slide show -->
+		<div class="slideshow">
+			<div class="hinhanh" style="width: 100%;">
+				<img class="mySlides" src="image/slide1.jpg" style="width: 100%; height: 400px;" >
+				<img class="mySlides" src="image/slide2.png" style="width: 100%; height: 400px;" >
+				<img class="mySlides" src="image/slide3.jpg" style="width: 100%; height: 400px;" >
+			</div>
+			<script>
+				var myIndex = 0;
+				carousel();
+
+				function carousel() {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					}
+					myIndex++;
+					if (myIndex > x.length) {myIndex = 1}    
+						x[myIndex-1].style.display = "block";  
+    				setTimeout(carousel, 2000); // Change image every 2 seconds
+    			}
+		    </script>
+		</div><br>
+
+		<!-- Phần conttend -->
+		<div  class="conttend row">
+			<div class="col-sm-6"><img src="image/header-pizza.jpg" style="width: 100%; height: 250px;"></div>
+			<div class="col-sm-6"><img src="image/header-drink.jpg" style="width: 100%; height: 250px;"></div>
+		</div>
+
+		<!-- Phần footer -->
+		<div class="footer">
+			<img src="image/Hotline_No.png">
+			<ul>
+				<li>&copy;2018 Pizza HLM.</li>
+				<li><a href="">Liên hệ</a></li>
+				<li><a href="">Chính sách giao hàng</a></li>
+				<li><a href="">Điều khoản</a></li>
+			</ul><br>
+			<p>Tập đoàn cung cấp Pizza số 1 Việt Nam<br>
+				Địa chỉ: Tầng 1 - Tòa nhà FPT - KCN An Đồn - Sơn Trà - Đà Nẵng.
+			</p>
+
+		</div>
+	</div>
+
+	<!-- Phần liên kết ngoài -->
+	<div class="lienketngoai">
+		<a href=""><img class="icon" src="image/youtube.jpg"></a><br>
+		<a href=""><img class="icon" src="image/zalo.png"></a><br>
+		<a href=""><img class="icon" src="image/twetter.jpg"></a><br>
+		<a href=""><img class="icon" src="image/facebook.png"></a><br>
+		<a href=""><img class="icon" src="image/gmail.png"></a><br>
+		<a href=""><img class="icon" src="image/instagram.jpg"></a>
+	</div>
+</body>
+</html>
+
+</body>
+</html>

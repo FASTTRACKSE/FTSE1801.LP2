@@ -1,0 +1,57 @@
+body{
+      width: 100%;
+      height: 1000px;
+      background-image: url("../image/hinhnen.jpg");
+    }
+.tongquan{
+  width: 80%;
+  margin-left: 10%;
+} 
+
+/* Phần header */
+.header{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.logo{
+  float: left;
+  margin-right: 30px;
+}
+h1{
+  float: left;
+}
+.ngonngu{
+  float: right;
+}
+/* Phần footer */
+.footer{
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+    display: block;
+    margin-left: 30%;
+}
+li{
+  float: left;
+  margin-right: 20px;
+}
+/* Phần liên kết ngoài */
+.lienketngoai{
+  position: fixed;
+  top: 100px;
+  left: 20px;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  filter: alpha(opacity=50); 
+}
+.icon:hover{
+ opacity: 1.5;
+}
