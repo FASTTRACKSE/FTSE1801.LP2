@@ -85,7 +85,6 @@ li{
 .menuchinh:hover .menu {
     background-color: #3e8e41;
 }
-
 /* Phần footer */
 .footer{
   text-align: center;
@@ -121,20 +120,4 @@ li{
   opacity: 1;
   transform: scale(1.5);
 }
-.top-up{
-  background-color: #9d9d9d;
-  opacity: 0.4;
-  filter: alpha(opacity=40); 
-  position: fixed;
-  top: 690px;
-  right: 50px; 
-}
-.giohang{ 
-  position: fixed;
-  top: 100px;
-  right: 50px;
-}
-/*Phần giới thiệu*/
-.phangioithieu{
-  background-image: url("../image/");
-}
+

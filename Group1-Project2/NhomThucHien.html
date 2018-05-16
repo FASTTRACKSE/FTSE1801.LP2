@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 	<title>Website bán đồ ăn nhanh và thức uống</title>
+	<link rel="icon" type="image/png" href="image/icon.jpg">
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">	
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/TrangChu.css">
+	<link rel="stylesheet" type="text/css" href="css/NhomThucHien.css">
 </head>
 <body>
 	<div class="tongquan">
@@ -23,51 +24,124 @@
 		</div>
 
 		<!-- Phần menu -->
-		<div class="menu">
-			<nav class="navbar navbar-default">
-				<div class="container-fluid">
-					<ul class="nav navbar-nav">
-						<li class="menuchinh"><a href="#">Trang chủ</a></li>
-						<li class="menuchinh"><a href="#">Pizza</a></li>
-						<li class="menuchinh"><a href="#">Thức uống</a></li>
-						<li class="dropdown menuchinh">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Giới thiệu
-								<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="https://www.fasttrack.edu.vn">Nhà tài trợ</a></li>
-									<li><a href="#">Nhóm thực hiện</a></li>
-								</ul>
-						</li>
+		<div class="thanhmenu"> 
+			<ul>
+				<li><button>Trangchu</button></li>
+				<li><button>Pizza</button></li>
+				<li><button>Thức uống</button></li>
+				<li>
+					<div class="menuchinh">
+						<a href="">
+							<button class="menu">Giới thiệu</button>
+							<div class="menuphu">
+							    <a href="#">Nhà tài trợ</a>
+							    <a href="#">Nhóm thực hiện</a>
+							</div>
+						 </a>
+					</div>
+				</li>
+				<li>
+					<div class="menuchinh">
+						<a href="">
+							<button class="menu">Liên hệ</button>
+							<div class="menuphu">
+							    <a href="#">Địa chỉ</a>
+							    <a href="#">CSKH</a>
+							</div>
+						 </a>
+					</div>
+				</li>			
+				
+			</ul><br>
+		</div>
 
-						<li class="dropdown menuchinh">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Liên hệ
-								<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Địa chỉ</a></li>
-									<li><a href="#">CSKH</a></li>
-								</ul>
-						</li>						
-					</ul>
+		<!-- Phần giới thiệu -->
+		<div class="phangioithieu" style="margin-top: 20px;">
+			<!-- Giới thiệu Phạm Ngọc Hợi -->
+			<div class="row" style="background-color: #c6ff8c;">
+				<div class="col-sm-4"><img src="image/pnhoi.jpg" style="width: 100%; height: 250px;"></div>
+				<div class="col-sm-8">
+					<table>
+						<tr>
+							<th colspan="2">Phạm Ngọc Hợi</th>
+						</tr>
+						<tr>
+							<th>MSSV: </th>
+							<td>FTSE1801005</td>
+						</tr>
+						<tr>
+							<th>Ngày sinh: </th>
+							<td>01 - 6 - 1995</td>
+						</tr>
+						<tr>
+							<th>Quê quán: </th>
+							<td>Nghệ An</td>
+						</tr>
+						<tr>
+							<th>Giới thiệu: </th>
+							<td>Đây là nhà thiết kế đầy tiềm năng cùng triển vọng của HLM, là người tạo nên thương hiệu độc đáo cho Group. Với một tinh thần sáng tạo, tư duy mới mẻ anh luôn tạo ra 1 sản phẩm tràn ngập chất độc khiến cho người dùng chỉ cần xem qua 1 lần sẽ không ngần ngại mà Click ngay vào nốt đỏ.</td>
+						</tr>
+					</table>
 				</div>
-			</nav>
-		</div>
-
-		<!-- Phần conttend -->
-		<div class="row">
-			<div class="col-sm-6 nhapphanhoi">
-				<input type="text" name="ten" placeholder="Tên của bạn ..."><br>
-				<input type="email" name="email" placeholder="Email của bạn ..."><br>
-				<textarea name="comments" placeholder="Phản hồi của bạn ... "></textarea><br>
-				<input type="submit" name="phanhoi">
 			</div>
-			<div class="col-sm-6 hienthiphanhoi">
-				<b>Phản hồi</b>
+			<!-- Giới thiệu Vũ Văn Mạnh -->
+			<div class="row" style="background-color: #c4bb9d">
+				<div class="col-sm-8">
+					<table>
+						<tr>
+							<th colspan="2">Vũ Văn Mạnh</th>
+						</tr>
+						<tr>
+							<th>Mã số sinh viên: </th>
+							<td>FTSE180100</td>
+						</tr>
+						<tr>
+							<th>Ngày sinh: </th>
+							<td>01 - 6 - 1995</td>
+						</tr>
+						<tr>
+							<th>Quê quán: </th>
+							<td>Gia Lai</td>
+						</tr>
+						<tr>
+							<th>Giới thiệu: </th>
+							<td>Đây là 1 chuyên viên kĩ thuật giỏi bậc nhất HLM, là người tạo nên chất lượng đỉnh cao của HLM. Với tinh thần chịu khó học hỏi anh luôn tìm và COPY được những phần CỐT khó mà những thành viên khác phải bó tay.</td>
+						</tr>
+					</table>				
+				</div>
+				<div class="col-sm-4"><img src="image/vanmanh.jpg " style="width: 100%; height: 250px;"></div>
 			</div>
+			<!-- Giới thiệu Trần Duy Luân -->
+			<div class="row" style="background-color: #ffffb0">
+				<div class="col-sm-4"><img src="image/images 41.jpg" style="width: 100%; height: 250px;"></div>
+				<div class="col-sm-8">
+					<table>
+						<tr>
+							<th colspan="2">Trần Duy Luân</th>
+						</tr>
+						<tr>
+							<th>MSSV: </th>
+							<td>FTSE180100</td>
+						</tr>
+						<tr>
+							<th>Ngày sinh: </th>
+							<td>01 - 6 - 1995</td>
+						</tr>
+						<tr>
+							<th>Quê quán: </th>
+							<td>Quảng Nam</td>
+						</tr>
+						<tr>
+							<th>Giới thiệu: </th>
+							<td>Là trưởng nhóm, người dẫn dắt cho từng bước đi của HLM, anh là thành viên quan trọng bậc nhất của Group. Và nếu thiếu anh HLM sẽ mãi mãi không thể trở thành 1 Group 3 người được.</td>
+						</tr>
+					</table>				
+				</div>
+			</div>	
 		</div>
-
 		<!-- Phần footer -->
+		<img src="image/Hotline_No.png" style="width: 50%;margin-left: 25%;">
 		<div class="footer">
-			<img src="image/Hotline_No.png" style="width: 100%;">
 			<ul>
 				<li><a href="">&copy;2018 Pizza HLM.</a></li>
 				<li><a href="">Liên hệ</a></li>
