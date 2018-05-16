@@ -26,9 +26,22 @@ h1{
 .ngonngu{
   float: right;
 }
+
+/* Phần menu */
+.menuchinh{
+padding: 10px 25px 10px 25px;
+}
+.menuchinh:hover{
+  color: white;
+  background-color: blue;
+}
 /* Phần footer */
 .footer{
   text-align: center;
+  background-color: pink;
+  opacity: 0.3;
+  filter: alpha(opacity=10); 
+  padding-bottom: 30px;
 }
 ul{
   list-style-type: none;
@@ -37,7 +50,6 @@ ul{
 }
 li{
   float: left;
-  margin-right: 20px;
 }
 /* Phần liên kết ngoài */
 .lienketngoai{
@@ -49,9 +61,31 @@ li{
 .icon{
   width: 50px;
   height: 50px;
-  opacity: 0.5;
-  filter: alpha(opacity=50); 
+  opacity: 0.2;
+  filter: alpha(opacity=20); 
+
 }
 .icon:hover{
- opacity: 1.5;
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+/*Phần giới thiệu*/
+.phangioithieu{
+  background-image: url("../image/");
+}
+.btn-top {
+    
+    background-repeat: no-repeat;
+    border: medium none;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+    height: 50px;
+    outline: medium none;
+    padding: 0;
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    z-index: 9999;
 }

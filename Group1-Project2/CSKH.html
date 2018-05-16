@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<title>Website bán đồ ăn nhanh và thức uống</title>
-	<link rel="icon" type="image/png" href="image/icon.jpg">
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">	
@@ -53,38 +52,18 @@
 			</nav>
 		</div>
 
-
-		<!-- Phần slide show -->
-		<div class="slideshow">
-			<div class="hinhanh" style="width: 100%;">
-				<a href=""><img class="mySlides" src="image/slide1.jpg" style="width: 100%; height: 400px;" ></a>
-				<a href=""><img class="mySlides" src="image/slide2.png" style="width: 100%; height: 400px;" ></a>
-				<a href=""><img class="mySlides" src="image/slide3.jpg" style="width: 100%; height: 400px;" ></a>
-			</div>
-			
-			<script>
-				var myIndex = 0;
-				carousel();
-
-				function carousel() {
-					var i;
-					var x = document.getElementsByClassName("mySlides");
-					for (i = 0; i < x.length; i++) {
-						x[i].style.display = "none";  
-					}
-					myIndex++;
-					if (myIndex > x.length) {myIndex = 1}    
-						x[myIndex-1].style.display = "block";  
-    				setTimeout(carousel, 2000); // Change image every 2 seconds
-    			}
-		    </script>
-		</div><br>
-
 		<!-- Phần conttend -->
-		<div  class="conttend row">
-			<div class="col-sm-6"><img src="image/header-pizza.jpg" style="width: 100%; height: 250px;"></div>
-			<div class="col-sm-6"><img src="image/header-drink.jpg" style="width: 100%; height: 250px;"></div>
-		</div><br>
+		<div class="row">
+			<div class="col-sm-6 nhapphanhoi">
+				<input type="text" name="ten" placeholder="Tên của bạn ..."><br>
+				<input type="email" name="email" placeholder="Email của bạn ..."><br>
+				<textarea name="comments" placeholder="Phản hồi của bạn ... "></textarea><br>
+				<input type="submit" name="phanhoi">
+			</div>
+			<div class="col-sm-6 hienthiphanhoi">
+				<b>Phản hồi</b>
+			</div>
+		</div>
 
 		<!-- Phần footer -->
 		<div class="footer">
@@ -111,7 +90,6 @@
 		<a href=""><img class="icon" src="image/gmail.png"></a><br>
 		<a href=""><img class="icon" src="image/instagram.jpg"></a>
 	</div>
-	<div class="footer"> <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a> </div>
 </body>
 </html>
 
