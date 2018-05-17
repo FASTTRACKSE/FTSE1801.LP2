@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giỏ hàng</title>
+	 <meta charset='utf-8'>
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/trangDangKi.css">
+    <style type="text/css">
+    	body{
+    		background-image: url("image/hinhnen.jpg");
+    	}
+    	.giohang{
+    		background: black;
+    		margin-right: -90px;
+    	}
+    	table tbody td{
+    		padding: 30px; 
+    		background: white;
+    	}
+    	table tbody tr{
+    		border-top: 10px solid black;
+    	}
+    	table thead tr th{
+    		padding: 30px;
+    		text-align: center;
+    		color: white;
+    	}
+    	table tbody td img{
+    		width: 200px;
+    	}
+    </style>
+</head>
+<body>
+	<div class="container giohang">			
+		<table  id="table-products">
+                <thead>
+                    <tr>
+
+                        <th>Hình ảnh</th>
+                        <th>Name</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Tổng tiền</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>  
+            </table>
+            <br><br>	
+            <div><button style="margin-right: 15%;" class="btn btn-lg btn-success button">Cập nhập giỏ hàng</button><button class="btn btn-lg btn-success" id="button-clear">Xóa Đơn Hàng</button></div>
+            <div><br><button class="btn btn-lg btn-success">Thanh toán</button></div>
+    </div>
+</body>
+
+	<script type="text/javascript">
+	
+				
+
+
+		$(".button").click(function(){
+				var name=localStorage.getItem('ten');
+				var item = JSON.parse(localStorage.getItem(name));
+                var htmlString = "";
+                htmlString += "<tr>";
+                htmlString += "<td>" + "<img src='"+item.src+"'></td>";
+                htmlString += "<td>" + item.name  + "</td>";
+                htmlString += "<td style='text-align: right'>" + item.gia + '	'+"</td>";
+                htmlString += "<td style='text-align: right'>" + item.soluong + "</td>";
+                htmlString += "<td style='text-align: right'>" + item.gia * item.soluong + "</td>";
+                htmlString += "</tr>";
+
+                $("#table-products > tbody:last").append(htmlString);
+
+            });
+
+		
+ 	 $("#button-clear").click(function () {
+        shoppingCartItems = [];
+        localStorage["shopping-cart-items"] = JSON.stringify(shoppingCartItems);
+        $("#table-products > tbody").html("");
+    });
+
+
+	</script>
+
+</html>
