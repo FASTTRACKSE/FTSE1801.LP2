@@ -86,7 +86,7 @@ button:hover{
   z-index: 999;
 }
 
-.sticky + .content {
+.sticky {
   padding-top: 0px;
 }
 
@@ -94,8 +94,6 @@ button:hover{
 .footer{
   text-align: center;
   background-color: pink;
-  opacity: 0.3;
-  filter: alpha(opacity=10); 
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -137,8 +135,4 @@ li{
   position: fixed;
   top: 100px;
   right: 50px;
-}
-/*Phần giới thiệu*/
-.phangioithieu{
-  background-image: url("../image/");
 }
