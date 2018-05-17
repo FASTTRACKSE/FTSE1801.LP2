@@ -1,88 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Giỏ hàng</title>
-	 <meta charset='utf-8'>
-    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/trangDangKi.css">
-    <style type="text/css">
-    	body{
-    		background-image: url("image/hinhnen.jpg");
-    	}
-    	.giohang{
-    		background: black;
-    	}
-    	table tbody td{
-    		padding: 30px; 
-    		background: white;
-    	}
-    	table tbody tr{
-    		border-top: 10px solid black;
-    	}
-    	table thead tr th{
-    		padding: 30px;
-    		text-align: center;
-    		color: white;
-    	}
-    	table tbody td img{
-    		width: 200px;
-    	}
-  
-    </style>
+	<link rel="icon" type="image/png" href="image/icon.jpg">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">	
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="wow/animate.css">
+	<script type="text/javascript" src="wow/wow.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/giohang.css">
 </head>
 <body>
-	<div class="container giohang">			
-		<table  id="table-products">
-                <thead>
-                    <tr>
+	<div class="tongquan">
+		<!-- Phần header -->
+		<div class="header">
+			<a href="NhomThucHien.html"><img class="logo" src="image/logonhom.jpg" style="width: 150px; height: 100px;"></a>
+			<div>
+				<a href="Project-Group1-TrangChu.html"><img class="logo" src="image/logo.png" style="width: 100px; height: 100px;"></a>	
+				<h1>Cửa hàng online</h1>
+			</div>
+		</div>
 
-                        <th>Hình ảnh</th>
-                        <th>Name</th>
-                        <th>Giá</th>
-                        <th>Số lượng</th>
-                        <th>Tổng tiền</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>  
-            </table>
-            <br><br>	
-            <div><button style="margin-right: 15%;" class="btn btn-lg btn-success button">Cập nhập giỏ hàng</button><button class="btn btn-lg btn-success" id="button-clear">Xóa Đơn Hàng</button></div>
-            <div><br><button class="btn btn-lg btn-success">Thanh toán</button></div>
-    </div>
-</body>
+		<!-- Phần menu -->
 
-	<script type="text/javascript">
-	
+		<div class="thanhmenu" id="navbar" > 			
+				<a href="Project-Group1-TrangChu.html"><button style=" margin-left: 7px;">Trang chủ</button></a>
+				<a href=""><button>Pizza</button></a>
+				<a href=""><button >Thức uống</button></a>				
+					<div class="menuchinh">
+					
+							<button class="menu" >Giới thiệu</button>
+							<div class="menuphu">
+							    <a href="https://www.fasttrack.edu.vn/">Nhà tài trợ</a>
+							    <a href="NhomThucHien.html">Nhóm thực hiện</a>
+							</div>
 				
+					</div>				
+					<div class="menuchinh">
+				
+							<button class="menu">Liên hệ</button>
+							<div class="menuphu">
+							    <a href="#">Địa chỉ</a>
+							    <a href="#">CSKH</a>
+							</div>
+					
+					</div>	
+		</div>
+		<script>
+			window.onscroll = function() {myFunction()};
 
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
 
-		$(".button").click(function(){
-				//Lấy key để lấy dữ liệu từ localStorage
-				var name=localStorage.getItem('ten');
-				// Lấy dữ liêu và chuyển dữ liệu từ localStorage
-				var item = JSON.parse(localStorage.getItem(name));
-				//Nhập các số liệu và table
-                var htmlString = "";
-                htmlString += "<tr>";
-                htmlString += "<td>" + "<img src='"+item.src+"'></td>";
-                htmlString += "<td>" + item.name  + "</td>";
-                htmlString += "<td style='text-align: right'>" + item.gia + '	'+"</td>";
-                htmlString += "<td style='text-align: right'>" + item.soluong + "</td>";
-                htmlString += "<td style='text-align: right'>" + item.gia * item.soluong + "</td>";
-                htmlString += "</tr>";
-                $("#table-products > tbody:last").append(htmlString);
-        });
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+		<!-- Phần conttend -->
 
-	//Xóa giỏ hàng
- 	 $("#button-clear").click(function () {
-        shoppingCartItems = [];
-        localStorage["shopping-cart-items"] = JSON.stringify(shoppingCartItems);
-        $("#table-products > tbody").html("");
-    });
+		<div class="container giohang">		
+			<table  id="table-products">
+	                <thead>
 
+	                </thead>
+	                <tbody></tbody>  
+	            </table>
+	            <br><br>	
+	            <div><button style="margin-right: 15%;" class="btn btn-lg btn-success button">Cập nhập giỏ hàng</button><button class="btn btn-lg btn-success" id="button-clear">Xóa Đơn Hàng</button></div>
+	            <div><br><button class="btn btn-lg btn-success">Thanh toán</button></div>
+	    </div>
+		<script type="text/javascript">
+			$(".button").click(function(){
+					//Lấy key để lấy dữ liệu từ localStorage
+					var name=localStorage.getItem('ten');
+					// Lấy dữ liêu và chuyển dữ liệu từ localStorage
+					var item = JSON.parse(localStorage.getItem(name));
+					//Nhập các số liệu và table
+	                var htmlString = "";
+	                htmlString += "<tr>";
+	                htmlString += "<td>" + "<img src='"+item.src+"'></td>";
+	                htmlString += "<td>" + 'Tên hàng :' + item.name  + "</td>";
+	                htmlString += "<td style='text-align: right'>" + 'Đơn giá : ' +item.gia + '	'+"</td>";
+	                htmlString += "<td style='text-align: right'>" + 'Số lượng :' + item.soluong + "</td>";
+	                htmlString += "<td style='text-align: right'>" + 'Tổng tiền :' + item.gia * item.soluong + "</td>";
+	                htmlString += "</tr>";
+	                $("#table-products > tbody:last").append(htmlString);
+	        });
 
-	</script>
+		//Xóa giỏ hàng
+	 	 $("#button-clear").click(function () {
+	        shoppingCartItems = [];
+	        localStorage["shopping-cart-items"] = JSON.stringify(shoppingCartItems);
+	        $("#table-products > tbody").html("");
+	    });
+		</script>
 
+		<!-- Phần footer -->
+		<img src="image/Hotline_No.png" style="width: 50%;margin-left: 25%;">
+		<div class="footer">
+			<ul>
+				<li><a href="">&copy;2018 Pizza HLM.</a></li>
+				<li><a href="">Liên hệ</a></li>
+				<li><a href="">Chính sách giao hàng</a></li>
+				<li><a href="">Điều khoản</a></li>
+			</ul><br>
+			<p>Tập đoàn cung cấp Pizza số 1 Việt Nam<br>
+				Địa chỉ: Tầng 1 - Tòa nhà FPT - KCN An Đồn - Sơn Trà - Đà Nẵng.
+			</p>
+
+		</div>
+	</div>
+
+	<!-- Phần liên kết ngoài -->
+	<div class="lienketngoai">
+		<a href=""><img class="icon" src="image/youtube.jpg"></a><br>
+		<a href=""><img class="icon" src="image/zalo.png"></a><br>
+		<a href=""><img class="icon" src="image/twetter.jpg"></a><br>
+		<a href=""><img class="icon" src="image/facebook.png"></a><br>
+		<a href=""><img class="icon" src="image/gmail.png"></a><br>
+		<a href=""><img class="icon" src="image/instagram.jpg"></a>
+	</div>
+
+</body>
+</html>
+
+</body>
 </html>
