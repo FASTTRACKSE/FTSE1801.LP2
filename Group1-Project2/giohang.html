@@ -13,7 +13,7 @@
     	}
     	.giohang{
     		background: black;
-    		margin: auto;
+    		margin-right: -90px;
     	}
     	table tbody td{
     		padding: 30px; 
@@ -26,6 +26,9 @@
     		padding: 30px;
     		text-align: center;
     		color: white;
+    	}
+    	table tbody td img{
+    		width: 200px;
     	}
     </style>
 </head>
@@ -43,20 +46,21 @@
                     </tr>
                 </thead>
                 <tbody></tbody>  
-            </table>	
-            <div><button class="button">Cập nhập giỏ hàng</button>	
+            </table>
+            <br><br>	
+            <div><button style="margin-right: 15%;" class="btn btn-lg btn-success button">Cập nhập giỏ hàng</button><button class="btn btn-lg btn-success" id="button-clear">Xóa Đơn Hàng</button></div>
+            <div><br><button class="btn btn-lg btn-success">Thanh toán</button></div>
+    </div>
 </body>
 
 	<script type="text/javascript">
 	
-			
+				
 
 
 		$(".button").click(function(){
 				var name=localStorage.getItem('ten');
 				var item = JSON.parse(localStorage.getItem(name));
-				var src = item.src;
-				alert(src)
                 var htmlString = "";
                 htmlString += "<tr>";
                 htmlString += "<td>" + "<img src='"+item.src+"'></td>";
@@ -71,7 +75,11 @@
             });
 
 		
- 
+ 	 $("#button-clear").click(function () {
+        shoppingCartItems = [];
+        localStorage["shopping-cart-items"] = JSON.stringify(shoppingCartItems);
+        $("#table-products > tbody").html("");
+    });
 
 
 	</script>
