@@ -13,7 +13,6 @@
     	}
     	.giohang{
     		background: black;
-    		margin-right: -90px;
     	}
     	table tbody td{
     		padding: 30px; 
@@ -30,6 +29,7 @@
     	table tbody td img{
     		width: 200px;
     	}
+  
     </style>
 </head>
 <body>
@@ -59,8 +59,11 @@
 
 
 		$(".button").click(function(){
+				//Lấy key để lấy dữ liệu từ localStorage
 				var name=localStorage.getItem('ten');
+				// Lấy dữ liêu và chuyển dữ liệu từ localStorage
 				var item = JSON.parse(localStorage.getItem(name));
+				//Nhập các số liệu và table
                 var htmlString = "";
                 htmlString += "<tr>";
                 htmlString += "<td>" + "<img src='"+item.src+"'></td>";
@@ -69,12 +72,10 @@
                 htmlString += "<td style='text-align: right'>" + item.soluong + "</td>";
                 htmlString += "<td style='text-align: right'>" + item.gia * item.soluong + "</td>";
                 htmlString += "</tr>";
-
                 $("#table-products > tbody:last").append(htmlString);
+        });
 
-            });
-
-		
+	//Xóa giỏ hàng
  	 $("#button-clear").click(function () {
         shoppingCartItems = [];
         localStorage["shopping-cart-items"] = JSON.stringify(shoppingCartItems);
