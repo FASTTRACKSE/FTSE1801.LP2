@@ -8,58 +8,70 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">	
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/NhomThucHien.css">
+	<link rel="stylesheet" type="text/css" href="wow/animate.css">
+	<script type="text/javascript" src="wow/wow.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/TrangChu.css">
 </head>
 <body>
 	<div class="tongquan">
 		<!-- Phần header -->
 		<div class="header">
-			<img class="logo" src="image/logonhom.jpg" style="width: 150px; height: 100px;">
-			<img class="logo" src="image/logo.png" style="width: 100px; height: 100px;">	
-			<h1>Cửa hàng online</h1>
-			<div class="ngonngu">
-				<img src="image/coAnh.png" style="width: 100px; height: 50px;"><br>
-				<img src="image/coVN.png" style="width: 100px; height: 50px;">
+			<a href="NhomThucHien.html"><img class="logo" src="image/logonhom.jpg" style="width: 150px; height: 100px;"></a>
+			<div>
+				<a href="Project-Group1-TrangChu.html"><img class="logo" src="image/logo.png" style="width: 100px; height: 100px;"></a>	
+				<h1>Cửa hàng online</h1>
 			</div>
 		</div>
 
 		<!-- Phần menu -->
-		<div class="thanhmenu"> 
-			<ul>
-				<li><button>Trangchu</button></li>
-				<li><button>Pizza</button></li>
-				<li><button>Thức uống</button></li>
-				<li>
-					<div class="menuchinh">
-						<a href="">
-							<button class="menu">Giới thiệu</button>
-							<div class="menuphu">
-							    <a href="#">Nhà tài trợ</a>
-							    <a href="#">Nhóm thực hiện</a>
-							</div>
-						 </a>
+
+		<div class="thanhmenu" id="navbar"> 			
+			<a href="Project-Group1-TrangChu.html"><button style=" margin-left: 7px;">Trang chủ</button></a>
+			<a href=""><button>Pizza</button></a>
+			<a href=""><button >Thức uống</button></a>				
+			<div class="menuchinh">
+			
+					<button class="menu" >Giới thiệu</button>
+					<div class="menuphu">
+					    <a href="https://www.fasttrack.edu.vn/">Nhà tài trợ</a>
+					    <a href="NhomThucHien.html">Nhóm thực hiện</a>
 					</div>
-				</li>
-				<li>
-					<div class="menuchinh">
-						<a href="">
-							<button class="menu">Liên hệ</button>
-							<div class="menuphu">
-							    <a href="#">Địa chỉ</a>
-							    <a href="#">CSKH</a>
-							</div>
-						 </a>
+		
+			</div>				
+			<div class="menuchinh">
+		
+					<button class="menu">Liên hệ</button>
+					<div class="menuphu">
+					    <a href="#">Địa chỉ</a>
+					    <a href="#">CSKH</a>
 					</div>
-				</li>			
-				
-			</ul><br>
+			
+			</div>	
 		</div>
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+
 
 		<!-- Phần giới thiệu -->
-		<div class="phangioithieu" style="margin-top: 20px;">
+
+		<div class="phangioithieu" style="margin-top:20px;z-index: 1">
+
 			<!-- Giới thiệu Phạm Ngọc Hợi -->
+
 			<div class="row" style="background-color: #c6ff8c;">
-				<div class="col-sm-4"><img src="image/pnhoi.jpg" style="width: 100%; height: 250px;"></div>
+				<div class="col-sm-4"><img src="image/pnhoi.jpg" style="width: 70%; height: 250px;"></div>
 				<div class="col-sm-8">
 					<table>
 						<tr>
@@ -84,7 +96,9 @@
 					</table>
 				</div>
 			</div>
+
 			<!-- Giới thiệu Vũ Văn Mạnh -->
+
 			<div class="row" style="background-color: #c4bb9d">
 				<div class="col-sm-8">
 					<table>
@@ -93,11 +107,11 @@
 						</tr>
 						<tr>
 							<th>Mã số sinh viên: </th>
-							<td>FTSE180100</td>
+							<td>FTSE1801010</td>
 						</tr>
 						<tr>
 							<th>Ngày sinh: </th>
-							<td>01 - 6 - 1995</td>
+							<td>10 - 9 - 1997</td>
 						</tr>
 						<tr>
 							<th>Quê quán: </th>
@@ -109,11 +123,13 @@
 						</tr>
 					</table>				
 				</div>
-				<div class="col-sm-4"><img src="image/vanmanh.jpg " style="width: 100%; height: 250px;"></div>
+				<div class="col-sm-4"><img src="image/vanmanh.jpg " style="width: 50%; height: 250px;"></div>
 			</div>
+
 			<!-- Giới thiệu Trần Duy Luân -->
+
 			<div class="row" style="background-color: #ffffb0">
-				<div class="col-sm-4"><img src="image/images 41.jpg" style="width: 100%; height: 250px;"></div>
+				<div class="col-sm-4"><img src="image/luan.jpg" style="width: 50%; height: 250px;"></div>
 				<div class="col-sm-8">
 					<table>
 						<tr>
@@ -121,11 +137,11 @@
 						</tr>
 						<tr>
 							<th>MSSV: </th>
-							<td>FTSE180100</td>
+							<td>FTSE1801009</td>
 						</tr>
 						<tr>
 							<th>Ngày sinh: </th>
-							<td>01 - 6 - 1995</td>
+							<td>17 - 8 - 1995</td>
 						</tr>
 						<tr>
 							<th>Quê quán: </th>
@@ -139,7 +155,9 @@
 				</div>
 			</div>	
 		</div>
+
 		<!-- Phần footer -->
+
 		<img src="image/Hotline_No.png" style="width: 50%;margin-left: 25%;">
 		<div class="footer">
 			<ul>
@@ -156,6 +174,7 @@
 	</div>
 
 	<!-- Phần liên kết ngoài -->
+
 	<div class="lienketngoai">
 		<a href=""><img class="icon" src="image/youtube.jpg"></a><br>
 		<a href=""><img class="icon" src="image/zalo.png"></a><br>
@@ -164,6 +183,8 @@
 		<a href=""><img class="icon" src="image/gmail.png"></a><br>
 		<a href=""><img class="icon" src="image/instagram.jpg"></a>
 	</div>
+	<div class="top-up" ><a href=""><img src="image/top-up.png" style="  width: 50px;height: 50px;"></a></div>
+
 </body>
 </html>
 
