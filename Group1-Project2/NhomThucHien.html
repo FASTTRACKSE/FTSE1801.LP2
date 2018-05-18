@@ -13,40 +13,57 @@
 	<link rel="stylesheet" type="text/css" href="css/TrangChu.css">
 </head>
 <body>
-	<div class="tongquan">
-		<!-- Phần header -->
-		<div class="header">
-			<a href="NhomThucHien.html"><img class="logo" src="image/logonhom.jpg" style="width: 150px; height: 100px;"></a>
-			<div>
-				<a href="Project-Group1-TrangChu.html"><img class="logo" src="image/logo.png" style="width: 100px; height: 100px;"></a>	
-				<h1>Cửa hàng online</h1>
+		<!--Phần header-->
+		<div class="jumbotron">
+			<div class="container text-center">
+
+				<h1>Pizza Store</h1>      
+				<p>Mạnh, Hợi & Luân</p>
 			</div>
 		</div>
-
-		<!-- Phần menu -->
-
-		<div class="thanhmenu" id="navbar"> 			
-			<a href="Project-Group1-TrangChu.html"><button style=" margin-left: 7px;">Trang chủ</button></a>
-			<a href=""><button>Pizza</button></a>
-			<a href=""><button >Thức uống</button></a>				
-			<div class="menuchinh">
-			
-					<button class="menu" >Giới thiệu</button>
-					<div class="menuphu">
-					    <a href="https://www.fasttrack.edu.vn/">Nhà tài trợ</a>
-					    <a href="NhomThucHien.html">Nhóm thực hiện</a>
+		<!--Phần Menu-->
+		<div id="navbar" style="z-index: 999;">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
 					</div>
-		
-			</div>				
-			<div class="menuchinh">
-		
-					<button class="menu">Liên hệ</button>
-					<div class="menuphu">
-					    <a href="#">Địa chỉ</a>
-					    <a href="#">CSKH</a>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="Project-Group1-TrangChu.html">Trang chủ</a></li>
+							<li><a href="MenuPizza.html">Menu Pizza </a></li>
+							<li><a href="MenuDrink.html">Menu Drink</a></li>
+							<li>
+								<div class="menuchinh">
+									<p class="mnphu">Giới thiệu</p>
+									<div class="menuphu">
+										<a href="https://www.fasttrack.edu.vn/">Nhà tài trợ</a>
+										<a href="NhomThucHien.html">Nhóm thực hiện</a>
+									</div>
+
+								</div>        
+							</li>
+							<li>
+								<div class="menuchinh" style="margin-left: 20px; margin-top: 5%">
+									<p class="mnphu">Liên hệ</p>
+									<div class="menuphu">
+										<a href="#">Địa chỉ</a>
+										<a href="#">CSKH</a>
+									</div>
+
+								</div>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="giohang.html" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+						</ul>
 					</div>
-			
-			</div>	
+				</div>
+			</nav>
 		</div>
 		<script>
 			window.onscroll = function() {myFunction()};
@@ -63,10 +80,9 @@
 			}
 		</script>
 
-
 		<!-- Phần giới thiệu -->
 
-		<div class="phangioithieu" style="margin-top:20px;z-index: 1">
+		<div class="container phangioithieu" style="margin-top:20px;z-index: 1">
 
 			<!-- Giới thiệu Phạm Ngọc Hợi -->
 
@@ -91,7 +107,7 @@
 						</tr>
 						<tr>
 							<th>Giới thiệu: </th>
-							<td>Đây là nhà thiết kế đầy tiềm năng cùng triển vọng của HLM, là người tạo nên thương hiệu độc đáo cho Group. Với một tinh thần sáng tạo, tư duy mới mẻ anh luôn tạo ra 1 sản phẩm tràn ngập chất độc khiến cho người dùng chỉ cần xem qua 1 lần sẽ không ngần ngại mà Click ngay vào nốt đỏ.</td>
+							<td>Đây là nhà thiết kế đầy tiềm năng cùng triển vọng của Nhóm HLM, là người tạo nên thương hiệu độc đáo cho Group. Với một tinh thần sáng tạo, tư duy mới mẻ anh luôn tạo ra 1 sản phẩm tràn ngập chất độc khiến cho người dùng chỉ cần xem qua 1 lần sẽ không ngần ngại mà Click ngay vào nốt đỏ.</td>
 						</tr>
 					</table>
 				</div>
@@ -119,7 +135,7 @@
 						</tr>
 						<tr>
 							<th>Giới thiệu: </th>
-							<td>Đây là 1 chuyên viên kĩ thuật giỏi bậc nhất HLM, là người tạo nên chất lượng đỉnh cao của HLM. Với tinh thần chịu khó học hỏi anh luôn tìm và COPY được những phần CỐT khó mà những thành viên khác phải bó tay.</td>
+							<td>Đây là 1 chuyên viên kĩ thuật giỏi bậc nhất Nhóm HLM, là người tạo nên chất lượng đỉnh cao của Nhóm HLM. Với tinh thần chịu khó học hỏi anh luôn tìm và COPY được những phần CỐT khó mà những thành viên khác phải bó tay.</td>
 						</tr>
 					</table>				
 				</div>
@@ -149,41 +165,41 @@
 						</tr>
 						<tr>
 							<th>Giới thiệu: </th>
-							<td>Là trưởng nhóm, người dẫn dắt cho từng bước đi của HLM, anh là thành viên quan trọng bậc nhất của Group. Và nếu thiếu anh HLM sẽ mãi mãi không thể trở thành 1 Group 3 người được.</td>
+							<td>Là trưởng nhóm, người dẫn dắt cho từng bước đi của Nhóm HLM, anh là thành viên quan trọng bậc nhất của Group. Và nếu thiếu anh Nhóm HLM sẽ mãi mãi không thể trở thành 1 Group 3 người được.</td>
 						</tr>
 					</table>				
 				</div>
 			</div>	
+			<!-- Phần footer -->
+
+			<img src="image/Hotline_No.png" style="width: 50%;margin-left: 25%;">
+			<div class="footer">
+				<ul>
+					<li><a href="">&copy;2018 Pizza Nhóm HLM.</a></li>
+					<li><a href="">Liên hệ</a></li>
+					<li><a href="">Chính sách giao hàng</a></li>
+					<li><a href="">Điều khoản</a></li>
+				</ul><br>
+				<p>Tập đoàn cung cấp Pizza số 1 Việt Nam<br>
+					Địa chỉ: Tầng 1 - Tòa nhà FPT - KCN An Đồn - Sơn Trà - Đà Nẵng.
+				</p>
+
+			</div>
 		</div>
 
-		<!-- Phần footer -->
 
-		<img src="image/Hotline_No.png" style="width: 50%;margin-left: 25%;">
-		<div class="footer">
-			<ul>
-				<li><a href="">&copy;2018 Pizza HLM.</a></li>
-				<li><a href="">Liên hệ</a></li>
-				<li><a href="">Chính sách giao hàng</a></li>
-				<li><a href="">Điều khoản</a></li>
-			</ul><br>
-			<p>Tập đoàn cung cấp Pizza số 1 Việt Nam<br>
-				Địa chỉ: Tầng 1 - Tòa nhà FPT - KCN An Đồn - Sơn Trà - Đà Nẵng.
-			</p>
 
-		</div>
-	</div>
 
 	<!-- Phần liên kết ngoài -->
 
 	<div class="lienketngoai">
-		<a href=""><img class="icon" src="image/youtube.jpg"></a><br>
-		<a href=""><img class="icon" src="image/zalo.png"></a><br>
-		<a href=""><img class="icon" src="image/twetter.jpg"></a><br>
-		<a href=""><img class="icon" src="image/facebook.png"></a><br>
-		<a href=""><img class="icon" src="image/gmail.png"></a><br>
-		<a href=""><img class="icon" src="image/instagram.jpg"></a>
+		<a href="https://www.youtube.com/watch?v=rG9r3RV_PDc"><img class="icon" src="image/youtube.jpg"></a><br>
+		<a href="https://zalo.me/pc"><img class="icon" src="image/zalo.png"></a><br>
+		<a href="https://twitter.com/?lang=vi"><img class="icon" src="image/twetter.jpg"></a><br>
+		<a href="https://www.facebook.com/"><img class="icon" src="image/facebook.png"></a><br>
+		<a href="https://mail.google.com/mail/#inbox"><img class="icon" src="image/gmail.png"></a><br>
+		<a href="https://www.instagram.com"><img class="icon" src="image/instagram.jpg"></a>
 	</div>
-	<div class="top-up" ><a href=""><img src="image/top-up.png" style="  width: 50px;height: 50px;"></a></div>
 
 </body>
 </html>

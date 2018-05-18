@@ -3,49 +3,31 @@ body{
       height: 1000px;
       background-image: url("../image/hinhnen.jpg");
     }
-.tongquan{
-  width: 1200px;
-  margin-left: 150px;
-} 
 
-/* Phần header */
-.header{
+ /* Phần header và menu*/
+    .navbar {
+    width:100%;
+      margin-bottom: 50px;
+      border-radius: 0;
+     
+    }
+     .jumbotron {
+      color: #9f0811;
+      margin-bottom: 0;
+      background-image: url("../image/header-pizza2.jpg");
+    }
+    .sticky {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 100px;
-  background-color: white;
-}
-.logo{
-  float: left;
-  margin-right: 30px;
-}
-h1{
-  float: left;
 }
 
-
-/* Phần menu */
-.thanhmenu{
-  height: 75px;
-  
-  border-top: 3px solid white;
-  background-color: #b6ad89;
-  }
-  button {
-    width: 234px;
-    height: 70px;
-    background-color: black;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-    
+.mnphu{
+  margin-top: 25%; 
+  color: #9d9d9d;
 }
-
-button:hover{
-  background-color: #3e8e41;
-  border-bottom: 5px solid red;
+.mnphu:hover{
+  color: white;
 }
 .menuchinh {
     position: relative;
@@ -75,19 +57,6 @@ button:hover{
 .menuchinh:hover .menuphu {
     display: block;
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 1200px;
-  margin-right: 100px;
-  z-index: 999;
-}
-
-.sticky {
-  padding-top: 0px;
-}
-
 /* Phần footer */
 .footer{
   text-align: center;
@@ -121,16 +90,4 @@ li{
   opacity: 1;
   transform: scale(1.5);
 }
-.top-up{
-  background-color: #9d9d9d;
-  opacity: 0.4;
-  filter: alpha(opacity=40); 
-  position: fixed;
-  top: 690px;
-  right: 50px; 
-}
-.giohang{ 
-  position: fixed;
-  top: 100px;
-  right: 50px;
-}
+

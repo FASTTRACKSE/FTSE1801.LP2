@@ -13,36 +13,58 @@
 	<link rel="stylesheet" type="text/css" href="css/giohang.css">
 </head>
 <body>
-	<div class="tongquan container-max">
-		<!-- Phần header -->
-		<div class="header">
-			<a href="NhomThucHien.html"><img class="logo" src="image/logonhom.jpg" style="width: 150px; height: 100px;"></a>
-			<div>
-				<a href="Project-Group1-TrangChu.html"><img class="logo" src="image/logo.png" style="width: 100px; height: 100px;"></a>	
-				<h1>Cửa hàng </h1>
+	<div>
+		<!--Phần header-->
+		<div class="jumbotron">
+			<div class="container text-center">
+
+				<h1>Pizza Store</h1>      
+				<p>Mạnh, Hợi & Luân</p>
 			</div>
 		</div>
+		<!--Phần Menu-->
+		<div id="navbar" style="z-index: 999;">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="Project-Group1-TrangChu.html">Trang chủ</a></li>
+							<li><a href="MenuPizza.html">Menu Pizza </a></li>
+							<li><a href="MenuDrink.html">Menu Drink</a></li>
+							<li>
+								<div class="menuchinh">
+									<p class="mnphu">Giới thiệu</p>
+									<div class="menuphu">
+										<a href="https://www.fasttrack.edu.vn/">Nhà tài trợ</a>
+										<a href="NhomThucHien.html">Nhóm thực hiện</a>
+									</div>
 
-		<!-- Phần menu -->
+								</div>        
+							</li>
+							<li>
+								<div class="menuchinh" style="margin-left: 20px; margin-top: 5%">
+									<p class="mnphu">Liên hệ</p>
+									<div class="menuphu">
+										<a href="#">Địa chỉ</a>
+										<a href="#">CSKH</a>
+									</div>
 
-		<div class="thanhmenu" id="navbar" > 			
-			<a href="Project-Group1-TrangChu.html"><button style=" margin-left: 7px;">Trang chủ</button></a>
-			<a href="MenuPizza.html"><button>Pizza</button></a>
-			<a href="MenuDrink.html"><button >Thức uống</button></a>				
-			<div class="menuchinh">
-				<button class="menu" >Giới thiệu</button>
-				<div class="menuphu">
-				    <a href="https://www.fasttrack.edu.vn/">Nhà tài trợ</a>
-				    <a href="NhomThucHien.html">Nhóm thực hiện</a>
+								</div>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="giohang.html" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+						</ul>
+					</div>
 				</div>
-			</div>				
-			<div class="menuchinh">
-					<button class="menu">Liên hệ</button>
-					<div class="menuphu">
-					    <a href="#">Địa chỉ</a>
-					    <a href="#">CSKH</a>
-					</div>	
-			</div>	
+			</nav>
 		</div>
 		<script>
 			window.onscroll = function() {myFunction()};
@@ -61,63 +83,65 @@
 		<!-- Phần conttend -->
 		<div class="container giohang">		
 			<table  id="table-products">
-	                <tbody></tbody>  
-	            </table>
-	            <br><br>	
-	            <div><button style="margin-right: 15%;" class="btn btn-lg btn-success button">Cập nhập giỏ hàng</button><button class="btn btn-lg btn-success" id="button-clear">Xóa Đơn Hàng</button></div>
-	            <div><br><button class="btn btn-lg btn-success">Thanh toán</button></div>
-	    </div>
-		<script type="text/javascript">
-			$(".button").click(function(){
+				<tbody></tbody>  
+			</table>
+			<br><br>	
+			<div><button style="margin-right: 15%;" class="btn btn-lg btn-success button">Cập nhập giỏ hàng</button><button class="btn btn-lg btn-success" id="button-clear">Xóa Đơn Hàng</button></div>
+			<div><br><button class="btn btn-lg btn-success">Thanh toán</button></div>
+
+			<!-- Phần footer -->
+			<img src="image/Hotline_No.png" style="width: 50%;margin-left: 25%;">
+			<div class="footer">
+				<ul>
+					<li><a href="">&copy;2018 Pizza HLM.</a></li>
+					<li><a href="">Liên hệ</a></li>
+					<li><a href="">Chính sách giao hàng</a></li>
+					<li><a href="">Điều khoản</a></li>
+				</ul><br>
+				<p>Tập đoàn cung cấp Pizza số 1 Việt Nam<br>
+					Địa chỉ: Tầng 1 - Tòa nhà FPT - KCN An Đồn - Sơn Trà - Đà Nẵng.
+				</p>
+
+			</div>
+			<script type="text/javascript">
+				$(".button").click(function(){
 					//Lấy key để lấy dữ liệu từ localStorage
 					var name=localStorage.getItem('ten');
 					// Lấy dữ liêu và chuyển dữ liệu từ localStorage
 					var item = JSON.parse(localStorage.getItem(name));
 					//Nhập các số liệu và table
-	                var htmlString = "";
-	                htmlString += "<tr>";
-	                htmlString += "<td>" + "<img src='"+item.src+"'></td>";
-	                htmlString += "<td>" + 'Tên hàng :' + item.name  + "</td>";
-	                htmlString += "<td style='text-align: right'>" + 'Đơn giá : ' +item.gia + '	'+"</td>";
-	                htmlString += "<td style='text-align: right'>" + 'Số lượng :' + item.soluong + "</td>";
-	                htmlString += "<td style='text-align: right'>" + 'Tổng tiền :' + item.gia * item.soluong + "</td>";
-	                htmlString += "</tr>";
-	                $("#table-products > tbody:last").append(htmlString);
-	        });
+					var htmlString = "";
+					htmlString += "<tr>";
+					htmlString += "<td>" + "<img src='"+item.src+"'></td>";
+					htmlString += "<td>" + 'Tên hàng :' + item.name  + "</td>";
+					htmlString += "<td style='text-align: right'>" + 'Đơn giá : ' +item.gia + '	'+"</td>";
+					htmlString += "<td style='text-align: right'>" + 'Số lượng :' + item.soluong + "</td>";
+					htmlString += "<td style='text-align: right'>" + 'Tổng tiền :' + item.gia * item.soluong + "</td>";
+					htmlString += "</tr>";
+					$("#table-products > tbody:last").append(htmlString);
+				});
 
-		//Xóa giỏ hàng
-	 	 $("#button-clear").click(function () {
-	        shoppingCartItems = [];
-	        localStorage["shopping-cart-items"] = JSON.stringify(shoppingCartItems);
-	        $("#table-products > tbody").html("");
-	    });
-		</script>
+				//Xóa giỏ hàng
+				$("#button-clear").click(function () {
+					shoppingCartItems = [];
+					localStorage["shopping-cart-items"] = JSON.stringify(shoppingCartItems);
+					$("#table-products > tbody").html("");
+				});
+			</script>
 
-		<!-- Phần footer -->
-		<img src="image/Hotline_No.png" style="width: 50%;margin-left: 25%;">
-		<div class="footer">
-			<ul>
-				<li><a href="">&copy;2018 Pizza HLM.</a></li>
-				<li><a href="">Liên hệ</a></li>
-				<li><a href="">Chính sách giao hàng</a></li>
-				<li><a href="">Điều khoản</a></li>
-			</ul><br>
-			<p>Tập đoàn cung cấp Pizza số 1 Việt Nam<br>
-				Địa chỉ: Tầng 1 - Tòa nhà FPT - KCN An Đồn - Sơn Trà - Đà Nẵng.
-			</p>
 
-		</div>
 	</div>
+</div>
 
-	<!-- Phần liên kết ngoài -->
-	<div class="lienketngoai">
-		<a href="https://www.youtube.com/watch?v=rG9r3RV_PDc"><img class="icon" src="image/youtube.jpg"></a><br>
-		<a href="https://zalo.me/pc"><img class="icon" src="image/zalo.png"></a><br>
-		<a href="https://twitter.com/?lang=vi"><img class="icon" src="image/twetter.jpg"></a><br>
-		<a href="https://www.facebook.com/"><img class="icon" src="image/facebook.png"></a><br>
-		<a href="https://mail.google.com/mail/#inbox"><img class="icon" src="image/gmail.png"></a><br>
-		<a href="https://www.instagram.com"><img class="icon" src="image/instagram.jpg"></a>
-	</div>
+<!-- Phần liên kết ngoài -->
+<div class="lienketngoai">
+	<a href="https://www.youtube.com/watch?v=rG9r3RV_PDc"><img class="icon" src="image/youtube.jpg"></a><br>
+	<a href="https://zalo.me/pc"><img class="icon" src="image/zalo.png"></a><br>
+	<a href="https://twitter.com/?lang=vi"><img class="icon" src="image/twetter.jpg"></a><br>
+	<a href="https://www.facebook.com/"><img class="icon" src="image/facebook.png"></a><br>
+	<a href="https://mail.google.com/mail/#inbox"><img class="icon" src="image/gmail.png"></a><br>
+	<a href="https://www.instagram.com"><img class="icon" src="image/instagram.jpg"></a>
+</div>
 
 </body>
 </html>
