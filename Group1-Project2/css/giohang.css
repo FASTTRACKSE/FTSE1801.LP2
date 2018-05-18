@@ -80,11 +80,7 @@ table tbody td{
 table tbody tr{
   border-top: 10px solid black;
 }
-table thead tr th{
-  padding: 30px;
-  text-align: center;
-  color: white;
-}
+
 table tbody td img{
   height: 120px;
 }
