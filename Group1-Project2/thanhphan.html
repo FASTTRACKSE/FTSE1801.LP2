@@ -10,7 +10,6 @@
 		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		  <link rel="stylesheet" type="text/css" href="css/TrangChu.css">
 		<style>
 		  body{
 		    background-image: url("image/hinhnen.jpg");
@@ -40,53 +39,73 @@
 		  	text-decoration: none;
 		  	color: black;
 		  }
+		  /* Phần header và menu*/
+    .navbar {
+    width:100%;
+      margin-bottom: 50px;
+      border-radius: 0;
+     
+    }
+     .jumbotron {
+      color: #9f0811;
+      margin-bottom: 0;
+      background-image: url("image/header-pizza2.jpg");
+    }
+    .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+/* Phần footer */
+.footer{
+  text-align: center;
+  background-color: pink;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+ul{
+  list-style-type: none;
+    display: block;
+    margin-left: 30%;
+}
+li{
+  float: left;
+}
+/* Phần liên kết ngoài */
+.lienketngoai{
+  position: fixed;
+  top: 100px;
+  left: 20px;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  opacity: 0.2;
+  filter: alpha(opacity=20); 
+
+}
+.icon:hover{
+  opacity: 1;
+  transform: scale(1.5);
+}
+.top-up{
+  background-color: #9d9d9d;
+  opacity: 0.4;
+  filter: alpha(opacity=40); 
+  position: fixed;
+  top: 690px;
+  right: 50px; 
+}
 	  	</style>
 
 	</head>
 	<body>
-		<div class="tongquan">
-			<!-- Phần header -->
-			<div class="header">
-				<img class="logo" src="image/logonhom.jpg" style="width: 150px; height: 100px;">
-				<img class="logo" src="image/logo.png" style="width: 100px; height: 100px;">	
-				<h1>Cửa hàng online</h1>
-				<div class="ngonngu">
-					<img src="image/coAnh.png" style="width: 100px; height: 50px;"><br>
-					<img src="image/coVN.png" style="width: 100px; height: 50px;">
-				</div>
-			</div>
-
-			<!-- Phần menu -->
-			<div class="menu">
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-						<ul class="nav navbar-nav">
-							<li class="menuchinh"><a href="#">Trang chủ</a></li>
-							<li><a href="#">Pizza</a></li>
-							<li><a href="#">Thức uống</a></li>
-							<li class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Giới thiệu
-									<span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Nhà tài trợ</a></li>
-										<li><a href="#">Nhóm thực hiện</a></li>
-									</ul>
-							</li>
-
-							<li class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Liên hệ
-									<span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Địa chỉ</a></li>
-										<li><a href="#">CSKH</a></li>
-									</ul>
-							</li>						
-						</ul>
-					</div>
-				</nav>
-			</div>
-			<br><br><br>
-		<div>
+		<div class="container">
 			<div>
 			  <img src="image/header-pizza.jpg" style="width: 100%;">x`
 			</div><br><br><br>
@@ -98,37 +117,11 @@
 				<h1 style="display: inline-block; color: white;">Thành phần gồm: Xúc xích, thịt nguội, thịt bò, xúc xích gà, thơm, nấm, hành tây, ớt chuông và ô liu <br><br><br> Giá: 119.0000đ</h1>
 				<a id="dathang" href="#">Bắt đầu đặt hàng</a><br><br><br>
 				<a id="return" href="MenuPizza.html">Trở lại Menu</a>
-
 				</div>
-				
 			</div>
-		</div><br><br><br>
-		<div id='cmt'></div>
-		<!-- Phần footer -->
-			<div class="footer">
-				<img src="image/Hotline_No.png" style="width: 100%;">
-				<ul>
-					<li>&copy;2018 Pizza HLM.</li>
-					<li><a href="">Liên hệ</a></li>
-					<li><a href="">Chính sách giao hàng</a></li>
-					<li><a href="">Điều khoản</a></li>
-				</ul><br>
-				<p>Tập đoàn cung cấp Pizza số 1 Việt Nam<br>
-					Địa chỉ: Tầng 1 - Tòa nhà FPT - KCN An Đồn - Sơn Trà - Đà Nẵng.
-				</p>
-
-			</div>
-		</div>
-
-		<!-- Phần liên kết ngoài -->
-		<div class="lienketngoai">
-			<a href=""><img class="icon" src="image/youtube.jpg"></a><br>
-			<a href=""><img class="icon" src="image/zalo.png"></a><br>
-			<a href=""><img class="icon" src="image/twetter.jpg"></a><br>
-			<a href=""><img class="icon" src="image/facebook.png"></a><br>
-			<a href=""><img class="icon" src="image/gmail.png"></a><br>
-			<a href=""><img class="icon" src="image/instagram.jpg"></a>
-		</div>
 		
+			</div>
+		</div>
+
 	</body>
 	</html>
