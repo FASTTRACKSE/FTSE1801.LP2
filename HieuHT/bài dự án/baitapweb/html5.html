@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap1</title>
+	<link rel="stylesheet" type="text/css" href="../Bootstrap1/css/style.css">
+	<script type="text/javascript" src="Bootstrap1/js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="Bootstrap1/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="Bootstrap1/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="Bootstrap1/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container-max"">
+		<header>
+			<div class="col-xs-4 logo">
+				<h1>Learning HTML5</h1>
+				<p>A responsive website tutorial</p>
+			</div>
+			<nav class="col-xs-8 col-sm-8 col-md-5 header-menu">
+				<ul class="nav navbar-nav">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">PORTFOLIO</a></li>
+					<li><a href="#">ABOUT</a></li>
+				</ul>
+			</nav>
+			<div>
+				<div class=" col-xs-12 slide">
+					<img class="slideshow" src="img/slide1.jpg" width="100%">
+					<img class="slideshow" src="img/slide2.jpg" width="100%">
+					<img class="slideshow" src="img/slide3.jpg" width="100%">
+					<img class="slideshow" src="img/slide4.jpg" width="100%">
+					<img class="slideshow" src="img/slide5.jpg" width="100%">
+				</div>
+				<div class="col-xs-4 title">
+					<h3 class="title_text" style="font-weight: bold;">Lorem</h3>
+					<p class="texttitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, deserunt, necessitatibus? Adipisci reprehenderit soluta quisquam iure  deserunt ea corrupti illo. More...</p>
+					<button class="button" type="submit">More</button>
+				</div>
+			</div>
+
+			<!--Slide show -->
+			<script type="text/javascript">
+				var myIndex = 0;
+				carousel();
+
+				function carousel(){
+					var i;
+					var x = document.getElementsByClassName("slideshow");
+					for (i=0;i<x.length; i++){
+						x[i].style.display ="none";
+					}
+					myIndex++;
+					if (myIndex>x.length){myIndex=1}
+						x[myIndex-1].style.display = "block";
+					setTimeout(carousel, 2000);
+				}
+			</script>
+			<div class="col-xs-12  spacer">
+				<div class="col-xs-4 col-sm-4 col-md-7 spacer1">
+					<p>Lorem ipsum dolor sit amet, consecteturadipisicing elit?</p>
+				</div>
+				<div class="col-xs-4 search">
+					<input type="text" name="search1" placeholder="Enter a word...">
+					<input type="submit" name="" class="search1" value="Search">
+				</div>
+			</div>
+		</header>
+		<section>
+			<div id="threecolumns">
+				<div class="col-xs-4 threecolumns-icon">
+					<div class="icon">
+						<img src="img/icon1.png">
+						<h3 class="threecolumns1">Lorem ipsum</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem magnam tenetur culpa</p>
+					</div>
+				</div>
+				<div class="col-xs-4 threecolumns-icon">
+					<div class="icon">
+						<img src="img/icon2.png">
+						<h3 class="threecolumns1">Consectetuer</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem magnam tenetur culpa...</p>
+					</div>
+				</div>
+				<div class="col-xs-4 threecolumns-icon">
+					<div class="icon">
+						<img src="img/icon3.png">
+						<h3 class="threecolumns1">Dolor sit amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem magnam tenetur culpa.</p>
+					</div>
+				</div>
+				
+				<div id="four_columns">
+					<h2>
+						Lorem ipsum
+					</h2>
+					<article class="img-item">
+						<figure>
+							<a href="#img1" title="Some title">
+								<div class="zoomin"></div>
+								<img src="img/lightbox-1sml.jpg" alt="Some alt text"/>
+							</a>
+							<figcaption>
+								<strong>
+									Photo by: Lorem
+								</strong>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</figcaption>
+						</figure>
+					</article>
+					<article class="img-item">
+						<figure>
+							<a href="#img2" title="Some title">
+								<div class="zoomin"></div>
+								<img src="img/lightbox-2sml.jpg" alt="Some alt text"/>
+							</a>
+							<figcaption>
+								<strong>
+									Photo by: Ipsum
+								</strong>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</figcaption>
+						</figure>
+					</article>
+					<article class="img-item">
+						<figure>
+							<a href="#img3" title="Some title">
+								<div class="zoomin"></div>
+								<img src="img/lightbox-3sml.jpg" alt="Some alt text"/>
+							</a>
+							<figcaption>
+								<strong>
+									Photo by: Dolor
+								</strong>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</figcaption>
+						</figure>
+					</article>
+					<article class="img-item">
+						<figure>
+							<a href="#img4" title="Some title">
+								<div class="zoomin"></div>
+								<img src="img/lightbox-4sml.jpg" alt="Some alt text"/>
+							</a>
+							<figcaption>
+								<strong>
+									Photo by: Amet
+								</strong>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</figcaption>
+						</figure>
+					</article>
+					<div class="clear"></div>
+				</div>
+
+				<div id="lightbox">
+					<a href="#_" class="lightbox" id="img1">
+						<img src="img/lightbox-1.jpg">
+					</a>  
+					<a href="#_" class="lightbox" id="img2">
+						<img src="img/lightbox-2.jpg">
+					</a>  
+					<a href="#_" class="lightbox" id="img3">
+						<img src="img/lightbox-3.jpg">
+					</a>  
+					<a href="#_" class="lightbox" id="img4">
+						<img src="img/lightbox-4.jpg">
+					</a>                
+				</div>
+
+				<div id="multiple_columns">
+					<div class="col-xs-6 column1">
+						<div>
+							<h3>Dolor sit amet</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aperiam optio eius nesciunt ipsa velit culpa assumenda perspiciatis dicta. Maiores, eum saepe, accusantium voluptatum est officiis deserunt nesciunt voluptas aut?</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem labore, iste ratione suscipit quidem vero aliquam ducimus doloremque voluptate veritatis sapiente sequi impedit deserunt totam aperiam illo similique quia dolor.</p>
+						</div>
+					</div>
+					<div class="col-xs-6 column2">
+						<div class="row">
+							<img src="img/icon4.png" class="rocket">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+						<div class="row">
+							<img src="img/icon5.png" class="clock">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ad quis nulla eum saepe.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div id="extra_content">
+			<div class="col-xs-4 column">
+				<h4>Lorem ipsum</h4>
+				<p>Eram consequat si anim aute, voluptate nisi culpa fabulas culpa. Ea ab nulla 
+					commodo, dolore est excepteur ut fugiat, probant cohaerescant id doctrina, de 
+					noster quorum qui commodo, eram nam expetendis do est quid fugiat ex laboris ex 
+				de nam fugiat laboris, nulla offendit iis expetendis.</p>
+			</div>
+			<div class="col-xs-4 column midlist">
+            <h4>Consectetuer</h4>
+            <ul>
+                <li>
+                    <a href="">Lorem ipsum dolor sit amet.</a>
+                </li>
+                <li>
+                    <a href="">Lorem ipsum dolor sit amet.</a>
+                </li>
+                <li>
+                    <a href="">Lorem ipsum dolor sit amet.</a>
+                </li>
+                <li>
+                    <a href="">Lorem ipsum dolor sit amet.</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-4 column rightlist">
+            <h4>Dolor sit amet</h4>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img alt="Some alt text" src="img/lightbox-1sml.jpg"/>
+                        <span>Eram consequat si anim aute, voluptate nisi.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img alt="Some alt text" src="img/lightbox-2sml.jpg"/>
+                        <span>Eram consequat si anim aute, voluptate nisi.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img alt="Some alt text" src="img/lightbox-3sml.jpg"/>
+                        <span>Eram consequat si anim aute, voluptate nisi.</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="clear" />
+        </div>
+		</div>
+	</div>
+	<div id="page_owner_info">
+        <div class="wrapper">
+            <div class="copyright">© Copyright 2016 by <a
+                href="http://www.example.com">Example</a>. All Rights Reserved.
+            </div>
+            <div class="social">
+                <a href="">
+                    <img src="img/icon6.png" alt="Some alt text" width="25"/>
+                </a>
+                <a href="">
+                    <img src="img/icon7.png" alt="Some alt text" width="25"/>
+                </a>
+                <a href="">
+                    <img src="img/icon8.png" alt="Some alt text" width="25"/>
+                </a>
+                <a href="">
+                    <img src="img/icon9.png" alt="Some alt text" width="25"/>
+                </a>
+                <a href="">
+                    <img src="img/icon10.png" alt="Some alt text" width="25"/>
+                </a>
+            </div>           
+        </div>
+    </div>
+	</footer>
+</div>
+</body>
+</html>

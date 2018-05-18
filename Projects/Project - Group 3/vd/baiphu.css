@@ -1,0 +1,43 @@
+.header{
+	border: 1px solid;
+	background-color: white;
+	padding: 2px;
+	height: 150px;
+	width: 1415px;
+	background-color: #149f5b;
+}
+.mySlides {display:none; width: 1400px; height: 300px;}
+img {vertical-align: middle;}
+.navbar{
+	width: 1400px;
+}
+.menu{
+	background-color: #f0f0f0;
+}
+.line{
+	margin-right: 30px;
+	margin-left: 30px;
+	background-color: #f0f0f0;
+}
+.line:hover{
+	background-color: #48bed0;
+}
+ul{
+		list-style-type: none;
+		overflow: hidden; background-color: #d0d0d0;
+	}
+	li{
+		float: left;
+		font-size: 20px;
+	}
+	li a, .droptn{
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+	li a:hover, .dropdown:hover .dropbtn{
+		background-color: #d7def0;
+		text-decoration: none;
+	}
