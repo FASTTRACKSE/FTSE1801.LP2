@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hinh anh da nang</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	html, body{
+		height: 100%;
+	}
+	.a:hover{
+		-webkit-filter: blur(3px); 
+		-moz-filter: blur(3px);
+		-o-filter: blur(3px); 
+		-ms-filter: blur(3px); 
+		filter: url(#blur); 
+		filter: blur(3px);  
+		filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+	}
+	.w3-modal-content{
+		width: 800px;
+		margin-top: -70px;
+	}
+	h3{
+		font-size: 17px;
+	}
+	h1 {
+		text-align: center;
+	}
+	.pagination>li>a, .pagination>li>span { border-radius: 50% !important;margin: 0 5px;}
+	.container{
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div class="container container-max" style="width:1250px">
+		<div id="navbar" class="navbar">
+			<img src="logo.png">
+			<a href="trangchu.html"><i class="fa fa-home" style="font-size:25px"></i></a>
+			<div class="dropdown">
+				<button class="dropbtn"><a href="#vedanang"><strong>VỀ ĐÀ NẴNG</strong> <i class="fa fa-caret-down"></i></a></button>
+				<div class="dropdown-content">
+					<a href="#thoitietdanang">Thời tiết Đà Nẵng</a>
+					<a href="#tongquandanang">Tổng quan Đà Nẵng</a>
+					<a href="#lichsudanang">Lịch sử Đà Nẵng</a>
+					<a href="hinhanh.html">Hình ảnh Đà Nẵng</a>
+					<a href="#hotrodukhach">Trung tâm hỗ trợ du khách</a>
+					<a href="#logodulich">Logo du lịch Đà Nẵng</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn"><a href="noibat.html"><strong>NỔI BẬT</strong> <i class="fa fa-caret-down"></i></a></button>
+				<div class="dropdown-content">
+					<a href="#phaohoaquocte">Lễ hội pháo hoa Quốc tế Đà Nẵng 2018</a>
+					<a href="#vuhoiduongpho">Vũ hội đường phố 2018</a>
+					<a href="#nghethuatbieudien">Liên hoan nghệ thuật biểu diễn 2018</a>
+					<a href="#marathon">Cuộc thi Marathon Quốc tế Đà Nẵng</a>
+					<a href="#diemhenmuahe">Đà Nẵng - Điểm hẹn mùa hè</a>
+				</div>
+			</div> 
+			<div class="dropdown">
+				<button class="dropbtn"><a href="trangdanhsachthangcanhdanang.html"><strong>ĐIỂM DU LỊCH</strong> <i class="fa fa-caret-down"></i></a></button>
+				<div class="dropdown-content">
+					<a href="#caycaudanang">Cây cầu Đà Nẵng</a>
+					<a href="#cungkhampha">Cùng khám phá</a>
+					<a href="#langnghe">Làng nghề</a>
+					<a href="#thiennhien">Thiên nhiên</a>
+					<a href="#vanhoa">Văn hóa</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn"><a href="#trainghiem"><strong>TRẢI NGHIỆM</strong> <i class="fa fa-caret-down"></i></a></button>
+				<div class="dropdown-content">
+					<a href="#danangvedem">Đà Nẵng về đêm</a>
+					<a href="#truyenthong">Truyền thống</a>
+					<a href="#hoatdongthethao">Hoạt động thể thao</a>
+					<a href="#muasam">Mua sắm</a>
+					<a href="dichvuanuong.html">Ẩm thực</a>
+					<a href="#duthuyensonghan">Du thuyền sông Hàn</a>
+					<a href="#dichvudatchuan">Dịch vụ đạt chuẩn</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn"><a href="#sukien"><strong>SỰ KIỆN</strong> <i class="fa fa-caret-down"></i></a></button>
+				<div class="dropdown-content">
+					<a href="#phaohoaquocte">Lễ hội pháo hoa Quốc tế Đà Nẵng 2018</a>
+					<a href="#heliosummerfestival">Lễ hội Helio Summer Festival 2018</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn"><a href="#khachsan"><strong>KHÁCH SẠN</strong> <i class="fa fa-caret-down"></i></a></button>
+				<div class="dropdown-content">
+					<a href="khachsan5sao.html">Khách sạn 5 sao</a>
+					<a href="khachsan4sao.html">Khách sạn 4 sao</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn"><a href="#lienhe"><strong>LIÊN HỆ</strong> <i class="fa fa-caret-down"></i></a></button>
+				<div class="dropdown-content">
+					<a href="thongtinffse.html">Thông tin chủ đầu tư</a>
+					<a href="thanhvien.html">Nhóm phát triển dự án</a>
+				</div>
+			</div>
+			<a href="#search"><i class="fa fa-search" id="search"></i></a>
+		</div>
+		
+		<div class="well"><h1>Danang's Gallery</h1></div>
+		<div class="container" style="margin-top: 8px;">
+			<div class="w3-row-padding w3-padding-16 w3-center" style="text-align: center;">
+				<div class="w3-quarter col-md-3" style="position: relative;width: 24%; height: 450px;overflow: hidden; margin-right: 10px;">
+					<div class="w3-display-middle">
+						<a class="lib" onClick="document.getElementById('id01').style.display='block'"> 
+							<img class="a" src="image\asia-park-sun-world-danang.jpeg" height="400">
+						</a>
+						<h3>Vòng Quay Mặt Trời</h3>
+					</div>
+				</div>
+
+				<div class="w3-quarter col-md-3" style="position: relative;width: 24%; height: 450px;overflow: hidden;margin-right: 10px;">
+					<div class="w3-display-middle">
+						<a class="lib" onClick="document.getElementById('id02').style.display='block'"> 
+							<img class="a" src="image\bien-nam-o.jpg" style="height: 400px;">
+						</a>
+						<h3>Bãi Rạn Nam Ô</h3>
+					</div>
+				</div>
+
+				<div class="w3-quarter col-md-3" style="position: relative;width: 24%; height: 450px;overflow: hidden;margin-right: 10px;">
+					<div class="w3-display-middle">
+						<a class="lib" onClick="document.getElementById('id03').style.display='block'"> 
+							<img class="a" src="image\ca-chep-hoa-rong-da-nang.jpg" style="height: 400px;">
+						</a>
+						<h3>Cá Chép Hóa Rồng</h3>
+					</div>
+				</div>
+
+				<div class="w3-quarter col-md-3" style="position: relative;width: 24%; height: 450px;overflow: hidden;">
+					<div class="w3-display-middle">
+						<a class="lib" onClick="document.getElementById('id04').style.display='block'"> 
+							<img class="a" src="image\chua-linh-ung.jpg" style="height: 400px;">
+						</a>
+						<h3>Chùa Linh Ứng</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-padding-16 w3-center" style="text-align: center;">
+				<div class="w3-quarter col-md-3" style="position: relative;width: 24%; height: 450px;overflow: hidden; margin-right: 10px;">
+					<div class="w3-display-middle">
+						<a class="lib" onClick="document.getElementById('id05').style.display='block'"> 
+							<img class="a" src="image\phao_hoa_Da_Nang_2018.jpg" style="height: 400px;">
+						</a>
+						<h3>Pháo Hoa Đà Nẵng</h3>
+					</div>
+				</div>
+
+				<div class="w3-quarter col-md-3" style="position: relative;width: 24%; height: 450px;overflow: hidden;margin-right: 10px;">
+					<div class="w3-display-middle">
+						<a class="lib" onClick="document.getElementById('id06').style.display='block'"> 
+							<img class="a" src="image\intercontinental danang.png" style="height: 400px;">
+						</a>
+						<h3>intercontinental danang</h3>
+					</div>
+				</div>
+
+				<div class="w3-quarter col-md-3" style="position: relative;width: 24%; height: 450px;overflow: hidden;margin-right: 10px;">
+					<div class="w3-display-middle">
+						<a class="lib" onClick="document.getElementById('id07').style.display='block'"> 
+							<img class="a" src="image\my-son.jpg" style="height: 400px;">
+						</a>
+						<h3>My Son Holyland</h3>
+					</div>
+				</div>
+
+				<div class="w3-quarter col-md-3" style="position: relative;width: 24%; height: 450px;overflow: hidden;">
+					<div class="w3-display-middle">
+						<a class="lib" onClick="document.getElementById('id08').style.display='block'"> 
+							<img class="a" src="image\nui-than-tai.jpg" style="height: 400px;">
+						</a>
+						<h3>Núi Thần Tài</h3>
+					</div>
+				</div>
+
+				<div class="container">
+					<ul class="pagination">
+						<li class="disabled"><a href="#">«</a></li>
+						<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">»</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="id01" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+					<span onclick="document.getElementById('id01').style.display='none'" 
+					class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
+					<img src="image\asia-park-sun-world-danang.jpeg" style="width: 100%;">
+				</div>
+			</div>		
+
+			<div id="id02" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+					<span onclick="document.getElementById('id02').style.display='none'" 
+					class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
+					<img src="image\bien-nam-o.jpg" style="width: 100%; height: 600px;">
+				</div>	
+			</div>		
+
+			<div id="id03" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+					<span onclick="document.getElementById('id03').style.display='none'" 
+					class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
+					<img src="image\ca-chep-hoa-rong-da-nang.jpg" style="width: 100%;">
+				</div>	
+			</div>		
+
+			<div id="id04" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+					<span onclick="document.getElementById('id04').style.display='none'" 
+					class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
+					<img src="image\chua-linh-ung.jpg" style="width: 100%; ">
+				</div>	
+			</div>
+
+			<div id="id05" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+					<span onclick="document.getElementById('id05').style.display='none'" 
+					class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
+					<img src="image\phao_hoa_Da_Nang_2018.jpg" style="width: 100%;">
+				</div>	
+			</div>
+
+
+			<div id="id06" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+					<span onclick="document.getElementById('id06').style.display='none'" 
+					class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
+					<img src="image\intercontinental danang.png" style="width: 100%;">
+				</div>	
+			</div>
+
+			<div id="id07" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+					<span onclick="document.getElementById('id07').style.display='none'" 
+					class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
+					<img src="image\my-son.jpg" style="width: 100%;">
+				</div>	
+			</div>
+
+			<div id="id08" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+					<span onclick="document.getElementById('id08').style.display='none'" 
+					class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
+					<img src="image\nui-than-tai.jpg" style="width: 100%;">
+				</div>	
+			</div>
+			<script>
+				function openModal() {
+					document.getElementById('myModal').style.display = "block";
+				}
+
+				function closeModal() {
+					document.getElementById('myModal').style.display = "none";
+				}
+
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("demo");
+					var captionText = document.getElementById("caption");
+					if (n > slides.length) {slideIndex = 1}
+						if (n < 1) {slideIndex = slides.length}
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";
+							}
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							}
+							slides[slideIndex-1].style.display = "block";
+							dots[slideIndex-1].className += " active";
+							captionText.innerHTML = dots[slideIndex-1].alt;
+						}
+					</script>
+
+					<footer>
+						<div class="col-sm-12" id="contact">
+							<div class="col-sm-4" id="vechungtoi">
+								<div id="tieude"><p><strong>Về chúng tôi</strong></p></div>
+								<div id="thongtin">
+									<p>Bản quyền thuộc về UBND TP. Đà Nẵng Sở Du lịch Đà Nẵng</p>
+									<p>Quản lý bởi Trung Tâm Xúc Tiến Du Lịch Đà Nẵng</p>
+									<p>Tel: (84.236) 3.898.196 - Fax: (84.236) 3.812.029</p>
+									<p>Contact us: media@danangfantasticity.com</p>
+								</div>
+							</div>
+							<div class="col-sm-4" id="dangky">
+								<div id="tieude"><p><strong>Đăng ký nhận bảng tin</strong></p></div>
+								<form class="form-group">
+									<input class="form-text" type="text" placeholder=" Họ và tên" required="">
+									<input class="form-email" type="email" placeholder=" Địa chỉ Email" required="">
+									<button class="form-button" type="submit"><strong>Đăng ký ngay</strong></button>
+								</form>
+							</div>
+							<div class="col-sm-4" id="tukhoa">
+								<div id="tieude"><p><strong>Từ khóa nổi bật</strong></p>
+									<span>4sao</span>
+									<span>abg5</span>
+									<span>APEC</span>
+									<span>APEC 2017</span>
+									<span>Clipper race</span>
+									<span>du lich da nang</span>
+									<span>du lịch Đà Nẵng</span>
+									<span>Hội An</span>
+									<span>khuyến mãi</span>
+									<span>khám phá</span>
+									<span>Novotel Danang Premier Han River</span>
+									<span>nổi bật</span>
+									<span>pháo hoa</span>
+									<span>sự kiện</span>
+									<span>Tin tức</span>
+									<span>tuyển dụng</span>
+								</div>					
+							</div>
+						</div>
+						<div class="col-sm-12" id="footer">
+							<div class="col-sm-6" id="copyright">
+								<p><i class="fa fa-copyright"></i> Copyright 2018 Tourism Danang. All rights reserved. Made with <i class="fa fa-heart" style="color:red"></i> in Da Nang</p>
+							</div>
+							<div class="col-sm-6" id="lienhe">
+								<i class="fa fa-facebook"></i>
+								<i class="fa fa-twitter"></i>
+								<i class="fa fa-youtube"></i>
+								<i class="fa fa-instagram"></i>
+								<p>Hỏi đáp</p>
+								<p>Liên hệ</p>
+								<p>Trao đổi liên kết</p>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</body>
+		</html>
