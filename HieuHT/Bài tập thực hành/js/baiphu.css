@@ -1,0 +1,24 @@
+.mySlides {display:none; width: 1400px; height: 300px;}
+img {vertical-align: middle;}
+.navbar{
+	width: 1415px;
+}
+.menu{
+	background-color: #f0f0f0;
+}
+.line{
+	margin-right: 30px;
+	margin-left: 30px;
+	background-color: #f0f0f0;
+}
+.line:hover{
+	background-color: #48bed0;
+}
+.khuyenmai{
+	width: 1490px;
+	height: 500px;
+}
+.tour{
+	text-align:70%;
+
+}

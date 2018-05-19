@@ -1,0 +1,242 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Thành phần Pizza</title>
+		<link rel="icon" type="image/png" href="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX9858349.jpg">
+
+		<meta property="fb:app_id" content="{YOUR_APP_ID}" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+		body{
+			background-image: url("image/hinhnen.jpg");
+		}
+		#dathang{
+			width: 30%;
+			color: white; 
+			text-decoration: none; 
+			font-size: 20px;
+			border: solid red;
+			background: red;
+		}
+		#dathang:hover{
+			text-decoration: none;
+			color: black;
+		}
+		#return{
+			width: 30%;
+			color: white; 
+			text-decoration: none; 
+			font-size: 20px;
+			border: solid red;
+			background: red;
+			margin-left: 70%;
+		}
+		#return:hover{
+			text-decoration: none;
+			color: black;
+		}
+		/* Phần header và menu*/
+		.navbar {
+			width:100%;
+			margin-bottom: 50px;
+			border-radius: 0;
+			
+		}
+		.jumbotron {
+			color: #9f0811;
+			margin-bottom: 0;
+			background-image: url("image/header-pizza2.jpg");
+		}
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		.menuchinh {
+			position: relative;
+			display: inline-block;
+		}
+
+		.menuphu {
+			display: none;
+			position: absolute;
+			background-color: #b6ad89;
+			min-width: 237px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.menuphu a {
+			color: white;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+		.menu:hover{background-color: #f1f1f1}
+		.menuphu a:hover {box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);}
+		.menuchinh:hover .menu {
+			background-color: #3e8e41;
+		}
+		.menuchinh:hover .menuphu {
+			display: block;
+		}
+		.mnphu{
+			margin-top: 25%; 
+			color: #9d9d9d;
+		}
+		.mnphu:hover{
+			color: white;
+		}
+		/* Phần footer */
+		.footer{
+			text-align: center;
+			background-color: pink;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		ul{
+			list-style-type: none;
+			display: block;
+			margin-left: 30%;
+		}
+		li{
+			float: left;
+		}
+		/* Phần liên kết ngoài */
+		.lienketngoai{
+			position: fixed;
+			top: 100px;
+			left: 20px;
+		}
+
+		.icon{
+			width: 50px;
+			height: 50px;
+			opacity: 0.2;
+			filter: alpha(opacity=20); 
+
+		}
+		.icon:hover{
+			opacity: 1;
+			transform: scale(1.5);
+		}
+
+	</style>
+
+</head>
+<body>
+	<!--Phần header-->
+	<div class="jumbotron">
+		<div class="container text-center">
+
+			<h1>Pizza Store</h1>      
+			<p>Mạnh, Hợi & Luân</p>
+		</div>
+	</div>
+	<!--Phần Menu-->
+	<div id="navbar">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="Project-Group1-TrangChu.html">Trang chủ</a></li>
+						<li><a href="MenuPizza.html">Menu Pizza </a></li>
+						<li><a href="MenuDrink.html">Menu Drink</a></li>
+						<li>
+							<div class="menuchinh">
+								<p class="mnphu">Giới thiệu</p>
+								<div class="menuphu">
+									<a href="https://www.fasttrack.edu.vn/">Nhà tài trợ</a>
+									<a href="NhomThucHien.html">Nhóm thực hiện</a>
+								</div>
+								
+							</div>        
+						</li>
+						<li>
+							<div class="menuchinh" style="margin-left: 20px; margin-top: 5%">
+								<p class="mnphu">Liên hệ</p>
+								<div class="menuphu">
+									<a href="#">Địa chỉ</a>
+									<a href="#">CSKH</a>
+								</div>
+								
+							</div>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="giohang.html" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script>
+
+	<div class="container">
+		<div>
+			<img src="image/header-pizza.jpg" style="width: 100%;">x`
+		</div><br><br><br>
+		<div class="row">
+			<div class="col-sm-5">
+				<img src="image/01.png">
+			</div>
+			<div class="col-sm-7">
+				<h1 style="display: inline-block; color: white;">Thành phần gồm: Xúc xích, thịt nguội, thịt bò, xúc xích gà, thơm, nấm, hành tây, ớt chuông và ô liu <br><br><br> Giá: 119.0000đ</h1>
+				<a id="dathang" href="#">Bắt đầu đặt hàng</a><br><br><br>
+				<a id="return" href="MenuPizza.html">Trở lại Menu</a>
+			</div>
+		</div>
+		<!-- Phần footer -->
+		<img src="image/Hotline_No.png" style="width: 50%;margin-left: 25%;">
+		<div class="footer">
+			<ul>
+				<li><a href="">&copy;2018 Pizza HLM.</a></li>
+				<li><a href="">Liên hệ</a></li>
+				<li><a href="">Chính sách giao hàng</a></li>
+				<li><a href="">Điều khoản</a></li>
+			</ul><br>
+			<p>Tập đoàn cung cấp Pizza số 1 Việt Nam<br>
+				Địa chỉ: Tầng 1 - Tòa nhà FPT - KCN An Đồn - Sơn Trà - Đà Nẵng.
+			</p>
+
+		</div>
+		<!-- Phần liên kết ngoài -->
+		<div class="lienketngoai">
+			<a href="https://www.youtube.com/watch?v=rG9r3RV_PDc"><img class="icon" src="image/youtube.jpg"></a><br>
+			<a href="https://zalo.me/pc"><img class="icon" src="image/zalo.png"></a><br>
+			<a href="https://twitter.com/?lang=vi"><img class="icon" src="image/twetter.jpg"></a><br>
+			<a href="https://www.facebook.com/"><img class="icon" src="image/facebook.png"></a><br>
+			<a href="https://mail.google.com/mail/#inbox"><img class="icon" src="image/gmail.png"></a><br>
+			<a href="https://www.instagram.com"><img class="icon" src="image/instagram.jpg"></a>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

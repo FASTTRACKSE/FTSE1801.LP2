@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Website bán đồ ăn nhanh và thức uống</title>
+	<link rel="icon" type="image/png" href="image/icon.jpg">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">	
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="wow/animate.css">
+	<script type="text/javascript" src="wow/wow.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/TrangChu.css">
+</head>
+<body>
+		<!--Phần header-->
+		<div class="jumbotron">
+			<div class="container text-center">
+
+				<h1>Pizza Store</h1>      
+				<p>Mạnh, Hợi & Luân</p>
+			</div>
+		</div>
+		<!--Phần Menu-->
+		<div id="navbar" style="z-index: 999;">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="Project-Group1-TrangChu.html">Trang chủ</a></li>
+							<li><a href="MenuPizza.html">Menu Pizza </a></li>
+							<li><a href="MenuDrink.html">Menu Drink</a></li>
+							<li>
+								<div class="menuchinh">
+									<p class="mnphu">Giới thiệu</p>
+									<div class="menuphu">
+										<a href="https://www.fasttrack.edu.vn/">Nhà tài trợ</a>
+										<a href="NhomThucHien.html">Nhóm thực hiện</a>
+									</div>
+
+								</div>        
+							</li>
+							<li>
+								<div class="menuchinh" style="margin-left: 20px; margin-top: 5%">
+									<p class="mnphu">Liên hệ</p>
+									<div class="menuphu">
+										<a href="#">Địa chỉ</a>
+										<a href="#">CSKH</a>
+									</div>
+
+								</div>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="giohang.html" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+
+		<!-- Phần giới thiệu -->
+
+		<div class="container phangioithieu" style="margin-top:20px;z-index: 1">
+
+			<!-- Giới thiệu Phạm Ngọc Hợi -->
+
+			<div class="row" style="background-color: #c6ff8c;">
+				<div class="col-sm-4"><img src="image/pnhoi.jpg" style="width: 70%; height: 250px;"></div>
+				<div class="col-sm-8">
+					<table>
+						<tr>
+							<th colspan="2">Phạm Ngọc Hợi</th>
+						</tr>
+						<tr>
+							<th>MSSV: </th>
+							<td>FTSE1801005</td>
+						</tr>
+						<tr>
+							<th>Ngày sinh: </th>
+							<td>01 - 6 - 1995</td>
+						</tr>
+						<tr>
+							<th>Quê quán: </th>
+							<td>Nghệ An</td>
+						</tr>
+						<tr>
+							<th>Giới thiệu: </th>
+							<td>Đây là nhà thiết kế đầy tiềm năng cùng triển vọng của Nhóm HLM, là người tạo nên thương hiệu độc đáo cho Group. Với một tinh thần sáng tạo, tư duy mới mẻ anh luôn tạo ra 1 sản phẩm tràn ngập chất độc khiến cho người dùng chỉ cần xem qua 1 lần sẽ không ngần ngại mà Click ngay vào nốt đỏ.</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<!-- Giới thiệu Vũ Văn Mạnh -->
+
+			<div class="row" style="background-color: #c4bb9d">
+				<div class="col-sm-8">
+					<table>
+						<tr>
+							<th colspan="2">Vũ Văn Mạnh</th>
+						</tr>
+						<tr>
+							<th>Mã số sinh viên: </th>
+							<td>FTSE1801010</td>
+						</tr>
+						<tr>
+							<th>Ngày sinh: </th>
+							<td>10 - 9 - 1997</td>
+						</tr>
+						<tr>
+							<th>Quê quán: </th>
+							<td>Gia Lai</td>
+						</tr>
+						<tr>
+							<th>Giới thiệu: </th>
+							<td>Đây là 1 chuyên viên kĩ thuật giỏi bậc nhất Nhóm HLM, là người tạo nên chất lượng đỉnh cao của Nhóm HLM. Với tinh thần chịu khó học hỏi anh luôn tìm và COPY được những phần CỐT khó mà những thành viên khác phải bó tay.</td>
+						</tr>
+					</table>				
+				</div>
+				<div class="col-sm-4"><img src="image/vanmanh.jpg " style="width: 50%; height: 250px;"></div>
+			</div>
+
+			<!-- Giới thiệu Trần Duy Luân -->
+
+			<div class="row" style="background-color: #ffffb0">
+				<div class="col-sm-4"><img src="image/luan.jpg" style="width: 50%; height: 250px;"></div>
+				<div class="col-sm-8">
+					<table>
+						<tr>
+							<th colspan="2">Trần Duy Luân</th>
+						</tr>
+						<tr>
+							<th>MSSV: </th>
+							<td>FTSE1801009</td>
+						</tr>
+						<tr>
+							<th>Ngày sinh: </th>
+							<td>17 - 8 - 1995</td>
+						</tr>
+						<tr>
+							<th>Quê quán: </th>
+							<td>Quảng Nam</td>
+						</tr>
+						<tr>
+							<th>Giới thiệu: </th>
+							<td>Là trưởng nhóm, người dẫn dắt cho từng bước đi của Nhóm HLM, anh là thành viên quan trọng bậc nhất của Group. Và nếu thiếu anh Nhóm HLM sẽ mãi mãi không thể trở thành 1 Group 3 người được.</td>
+						</tr>
+					</table>				
+				</div>
+			</div>	
+			<!-- Phần footer -->
+
+			<img src="image/Hotline_No.png" style="width: 50%;margin-left: 25%;">
+			<div class="footer">
+				<ul>
+					<li><a href="">&copy;2018 Pizza Nhóm HLM.</a></li>
+					<li><a href="">Liên hệ</a></li>
+					<li><a href="">Chính sách giao hàng</a></li>
+					<li><a href="">Điều khoản</a></li>
+				</ul><br>
+				<p>Tập đoàn cung cấp Pizza số 1 Việt Nam<br>
+					Địa chỉ: Tầng 1 - Tòa nhà FPT - KCN An Đồn - Sơn Trà - Đà Nẵng.
+				</p>
+
+			</div>
+		</div>
+
+
+
+
+	<!-- Phần liên kết ngoài -->
+
+	<div class="lienketngoai">
+		<a href="https://www.youtube.com/watch?v=rG9r3RV_PDc"><img class="icon" src="image/youtube.jpg"></a><br>
+		<a href="https://zalo.me/pc"><img class="icon" src="image/zalo.png"></a><br>
+		<a href="https://twitter.com/?lang=vi"><img class="icon" src="image/twetter.jpg"></a><br>
+		<a href="https://www.facebook.com/"><img class="icon" src="image/facebook.png"></a><br>
+		<a href="https://mail.google.com/mail/#inbox"><img class="icon" src="image/gmail.png"></a><br>
+		<a href="https://www.instagram.com"><img class="icon" src="image/instagram.jpg"></a>
+	</div>
+
+</body>
+</html>
+
+</body>
+</html>

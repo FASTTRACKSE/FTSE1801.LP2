@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phiếu đăng kí dự thi người mẫu</title>
+	<style type="text/css">
+		table, tr, th, td{
+			border: 1px solid;
+		}
+	</style>
+</head>
+<body>
+	<h1>PHIẾU ĐĂNG KÝ DỰ THI NGƯỜI MẪU</h1>
+	<form>
+		<table>
+			<tr>
+				<th style="width: 250px;">Tên</th>
+				<th>Giá trị</th>
+			</tr>
+			<tr>
+				<td>Tên</td>
+				<td><input type="text"/></td>
+			</tr>
+			<tr>
+				<td>Giới tính</td>
+				<td><input type="radio" name="giới tính" value="nam">Nam <br>
+					<input type="radio" name="giới tính"  value="nữ">Nữ
+				</td>
+			</tr>
+			<tr>
+				<td>Màu mắt</td>
+				<td><select>
+					<option>Xanh</option>
+					<option>Nâu</option>
+					<option>Đen</option>
+					</select> 
+				</td>
+			</tr>
+			<tr>
+				<td>Chiều cao</td>
+				<td><input type="checkbox">Trên 1,5m <br/>
+				<input type="checkbox">Dưới 1,5m
+				</td>
+			</tr>
+			<tr>
+				<td>Mong muốn của bạn</td>
+				<td><textarea style="width: 400px; height: 100px;"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;"><input type="submit" name="" value="Gửi thông tin"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
