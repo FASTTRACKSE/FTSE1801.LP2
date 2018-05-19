@@ -14,18 +14,6 @@
 		body{
 			background-image: url("image/hinhnen.jpg");
 		}
-		#dathang{
-			width: 30%;
-			color: white; 
-			text-decoration: none; 
-			font-size: 20px;
-			border: solid red;
-			background: red;
-		}
-		#dathang:hover{
-			text-decoration: none;
-			color: black;
-		}
 		#return{
 			width: 30%;
 			color: white; 
@@ -39,7 +27,7 @@
 			text-decoration: none;
 			color: black;
 		}
-		/* Phần header và menu*/
+		/* Css Phần header và menu*/
 		.navbar {
 			width:100%;
 			margin-bottom: 50px;
@@ -92,7 +80,7 @@
 		.mnphu:hover{
 			color: white;
 		}
-		/* Phần footer */
+		/* Css Phần footer */
 		.footer{
 			text-align: center;
 			background-color: pink;
@@ -107,7 +95,7 @@
 		li{
 			float: left;
 		}
-		/* Phần liên kết ngoài */
+		/* Css Phần liên kết ngoài */
 		.lienketngoai{
 			position: fixed;
 			top: 100px;
@@ -139,7 +127,7 @@
 		</div>
 	</div>
 	<!--Phần Menu-->
-	<div id="navbar">
+	<div id="navbar" style="z-index: 999;">
 		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -184,7 +172,6 @@
 	</div>
 	<script>
 		window.onscroll = function() {myFunction()};
-
 		var navbar = document.getElementById("navbar");
 		var sticky = navbar.offsetTop;
 
@@ -196,18 +183,26 @@
 			}
 		}
 	</script>
-
+	<!-- Phần thân thành phần-->
 	<div class="container">
 		<div>
-			<img src="image/header-pizza.jpg" style="width: 100%;">x`
+			<img src="image/header-pizza.jpg" style="width: 100%;">
 		</div><br><br><br>
 		<div class="row">
-			<div class="col-sm-5">
-				<img src="image/01.png">
+			<div class="col-sm-6 wow bounceInRight" data-wow-duration="3s">
+				<div class="panel thumbnail" style="background: black;">
+					<div class="panel-heading" style="color: #d4a26f; font-size: 20px; text-align: center;">PIZZA THẬP CẨM CAO CẤP</div>
+					<div class="panel-body" style="background: black">
+						<div>
+							<img src="image/01.png" class="img-responsive" style="width:50%; display: inline;" alt="Image">
+						</div>
+						<span style="color: white"> Số lượng: <input style="color: black" type="number" name="soluong" value="1" id="1"></span>
+					</div>
+					<div class="panel-footer" style="border-radius: 5px; background: red; text-align: center;"><button data-name="PIZZA THẬP CẨM CAO CẤP" data-price="119000" class="add-to-cart btn btn-info button-buy-now">Bắt đầu đặt hàng</button></div>
+				</div>
 			</div>
-			<div class="col-sm-7">
+			<div class="col-sm-6">
 				<h1 style="display: inline-block; color: white;">Thành phần gồm: Xúc xích, thịt nguội, thịt bò, xúc xích gà, thơm, nấm, hành tây, ớt chuông và ô liu <br><br><br> Giá: 119.0000đ</h1>
-				<a id="dathang" href="#">Bắt đầu đặt hàng</a><br><br><br>
 				<a id="return" href="MenuPizza.html">Trở lại Menu</a>
 			</div>
 		</div>
@@ -238,5 +233,23 @@
 </div>
 
 
+<!-- Phần liên kết giỏ hàng-->
+<script type="text/javascript">
+	$(document).on('click','.button-buy-now',function(e){
+		e.preventDefault();
+		var parent = $(this).parents('.thumbnail');
+		var src = parent.find('img').attr('src');
+		var name = parent.find('button').attr('data-name');
+		var gia = parent.find('button').attr('data-price');
+		var soluong = document.getElementById(parent.find('input').attr('id')).value;
+		var item = {"name" : name, "gia" : gia, "soluong" : soluong, 'src' : src};
+		var name=item.name;
+
+		
+		localStorage.setItem('ten',name);
+		localStorage.setItem(name,JSON.stringify(item));
+
+	});
+</script>
 </body>
 </html>
