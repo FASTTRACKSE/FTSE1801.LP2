@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tính chu vi - diện tích hình tròn</title>
+</head>
+<body>
+	<form>
+		<label>Nhập bán kính: </label>
+		<input onchange="dientich()" id="n" type="number" name="" value=" ">
+	</form>
+	<script type="text/javascript">
+		function dientich(){
+			var x= document.getElementById('n');
+			var y=x.value;
+			var dt=3.14*y*y;
+			alert('Diện tích là: '+dt);
+		}	
+	</script>
+</body>
+</html>
