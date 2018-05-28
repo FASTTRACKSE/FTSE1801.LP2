@@ -1,0 +1,95 @@
+body{
+  width: 100%;
+  height: 1000px;
+  background-image: url("../image/hinhnen.jpg");
+}
+
+/* Phần header và menu*/
+.navbar {
+  width:100%;
+  margin-bottom: 50px;
+  border-radius: 0;
+
+}
+.jumbotron {
+  color: #9f0811;
+  margin-bottom: 0;
+  background-image: url("../image/header-pizza2.jpg");
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.mnphu{
+  margin-top: 25%; 
+  color: #9d9d9d;
+}
+.mnphu:hover{
+  color: white;
+}
+.menuchinh {
+  position: relative;
+  display: inline-block;
+}
+
+.menuphu {
+  display: none;
+  position: absolute;
+  background-color: #b6ad89;
+  min-width: 237px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menuphu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.menu:hover{background-color: #f1f1f1}
+.menuphu a:hover {box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);}
+.menuchinh:hover .menu {
+  background-color: #3e8e41;
+}
+.menuchinh:hover .menuphu {
+  display: block;
+}
+
+/* Phần footer */
+
+.footer{
+  text-align: center;
+  background-color: pink;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+ul{
+  list-style-type: none;
+  display: block;
+  margin-left: 30%;
+}
+li{
+  float: left;
+}
+/* Phần liên kết ngoài */
+.lienketngoai{
+  position: fixed;
+  top: 100px;
+  left: 20px;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  opacity: 0.2;
+  filter: alpha(opacity=20); 
+
+}
+.icon:hover{
+  opacity: 1;
+  transform: scale(1.5);
+}
+
