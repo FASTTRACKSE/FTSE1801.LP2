@@ -252,18 +252,36 @@ body{
 
 
 /*product*/
-.row_p{margin-left:-15px;margin-right: -15px;}	
-.box_p{float:left;margin-bottom:15px;}
-.img_p{text-align:center;overflow:hidden;}
-.img_p{border-radius:5px;border: 1px solid #e1e1e1;padding: 0px;}
+.row_p{margin-left:-15px;
+	margin-right: -15px;}	
+.box_p{float:left;
+	margin-bottom:15px;}
+.img_p{text-align:center;
+	overflow:hidden;}
+.img_p{border-radius:5px;
+	border: 1px solid #e1e1e1;
+	padding: 0px;}
 .img_p img{border-radius:5px;}
-.name_p{text-align:center;font-size:15px;margin-top: 10px;font-family:RobotoRegular;}
-.name_p h2{font-size: 18px;color:;}
-.name_p1{font-size:15px;margin-top: 10px;font-family:RobotoRegular;padding-left: 40px;}
+.name_p{text-align:center;
+	font-size:15px;margin-top: 10px;
+	font-family:RobotoRegular;}
+.name_p h2{font-size: 18px;
+	color:;}
+.name_p1{font-size:15px;
+	margin-top: 10px;
+	font-family:RobotoRegular;
+	padding-left: 40px;}
 
-.name_p1 h2{font-size: 18px;color: #000;}
-.gia_p{text-align:center;margin-top:5px;font-size:15px;font-family:RobotoRegular;color:#979797;}
-.gia_p span{color:#f00;font-family:RobotoMedium;font-size:15px;}
+.name_p1 h2{font-size: 18px;
+	color: #000;}
+.gia_p{text-align:center;
+	margin-top:5px;
+	font-size:15px;
+	font-family:RobotoRegular;
+	color:#979797;}
+.gia_p span{color:#f00;
+	font-family:RobotoMedium;
+	font-size:15px;}
 /*end product*/
 /*dangkytinnhan*/
 .bg_dangkynhantin{
@@ -276,7 +294,11 @@ body{
 .clear{
 	clear: both;
 }
-.max_dknhantin{max-width:600px;margin:auto;text-align:center;position:absolute;left: 400px;}
+.max_dknhantin{max-width:600px;
+	margin:auto;
+	text-align:center;
+	position:absolute;
+	left: 400px;}
 .max_dknhantin h3{text-transform:uppercase;
 	font-family:UTMCookies;
 	padding-top: 10px;
@@ -300,7 +322,11 @@ color: #7c7c7c;/* padding-top: 5px; */}
 	font-size:15px;
 	padding:10px 0px;
 	margin:0px;}
-.hotro_online span{color:#ff0078;font-family:UTMHelvetIns;font-style:italic;font-size:30px;text-align:  center;}
+.hotro_online span{color:#ff0078;
+	font-family:UTMHelvetIns;
+	font-style:italic;
+	font-size:30px;
+	text-align:  center;}
 /*dkmail*/
 .dangkymail{width: 100%;background: #fff;}
 #hoten_dknhantin{width: 43%;height: 35px;
@@ -324,11 +350,20 @@ color: #7c7c7c;/* padding-top: 5px; */}
 	font-family:RobotoRegular;
 	font-family:RobotoRegular;
 	margin-top: 0px;}
-#button_dknhantin{width: 20%;height: 34px;background: #ff0078;text-align: center;}
+#button_dknhantin{width: 20%;
+	height: 34px;
+	background: #ff0078;
+	text-align: center;}
 /*End dkmail*/
 /*footer*/
-#footer{background: #e11776;padding: 20px 0px;max-width: 100%;margin: 0px auto;}
-.name_footer{font-family: 'UTMSwiss721BlackCondensed';font-size: 20px;color:#fcff00;font-weight: normal;}
+#footer{background: #e11776;
+	padding: 20px 0px;
+	max-width: 100%;
+	margin: 0px auto;}
+.name_footer{font-family: 'UTMSwiss721BlackCondensed';
+font-size: 20px;
+color:#fcff00;
+font-weight: normal;}
 .left_footer{width: 480px;float: left;margin-left: 20px;}
 .right_footer{width:300px;float: right;padding-left: 30px;}
 .mid1_footer{width: 150px;float: left;margin-left: 30px;}
@@ -338,7 +373,12 @@ color: #7c7c7c;/* padding-top: 5px; */}
 .box_noidung_top_footer{text-align:center;}
 .box_diachi{margin-top:20px;}
 .box_diachi img{padding-right:20px;}
-.box_diachi a{background:#ffea00;padding: 11px 30px;border-radius: 20px;color: #000;font-family:RobotoRegular;font-size:14px;}
+.box_diachi a{background:#ffea00;
+	padding: 11px 30px;
+	border-radius: 20px;
+	color: #000;
+	font-family:RobotoRegular;
+	font-size:14px;}
 .title_footer{font-family:RobotoCondensedBold;
 	text-transform:uppercase;
 	color:#fff;
@@ -346,12 +386,22 @@ color: #7c7c7c;/* padding-top: 5px; */}
 	background:url(../img/li_gt.png) left bottom no-repeat;
 	padding-bottom: 8px;
 	margin-bottom: 5px;}
-.title_noidung{color:#fff;font-family:UTMCookies;font-size:40px;text-transform:uppercase;}
-.list_thongke{margin-left:-40px;list-style: none;color:#fff;}
+.title_noidung{color:#fff;
+	font-family:UTMCookies;
+	font-size:40px;
+	text-transform:uppercase;}
+.list_thongke{
+	margin-left:-40px;
+	list-style: none;
+	color:#fff;}
 .list_thongke li{
 	padding-right: 100px;
 }
-#copyright{padding: 10px 0px;background: #9f004b;color:#fff;text-align:center;font-family:RobotoRegular;}
+#copyright{padding: 10px 0px;
+	background: #9f004b;
+	color:#fff;
+	text-align:center;
+	font-family:RobotoRegular;}
 /*End fotter*/
 /*Gioi thieu*/
 .gioithieu{
