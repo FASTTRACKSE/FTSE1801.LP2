@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MENU DRINK</title>
+  <link rel="icon" type="image/png" href="image/icon.jpg">
+  <link rel="stylesheet" type="text/css" href="wow/animate.css">
+  <script type="text/javascript" src="wow/wow.min.js"></script>
+  <script type="text/javascript">
+    new WOW().init();
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+  body{
+    background-image: url("image/hinhnen.jpg");
+  }
+  h3{
+    color: white;
+  }
+  /* Css Phần header và menu*/
+    .navbar {
+    width:100%;
+      margin-bottom: 50px;
+      border-radius: 0;
+     
+    }
+     .jumbotron {
+      color: #9f0811;
+      margin-bottom: 0;
+      background-image: url("image/header-pizza2.jpg");
+    }
+    .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.menuchinh {
+    position: relative;
+    display: inline-block;
+}
+
+.menuphu {
+    display: none;
+    position: absolute;
+    background-color: #b6ad89;
+    min-width: 237px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menuphu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.menu:hover{background-color: #f1f1f1}
+.menuphu a:hover {box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);}
+.menuchinh:hover .menu {
+    background-color: #3e8e41;
+}
+.menuchinh:hover .menuphu {
+    display: block;
+}
+.mnphu{
+  margin-top: 25%; 
+  color: #9d9d9d;
+}
+.mnphu:hover{
+  color: white;
+}
+/* Css Phần footer */
+.footer{
+  text-align: center;
+  background-color: pink;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+ul{
+  list-style-type: none;
+    display: block;
+    margin-left: 30%;
+}
+li{
+  float: left;
+}
+/* Css Phần liên kết ngoài */
+.lienketngoai{
+  position: fixed;
+  top: 100px;
+  left: 20px;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  opacity: 0.2;
+  filter: alpha(opacity=20); 
+
+}
+.icon:hover{
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+  </style>
+</head>
+<body>
+  
+<!--Phần header-->
+<div class="jumbotron">
+  <div class="container text-center">
+
+    <h1>Pizza Store</h1>      
+    <p>Mạnh, Hợi & Luân</p>
+  </div>
+</div>
+<!--Phần Menu-->
+<div id="navbar" style="z-index: 999;">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="Project-Group1-TrangChu.html">Trang chủ</a></li>
+        <li><a href="MenuPizza.html">Menu Pizza </a></li>
+        <li><a href="MenuDrink.html">Menu Drink</a></li>
+        <li>
+          <div class="menuchinh">
+             <p class="mnphu">Giới thiệu</p>
+              <div class="menuphu">
+                  <a href="https://www.fasttrack.edu.vn/">Nhà tài trợ</a>
+                  <a href="NhomThucHien.html">Nhóm thực hiện</a>
+              </div>
+        
+          </div>        
+          </li>
+        <li>
+          <div class="menuchinh" style="margin-left: 20px; margin-top: 5%">
+              <p class="mnphu">Liên hệ</p>
+              <div class="menuphu">
+                  <a href="#">Địa chỉ</a>
+                  <a href="#">CSKH</a>
+              </div>
+          
+          </div>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="giohang.html" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<!-- Phần thân Menu-->
+<div class="container text-center"> 
+<div>
+  <img src="image/header-drink.jpg" style="width: 100%;">
+</div>
+<br>   
+  <h1 style="color: red;">Menu Drink</h1><br>
+  </div><br><br><br>
+ <div class="container content">    
+  <div class="row" >
+    <div class="col-sm-4 wow bounceInRight" data-wow-duration="3s">
+      <div class="panel thumbnail" style="background: black;">
+        <div class="panel-heading" style="color: #d4a26f; font-size: 20px; text-align: center;">TRÀ SỮA TRÀ ĐEN</div>
+        <div class="panel-body" style="background: black">
+          <div>
+          <img src="image/ZT01.png" class="img-responsive" style="width:50%; display: inline;" alt="Image">
+          <h3 style="width: 49%; float: right; text-align: left;">Giá: 19.000đ<br><br><a href="thanhphan.html" style="text-decoration: none; color: white; font-size: 20px;">>> Chi tiết</a></h3>
+          </div>
+          <span style="color: white"> Số lượng: <input style="color: black" type="number" name="soluong" value="1" id="14"></span>
+        </div>
+        <div class="panel-footer" style="border-radius: 5px; background: red; text-align: center;"><button data-name="TRÀ SỮA TRÀ ĐEN" data-price="19000" class="add-to-cart btn btn-info button-buy-now">Bắt đầu đặt hàng</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4 wow bounceInUp" data-wow-duration="3s">
+      <div class="panel thumbnail" style="background: black;">
+        <div class="panel-heading" style="color: #d4a26f; font-size: 20px; text-align: center;">TRÀ ĐÀO HẠT CHIA</div>
+        <div class="panel-body" style="background: black">
+          <div>
+          <img src="image/ZT02.png" class="img-responsive" style="width:50%; display: inline;" alt="Image">
+          <h3 style="width: 49%; float: right; text-align: left;">Giá: 19.000đ<br><br><a href="thanhphan.html" style="text-decoration: none; color: white; font-size: 20px;">>> Chi tiết</a></h3>
+          </div>
+          <span style="color: white"> Số lượng: <input style="color: black" type="number" name="soluong" value="1" id="15"></span>
+        </div>
+        <div class="panel-footer" style="border-radius: 5px; background: red; text-align: center;"><button data-name="TRÀ ĐÀO HẠT CHIA" data-price="19000" class="add-to-cart btn btn-info button-buy-now">Bắt đầu đặt hàng</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4 wow bounceInLeft" data-wow-duration="3s">
+      <div class="panel thumbnail" style="background: black;">
+        <div class="panel-heading" style="color: #d4a26f; font-size: 20px; text-align: center;">COCA-COLA 300ML</div>
+        <div class="panel-body" style="background: black">
+          <div>
+          <img src="image/NC27.png" class="img-responsive" style="width:50%; display: inline;" alt="Image">
+          <h3 style="width: 49%; float: right; text-align: left;">Giá: 29.000đ<br><br><a href="thanhphan.html" style="text-decoration: none; color: white; font-size: 20px;">>> Chi tiết</a></h3>
+          </div>
+          <span style="color: white"> Số lượng: <input style="color: black" type="number" name="soluong" value="1" id="16"></span>
+        </div>
+        <div class="panel-footer" style="border-radius: 5px; background: red; text-align: center;"><button data-name="COCA-COLA 300ML" data-price="29000" class="add-to-cart btn btn-info button-buy-now">Bắt đầu đặt hàng</button></div>
+      </div>
+    </div>
+ </div>
+ <div class="row">
+    <div class="col-sm-4 wow bounceInRight" data-wow-duration="3s">
+      <div class="panel thumbnail" style="background: black;">
+        <div class="panel-heading" style="color: #d4a26f; font-size: 20px; text-align: center;">COCA-LIGHT 300ML</div>
+        <div class="panel-body" style="background: black">
+          <div>
+          <img src="image/NC28.png" class="img-responsive" style="width:50%; display: inline;" alt="Image">
+          <h3 style="width: 49%; float: right; text-align: left;">Giá: 29.000đ<br><br><a href="thanhphan.html" style="text-decoration: none; color: white; font-size: 20px;">>> Chi tiết</a></h3>
+          </div>
+          <span style="color: white"> Số lượng: <input style="color: black" type="number" name="soluong" value="1" id="17"></span>
+        </div>
+        <div class="panel-footer" style="border-radius: 5px; background: red; text-align: center;"><button data-name="COCA-LIGHT 300ML" data-price="29000" class="add-to-cart btn btn-info button-buy-now">Bắt đầu đặt hàng</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4 wow bounceInDown" data-wow-duration="3s">
+      <div class="panel thumbnail" style="background: black;">
+        <div class="panel-heading" style="color: #d4a26f; font-size: 20px; text-align: center;">SPRITE 300ML</div>
+        <div class="panel-body" style="background: black">
+          <div>
+          <img src="image/NC29.png" class="img-responsive" style="width:50%; display: inline;" alt="Image">
+          <h3 style="width: 49%; float: right; text-align: left;">Giá: 29.000đ<br><br><a href="thanhphan.html" style="text-decoration: none; color: white; font-size: 20px;">>> Chi tiết</a></h3>
+          </div>
+          <span style="color: white"> Số lượng: <input style="color: black" type="number" name="soluong" value="1" id="18"></span>
+        </div>
+        <div class="panel-footer" style="border-radius: 5px; background: red; text-align: center;"><button data-name="SPRITE 300ML" data-price="29000" class="add-to-cart btn btn-info button-buy-now">Bắt đầu đặt hàng</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4 wow bounceInLeft" data-wow-duration="3s">
+      <div class="panel thumbnail" style="background: black;">
+        <div class="panel-heading" style="color: #d4a26f; font-size: 20px; text-align: center;">FANTA 300ML</div>
+        <div class="panel-body" style="background: black">
+          <div>
+          <img src="image/NC30.png" class="img-responsive" style="width:50%; display: inline;" alt="Image">
+          <h3 style="width: 49%; float: right; text-align: left;">Giá: 29.000đ<br><br><a href="thanhphan.html" style="text-decoration: none; color: white; font-size: 20px;">>> Chi tiết</a></h3>
+          </div>
+          <span style="color: white"> Số lượng: <input style="color: black" type="number" name="soluong" value="1" id="19"></span>
+        </div>
+        <div class="panel-footer" style="border-radius: 5px; background: red; text-align: center;"><button data-name="FANTA 300ML" data-price="29000" class="add-to-cart btn btn-info button-buy-now">Bắt đầu đặt hàng</button></div>
+      </div>
+    </div>
+ </div>
+  <div class="row">
+    <div class="col-sm-4 wow bounceInRight" data-wow-duration="3s">
+      <div class="panel thumbnail" style="background: black;">
+        <div class="panel-heading" style="color: #d4a26f; font-size: 20px; text-align: center;">BEER HEINIKEN</div>
+        <div class="panel-body" style="background: black">
+          <div>
+          <img src="image/NI04.png" class="img-responsive" style="width:50%; display: inline;" alt="Image">
+          <h3 style="width: 49%; float: right; text-align: left;">Giá: 35.000đ<br><br><a href="thanhphan.html" style="text-decoration: none; color: white; font-size: 20px;">>> Chi tiết</a></h3>
+          </div>
+          <span style="color: white"> Số lượng: <input style="color: black" type="number" name="soluong" value="1" id="20"></span>
+        </div>
+        <div class="panel-footer" style="border-radius: 5px; background: red; text-align: center;"><button data-name="BEER HEINEIKEN" data-price="35000" class="add-to-cart btn btn-info button-buy-now">Bắt đầu đặt hàng</button></div>
+      </div>
+    </div>
+    <div class="col-sm-4 wow bounceInDown" data-wow-duration="3s">
+      <div class="panel thumbnail" style="background: black;">
+        <div class="panel-heading" style="color: #d4a26f; font-size: 20px; text-align: center;">NƯỚC SUỐI DANISA</div>
+        <div class="panel-body" style="background: black">
+          <div>
+          <img src="image/NC31.png" class="img-responsive" style="width:50%; display: inline;" alt="Image">
+          <h3 style="width: 49%; float: right; text-align: left;">Giá: 15.000đ<br><br><a href="thanhphan.html" style="text-decoration: none; color: white; font-size: 20px;">>> Chi tiết</a></h3>
+          </div>
+          <span style="color: white"> Số lượng: <input style="color: black" type="number" name="soluong" value="1" id="21"></span>
+        </div>
+        <div class="panel-footer" style="border-radius: 5px; background: red; text-align: center;"><button data-name="NƯỚC SUỐI DANISA" data-price="15000" class="add-to-cart btn btn-info button-buy-now">Bắt đầu đặt hàng</button></div>
+      </div>
+    </div>
+  </div>
+  <!-- Phần chuyển trang-->
+  <ul class="pagination">
+    <li><a href="MenuPizza.html">1</a></li>
+    <li><a href="MenuPizza2.html">2</a></li>
+    <li><a href="MenuDrink.html">3</a></li>
+  </ul>
+  <!-- Phần footer -->
+    <img src="image/Hotline_No.png" style="width: 50%;margin-left: 25%;">
+    <div class="footer">
+      <ul>
+        <li><a href="">&copy;2018 Pizza HLM.</a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Chính sách giao hàng</a></li>
+        <li><a href="">Điều khoản</a></li>
+      </ul><br>
+      <p>Tập đoàn cung cấp Pizza số 1 Việt Nam<br>
+        Địa chỉ: Tầng 1 - Tòa nhà FPT - KCN An Đồn - Sơn Trà - Đà Nẵng.
+      </p>
+
+    </div>
+    <!-- Phần liên kết ngoài -->
+  <div class="lienketngoai">
+    <a href="https://www.youtube.com/watch?v=rG9r3RV_PDc"><img class="icon" src="image/youtube.jpg"></a><br>
+    <a href="https://zalo.me/pc"><img class="icon" src="image/zalo.png"></a><br>
+    <a href="https://twitter.com/?lang=vi"><img class="icon" src="image/twetter.jpg"></a><br>
+    <a href="https://www.facebook.com/"><img class="icon" src="image/facebook.png"></a><br>
+    <a href="https://mail.google.com/mail/#inbox"><img class="icon" src="image/gmail.png"></a><br>
+    <a href="https://www.instagram.com"><img class="icon" src="image/instagram.jpg"></a>
+  </div>
+  </div>
+
+<!-- Phần liên kết giỏ hàng-->
+<script type="text/javascript">
+        $(document).on('click','.button-buy-now',function(e){
+            e.preventDefault();
+            var parent = $(this).parents('.thumbnail');
+            var src = parent.find('img').attr('src');
+            var name = parent.find('button').attr('data-name');
+            var gia = parent.find('button').attr('data-price');
+            var soluong = document.getElementById(parent.find('input').attr('id')).value;
+            var item = {"name" : name, "gia" : gia, "soluong" : soluong, 'src' : src};
+            var name=item.name;
+
+            
+                localStorage.setItem('ten',name);
+                localStorage.setItem(name,JSON.stringify(item));
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+﻿
+body {
+	background: #f7f7f7;
+}
+
+/* Bắt đầu CSS phần Menu */
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  display:block;
+  transition: top 0.3s;
+  z-index: 1;
+  padding-right: 14px;
+  margin-left: ;
+}
+.navbar img { 
+	float: left;
+	width: 110px;
+	height: 50px;
+	margin: 8px 0px 5px 10px;
+}
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	margin-top: 0px;
+	padding: 22px 10px 22px 10px;
+	text-decoration: none;
+}
+.dropdown {
+	float: left;
+	padding: 0px 0px;
+}
+.dropdown .dropbtn {
+	font-size: 16px;    
+	border: none;
+	outline: none;
+	color: white;
+	padding: 0px 7px;
+	background-color: inherit;
+	font-family: inherit;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color:#f88c00;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #333;
+	min-width: 200px;
+	max-width: 300px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+	float: none;
+	color: white;
+	border-bottom: solid 1px #d8d8d6;
+	padding: 8px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+a #search {
+	font-size: 23px;
+	color: white;
+	margin: 0px 5px;
+}
+
+
+/* Bắt đầu CSS phần Slide ảnh */
+#myCarousel { 
+	margin-top:-18px;
+}
+
+/* Bắt đầu CSS phần nội dung */
+section {
+	width: 1200px;
+	background-color: #ffffff;
+	padding-top: 10px;
+	border-left: outset 1px #d8d8d6;
+	border-right: outset 1px;
+}
+#quangcao {
+	padding-left: 15px;
+}
+#quangcao img {
+	margin-left: 15px;
+	margin-bottom: 7px;
+}
+#sukien {
+	height: 50px;
+	border-bottom: solid 2px #d8d8d6;
+	padding: 10px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #fe2e2e;
+}
+#sukiennoibat {
+	margin-top:15px;
+}
+#sukiennoibat img {
+	margin-bottom: 10px;
+	width: 375px;
+	height: 210px;
+}
+#sukiennoibat h4 {
+	font-size: 20px;
+}
+#sukiennoibat h4:hover, #sukienkhac strong:hover {
+	color: #fe2e2e;
+}
+#sukienkhac {
+	margin-top: 15px;
+	padding-left: 30px;
+}
+#sukien1 {
+	margin-bottom: 20px;
+}
+#sukien2, #sukien3 {
+	margin-bottom: 10px;
+}
+#sukiennoibat img:hover, #sukienkhac img:hover, #khuyenmai1 img:hover, #khuyenmai2 img:hover, #anhtintuc img:hover, #vieclam img:hover, #khampha img:hover {
+	opacity: 0.6;
+}
+#time {
+	color: #969696;
+}
+#tensukien, #tenvieclam, #tenkhampha {
+	margin-left: -15px;
+}
+#khuyenmai {
+	height: 50px;
+	border-bottom: solid 2px #d8d8d6;
+	padding: 10px 0px;
+	font-size: 20px;
+	color: #00a950;
+}
+#khuyenmai1 img {
+	width: 735px;
+	margin: 20px 0px 15px 16px;
+}
+#tieudekhuyenmai1 {
+	color: #00a950;
+	position: absolute;
+	top: 770px;
+	left: 40px;
+}
+#khuyenmai2 img {
+	width: 230px;
+	margin: 6px 0px;
+}
+#khuyenmai2 h4:hover {
+	color: #00a950;
+}
+#tintuc, #tieudevieclam, #tieudekhampha {
+	height: 40px;
+	border-bottom: solid 2px #d8d8d6;
+	font-size: 20px;
+	color: #fe2e2e;
+	margin-bottom: 20px;
+}
+#tieudevieclam {
+	color: #800040;
+}
+#tieudekhampha {
+	color: skyblue;
+}
+#vieclamkhac, #khamphakhac {
+	border-top: solid 1px #d8d8d6;
+	margin-top: 0px;
+	padding: 20px 0px;
+}
+#vieclam strong:hover {
+	color: #800040;
+}
+#khampha strong:hover {
+	color: skyblue;
+}
+#anhtintuc img {
+	width:260px;
+	margin-bottom:20px
+}
+#anhtintuc p {
+	color: white;
+	font-size: 17px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+/* Bắt đầu CSS phần Footer */
+#contact {
+	background: #333333;
+	height: 300px;
+}
+#tieude p {
+	margin-top: 20px;
+	border-bottom: solid 3px #f88c00;
+}
+#tieude p {
+	color: white;
+	font-size: 17px;
+	padding-bottom: 13px;
+}
+#thongtin p {
+	color: white;
+	padding-top: 10px;
+}
+.form-text {
+	width: 340px;
+	height: 35px;
+	margin: 10px 0px;
+}
+.form-email {
+	width: 340px;
+	height: 35px;
+	margin: 10px 0px;
+}
+.form-button {
+	width: 340px;
+	height: 35px;
+	background: #f88c00;
+	color: white;
+	margin: 10px 0px;
+	border-radius: 7px;
+}
+#tukhoa span {
+	float: left;
+	border: solid 1px white;
+	border-radius: 2px;
+	margin: 0px 7px 5px 0px;
+	padding: 4px 7px;
+	color: white;
+}
+#tukhoa span:hover {
+	color: #f88c00;
+}
+#footer {
+	background: #242424;
+	height: 70px;
+
+}
+#copyright p {
+	color: white;
+	margin-top: 25px;
+}
+#lienhe {
+	padding-left: 200px;
+}
+#lienhe p, #lienhe i {
+	color: white;
+	margin: 25px 7px 0px 7px;
+	float: left;
+}
+#lienhe p:hover, #lienhe i:hover {
+	color: #f88c00;
+}

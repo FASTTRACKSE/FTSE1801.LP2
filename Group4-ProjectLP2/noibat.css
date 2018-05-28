@@ -1,0 +1,235 @@
+﻿
+body {
+	background: #f7f7f7;
+}
+
+/* Bắt đầu CSS phần Menu */
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  display:block;
+  transition: top 0.3s;
+  z-index: 1;
+  padding-right: 14px;
+  margin-left: ;
+}
+.navbar img { 
+	float: left;
+	width: 110px;
+	height: 50px;
+	margin: 8px 0px 5px 10px;
+}
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	margin-top: 0px;
+	padding: 22px 10px 22px 10px;
+	text-decoration: none;
+}
+.dropdown {
+	float: left;
+	padding: 0px 0px;
+}
+.dropdown .dropbtn {
+	font-size: 16px;    
+	border: none;
+	outline: none;
+	color: white;
+	padding: 0px 7px;
+	background-color: inherit;
+	font-family: inherit;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color:#f88c00;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #333;
+	min-width: 200px;
+	max-width: 300px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+	float: none;
+	color: white;
+	border-bottom: solid 1px #d8d8d6;
+	padding: 8px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+a #search {
+	font-size: 23px;
+	color: white;
+	margin: 0px 5px;
+}
+
+
+/* Bắt đầu CSS phần Slide ảnh */
+#myCarousel { 
+	margin-top:-18px;
+}
+
+
+
+
+/* Bắt đầu CSS phần nội dung */
+#noibat {
+	margin-top: 30px;
+	border: solid 1px #d8d8d6;
+	padding: 20px 0px 5px 20px;
+}
+#noibat a {
+	color: black;
+}
+#noidung {
+	border: solid 1px #d8d8d6;
+	padding: 20px 200px 20px 20px;
+}
+#noidung img {
+	width: 690px;
+	margin-bottom: 20px;
+}
+#title1, #title2, #title3, #title4, #title5, #title6 {
+	border: solid 1px white;
+	background: white;
+	position: absolute;
+	text-align: center;
+	padding: 5px 8px 0px 8px;
+	margin-top: -125px;
+}
+#title1 {
+	margin-left: 170px;
+}
+#title2 {
+	margin-left: 65px;
+}
+#title3 {
+	margin-left: 90px;
+}
+#title4 {
+	margin-left: 85px;
+}
+#title5 {
+	margin-left: 140px;
+}
+#title6 {
+	margin-left: 230px;
+}
+#noidung h2 {
+	margin-top: 0px;
+}
+#noidung h2:hover {
+	color: #f88c00;
+}
+#time {
+	color: #969696;
+}
+#read button {
+	background: #f88c00;
+	padding: 3px 10px;
+}
+
+#sukienkhac {
+	/*position: fixed;
+	z-index: 1;*/
+}
+#sukienthangnam {
+	border-bottom: solid 3px #d8d8d6;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 18px;
+}
+#tensukien {
+	margin-top: 20px;
+}
+#tensukien img {
+	float: left;
+	width: 90px;
+	margin: 0px 10px;
+}
+#tensukien strong {
+	float: left;
+	margin-top: 35px;
+}
+
+
+/* Bắt đầu CSS phần Footer */
+#contact {
+	background: #333333;
+	height: 300px;
+}
+#tieude p {
+	margin-top: 20px;
+	border-bottom: solid 3px #f88c00;
+}
+#tieude p {
+	color: white;
+	font-size: 17px;
+	padding-bottom: 13px;
+}
+#thongtin p {
+	color: white;
+	padding-top: 10px;
+}
+.form-text {
+	width: 340px;
+	height: 35px;
+	margin: 10px 0px;
+}
+.form-email {
+	width: 340px;
+	height: 35px;
+	margin: 10px 0px;
+}
+.form-button {
+	width: 340px;
+	height: 35px;
+	background: #f88c00;
+	color: white;
+	margin: 10px 0px;
+	border-radius: 7px;
+}
+#tukhoa span {
+	float: left;
+	border: solid 1px white;
+	border-radius: 2px;
+	margin: 0px 7px 5px 0px;
+	padding: 4px 7px;
+	color: white;
+}
+#tukhoa span:hover {
+	color: #f88c00;
+}
+#footer {
+	background: #242424;
+	height: 70px;
+
+}
+#copyright p {
+	color: white;
+	margin-top: 25px;
+}
+#lienhe {
+	padding-left: 200px;
+}
+#lienhe p, #lienhe i {
+	color: white;
+	margin: 25px 7px 0px 7px;
+	float: left;
+}
+#lienhe p:hover, #lienhe i:hover {
+	color: #f88c00;
+}
