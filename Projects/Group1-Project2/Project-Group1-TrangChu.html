@@ -14,144 +14,153 @@
 </head>
 <body>
 	<div>
-			<!--Phần header-->
-<div class="jumbotron">
-  <div class="container text-center">
 
-    <h1>Pizza Store</h1>      
-    <p>Mạnh, Hợi & Luân</p>
-  </div>
-</div>
-<!--Phần Menu-->
-<div id="navbar" style="z-index: 999;">
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="Project-Group1-TrangChu.html">Trang chủ</a></li>
-        <li><a href="MenuPizza.html">Menu Pizza </a></li>
-        <li><a href="MenuDrink.html">Menu Drink</a></li>
-        <li>
-          <div class="menuchinh">
-             <p class="mnphu">Giới thiệu</p>
-              <div class="menuphu">
-                  <a href="https://www.fasttrack.edu.vn/">Nhà tài trợ</a>
-                  <a href="NhomThucHien.html">Nhóm thực hiện</a>
-              </div>
-        
-          </div>        
-          </li>
-        <li>
-          <div class="menuchinh" style="margin-left: 20px; margin-top: 5%">
-              <p class="mnphu">Liên hệ</p>
-              <div class="menuphu">
-                  <a href="#">Địa chỉ</a>
-                  <a href="#">CSKH</a>
-              </div>
-          
-          </div>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="giohang.html" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-</div>
-<script>
-window.onscroll = function() {myFunction()};
+		<!--Phần header-->
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-	<div class="container">
-		<!-- Phần slide show -->
-		<div class="slideshow" style="margin-top: 20px;">
-			<div class="hinhanh" style="width: 100%;">
-				<a href=""><img class="mySlides" src="image/slide1.jpg" style="width: 100%; height: 400px;" ></a>
-				<a href=""><img class="mySlides" src="image/slide2.png" style="width: 100%; height: 400px;" ></a>
-				<a href=""><img class="mySlides" src="image/slide3.jpg" style="width: 100%; height: 400px;" ></a>
+		<div class="jumbotron">
+			<div class="container text-center">
+				<h1>Pizza Store</h1>      
+				<p>Mạnh, Hợi & Luân</p>
 			</div>
-			
-			<script>
-				var myIndex = 0;
-				carousel();
+		</div>
 
-				function carousel() {
-					var i;
-					var x = document.getElementsByClassName("mySlides");
-					for (i = 0; i < x.length; i++) {
-						x[i].style.display = "none";  
-					}
-					myIndex++;
-					if (myIndex > x.length) {myIndex = 1}    
-						x[myIndex-1].style.display = "block";  
+		<!--Phần Menu-->
+
+		<div id="navbar" style="z-index: 999;">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="Project-Group1-TrangChu.html">Trang chủ</a></li>
+							<li><a href="MenuPizza.html">Menu Pizza </a></li>
+							<li><a href="MenuDrink.html">Menu Drink</a></li>
+							<li>
+								<div class="menuchinh">
+									<p class="mnphu">Giới thiệu</p>
+									<div class="menuphu">
+										<a href="https://www.fasttrack.edu.vn/">Nhà tài trợ</a>
+										<a href="NhomThucHien.html">Nhóm thực hiện</a>
+									</div>
+
+								</div>        
+							</li>
+							<li>
+								<div class="menuchinh" style="margin-left: 20px; margin-top: 5%">
+									<p class="mnphu">Liên hệ</p>
+									<div class="menuphu">
+										<a href="#">Địa chỉ</a>
+										<a href="#">CSKH</a>
+									</div>
+
+								</div>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="giohang.html" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+		</script>
+
+		<!-- Phần slide show -->
+
+		<div class="container">			
+			<div class="slideshow" style="margin-top: 20px;">
+				<div class="hinhanh" style="width: 100%;">
+					<a href=""><img class="mySlides" src="image/slide1.jpg" style="width: 100%; height: 400px;" ></a>
+					<a href=""><img class="mySlides" src="image/slide2.png" style="width: 100%; height: 400px;" ></a>
+					<a href=""><img class="mySlides" src="image/slide3.jpg" style="width: 100%; height: 400px;" ></a>
+				</div>
+
+				<script>
+					var myIndex = 0;
+					carousel();
+
+					function carousel() {
+						var i;
+						var x = document.getElementsByClassName("mySlides");
+						for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";  
+						}
+						myIndex++;
+						if (myIndex > x.length) {myIndex = 1}    
+							x[myIndex-1].style.display = "block";  
     				setTimeout(carousel, 2000); // Change image every 2 seconds
     			}
-		    </script>
-		</div><br>
+    		</script>
+    	</div><br>
 
-		<!-- Phần conttend -->
-		<script type="text/javascript">
-			new WOW().init();
-		</script>
-		<div  class="conttend row" style="z-index: 1">
-			<div class="col-sm-6 "><a href="MenuPizza.html"><img src="image/header-pizza.jpg" class="wow fadeInLeft" data-wow-delay="0.5s" style="width: 100%; height: 250px;"></a></div>
-			<div class="col-sm-6"><a href="MenuDrink.html"><img src="image/header-drink.jpg" class="wow fadeInRight" data-wow-delay="1s"  style="width: 100%; height: 250px;"></a></div>
-		</div><br>
-		<div class="row">
-		<div class="col-sm-6 text-center">
-			<video controls="" >
-				<source src="image/video.mp4" type="video/mp4" >
-				Video làm bánh pizza.
-			</video>
-		</div>
-		<div class=" col-sm-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1916.8913639636212!2d108.23604036626904!3d16.07676072183423!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdec2fb897aa16a90!2zxJDhuqFpIGjhu41jIEZQVCDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1507622604309" width="100%" height="150" frameborder="0" style="border:0; height: 400px;" allowfullscreen=""></iframe>
-        </div>
-</div>
-		<!-- Phần footer -->
-		<img src="image/Hotline_No.png" style="width: 50%;margin-left: 25%;">
-		<div class="footer">
-			<ul>
-				<li><a href="">&copy;2018 Pizza HLM.</a></li>
-				<li><a href="">Liên hệ</a></li>
-				<li><a href="">Chính sách giao hàng</a></li>
-				<li><a href="">Điều khoản</a></li>
-			</ul><br>
-			<p>Tập đoàn cung cấp Pizza số 1 Việt Nam<br>
-				Địa chỉ: Tầng 1 - Tòa nhà FPT - KCN An Đồn - Sơn Trà - Đà Nẵng.
-			</p>
+    	<!-- Phần conttend -->
 
-		</div>
-	</div>
+    	<script type="text/javascript">
+    		new WOW().init();
+    	</script>
+    	<div  class="conttend row" style="z-index: 1">
+    		<div class="col-sm-6 "><a href="MenuPizza.html"><img src="image/header-pizza.jpg" class="wow fadeInLeft" data-wow-delay="0.5s" style="width: 100%; height: 250px;"></a></div>
+    		<div class="col-sm-6"><a href="MenuDrink.html"><img src="image/header-drink.jpg" class="wow fadeInRight" data-wow-delay="1s"  style="width: 100%; height: 250px;"></a></div>
+    	</div><br>
+    	<div class="row">
+    		<div class="col-sm-6 text-center">
+    			<video controls="" >
+    				<source src="image/video.mp4" type="video/mp4" >
+    					Video làm bánh pizza.
+    				</video>
+    			</div>
+    			<div class=" col-sm-6">
+    				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1916.8913639636212!2d108.23604036626904!3d16.07676072183423!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdec2fb897aa16a90!2zxJDhuqFpIGjhu41jIEZQVCDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1507622604309" width="100%" height="150" frameborder="0" style="border:0; height: 400px;" allowfullscreen=""></iframe>
+    			</div>
+    		</div>
 
-	<!-- Phần liên kết ngoài -->
-	<div class="lienketngoai">
-		<a href="https://www.youtube.com/watch?v=rG9r3RV_PDc"><img class="icon" src="image/youtube.jpg"></a><br>
-		<a href="https://zalo.me/pc"><img class="icon" src="image/zalo.png"></a><br>
-		<a href="https://twitter.com/?lang=vi"><img class="icon" src="image/twetter.jpg"></a><br>
-		<a href="https://www.facebook.com/"><img class="icon" src="image/facebook.png"></a><br>
-		<a href="https://mail.google.com/mail/#inbox"><img class="icon" src="image/gmail.png"></a><br>
-		<a href="https://www.instagram.com"><img class="icon" src="image/instagram.jpg"></a>
-	</div>
-	</div>
+    		<!-- Phần footer -->
+
+    		<img src="image/Hotline_No.png" style="width: 50%;margin-left: 25%;">
+    		<div class="footer">
+    			<ul>
+    				<li><a href="">&copy;2018 Pizza HLM.</a></li>
+    				<li><a href="">Liên hệ</a></li>
+    				<li><a href="">Chính sách giao hàng</a></li>
+    				<li><a href="">Điều khoản</a></li>
+    			</ul><br>
+    			<p>Tập đoàn cung cấp Pizza số 1 Việt Nam<br>
+    				Địa chỉ: Tầng 1 - Tòa nhà FPT - KCN An Đồn - Sơn Trà - Đà Nẵng.
+    			</p>
+
+    		</div>
+    	</div>
+
+    	<!-- Phần liên kết ngoài -->
+    	<div class="lienketngoai">
+    		<a href="https://www.youtube.com/watch?v=rG9r3RV_PDc"><img class="icon" src="image/youtube.jpg"></a><br>
+    		<a href="https://zalo.me/pc"><img class="icon" src="image/zalo.png"></a><br>
+    		<a href="https://twitter.com/?lang=vi"><img class="icon" src="image/twetter.jpg"></a><br>
+    		<a href="https://www.facebook.com/"><img class="icon" src="image/facebook.png"></a><br>
+    		<a href="https://mail.google.com/mail/#inbox"><img class="icon" src="image/gmail.png"></a><br>
+    		<a href="https://www.instagram.com"><img class="icon" src="image/instagram.jpg"></a>
+    	</div>
+    </div>
 </body>
 </html>
 
